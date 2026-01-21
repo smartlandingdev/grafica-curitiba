@@ -2,33 +2,33 @@ import { Link } from 'react-router-dom'
 
 // Features Data
 const features = [
-  { icon: 'ri-printer-line', label: 'Impressão Offset e Digital' },
-  { icon: 'ri-palette-line', label: 'Acabamento Premium' },
-  { icon: 'ri-timer-line', label: 'Entrega Rápida' },
-  { icon: 'ri-shield-check-line', label: 'Qualidade Garantida' },
+  { icon: 'ri-image-line', label: 'Alta Resolução' },
+  { icon: 'ri-sun-line', label: 'Resistente ao Sol' },
+  { icon: 'ri-ruler-line', label: 'Tamanhos Variados' },
+  { icon: 'ri-truck-line', label: 'Entrega Rápida' },
 ]
 
-// Paper Options Data
-const paperOptions = [
+// Product Options Data
+const productOptions = [
   {
-    title: 'Papel Couché 300g',
-    description: 'Acabamento fosco ou brilhante, ideal para impressão colorida',
+    title: 'Banner Lona 440g',
+    description: 'Material padrão com excelente custo-benefício e durabilidade',
   },
   {
-    title: 'Papel Supremo 250g',
-    description: 'Textura premium, perfeito para acabamento sofisticado',
+    title: 'Banner Lona Backlight',
+    description: 'Ideal para caixas luminosas e vitrines iluminadas',
   },
   {
-    title: 'Papel Reciclado',
-    description: 'Opção sustentável com excelente qualidade de impressão',
+    title: 'Banner Roll-Up',
+    description: 'Portátil com estrutura retrátil, perfeito para eventos',
   },
   {
-    title: 'Laminação',
-    description: 'Proteção extra com acabamento fosco ou brilhante',
+    title: 'Faixa em Lona',
+    description: 'Para fachadas, promoções e comunicação de grande formato',
   },
 ]
 
-function CartoesDeVisita() {
+function Banners() {
   return (
     <>
       {/* JSON-LD Schema */}
@@ -36,9 +36,9 @@ function CartoesDeVisita() {
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Product',
-          name: 'Cartões de Visita',
+          name: 'Banners e Lonas',
           description:
-            'Cartões de visita personalizados em Curitiba com impressão offset e digital. Acabamento premium, diversos tipos de papel e entrega rápida. Solicite orçamento via WhatsApp (41) 3024-0080.',
+            'Banners personalizados e impressão em lona em Curitiba. Alta resolução, material resistente ao tempo e acabamento profissional. Solicite orçamento via WhatsApp (41) 3024-0080.',
           brand: {
             '@type': 'Organization',
             name: 'Gráfica Curitiba',
@@ -71,7 +71,7 @@ function CartoesDeVisita() {
         className="relative min-h-[70vh] flex items-center justify-center pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1920&h=1080&fit=crop")',
+            'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -79,14 +79,14 @@ function CartoesDeVisita() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-[48px] font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
-            Cartões de Visita em Curitiba
+            Banners e Lonas em Curitiba
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Impressão profissional de cartões de visita com acabamento premium. Diversos tipos de
-            papel e acabamentos para sua marca se destacar.
+            Impressão de banners em alta resolução para eventos, fachadas e pontos de venda.
+            Material resistente ao tempo e acabamento profissional.
           </p>
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Cartões%20de%20Visita"
+            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Banners"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#FF6B35] text-white px-12 py-5 rounded-full text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
@@ -119,29 +119,29 @@ function CartoesDeVisita() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h2 className="text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-6">
-                Cartões de Visita Profissionais para Sua Empresa
+                Banners de Grande Impacto Visual
               </h2>
               <p className="text-[16px] text-[#555] leading-relaxed mb-6">
-                Na Gráfica Curitiba, oferecemos impressão de cartões de visita com a mais alta
-                qualidade. Utilizamos tecnologia de impressão offset e digital para garantir cores
-                vibrantes e acabamento impecável.
+                Na Gráfica Curitiba, produzimos banners e impressões em lona com tecnologia
+                de ponta. Impressão digital em alta resolução que garante cores vibrantes
+                e definição perfeita em qualquer tamanho.
               </p>
               <p className="text-[16px] text-[#555] leading-relaxed mb-6">
-                Nossos cartões de visita são produzidos em diversos tipos de papel, desde o
-                tradicional couché até opções premium como supremo e reciclado. Todos os materiais
-                são cuidadosamente selecionados para transmitir profissionalismo e qualidade.
+                Nossos materiais são resistentes ao sol, chuva e intempéries, ideais para
+                uso interno e externo. Trabalhamos com lona front-light, backlight, vinil
+                adesivo e outros materiais para grande formato.
               </p>
               <p className="text-[16px] text-[#555] leading-relaxed">
-                Atendemos empresas de todos os portes em Curitiba e região metropolitana, com
-                entrega rápida e preços competitivos. Solicite seu orçamento via WhatsApp e receba
-                atendimento personalizado.
+                Oferecemos acabamentos como ilhós, bastão, estrutura roll-up e instalação.
+                Atendemos desde pequenos banners para eventos até grandes painéis para
+                fachadas e outdoors em Curitiba e região.
               </p>
             </div>
             <div
               className="rounded-2xl overflow-hidden shadow-xl h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=600&fit=crop")',
+                  'url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
@@ -150,10 +150,10 @@ function CartoesDeVisita() {
 
           <div>
             <h3 className="text-3xl font-bold text-[#1A1A1A] mb-10 text-center">
-              Opções de Papel e Acabamento
+              Tipos de Banners
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {paperOptions.map((option) => (
+              {productOptions.map((option) => (
                 <div
                   key={option.title}
                   className="bg-white border border-[#E5E5E5] rounded-xl p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300"
@@ -171,14 +171,14 @@ function CartoesDeVisita() {
       <section className="py-20 bg-[#FFF4F0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-6">
-            Pronto para Criar Seus Cartões de Visita?
+            Pronto para Criar Seu Banner?
           </h2>
           <p className="text-lg text-[#555] mb-10 max-w-2xl mx-auto">
-            Entre em contato agora e receba um orçamento personalizado para seus cartões de visita
+            Entre em contato agora e receba um orçamento personalizado para banners e lonas
             em Curitiba.
           </p>
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Cartões%20de%20Visita"
+            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Banners"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#FF6B35] text-white px-12 py-5 rounded-full text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
@@ -201,4 +201,4 @@ function CartoesDeVisita() {
   )
 }
 
-export default CartoesDeVisita
+export default Banners

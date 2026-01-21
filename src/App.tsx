@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom'
 import CartoesDeVisita from './pages/CartoesDeVisita'
+import Panfletos from './pages/Panfletos'
+import CrachasCordoes from './pages/CrachasCordoes'
+import Banners from './pages/Banners'
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -40,7 +43,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
             <img
               alt="Gráfica Curitiba Logo"
               className="h-14 w-auto"
-              src="https://static.readdy.ai/image/70bf5e03c1d0a5779acdfda365627545/14dca3cdf069e880b6fbe9e526d42260.png"
+              src="/logo.png"
             />
             <div className="flex flex-col">
               <span className="text-[18px] font-bold text-[#1A1A1A] leading-tight">Gráfica e Web Sites</span>
@@ -285,7 +288,7 @@ function Footer() {
               <img
                 alt="Gráfica Curitiba Logo"
                 className="h-12 w-auto"
-                src="https://static.readdy.ai/image/70bf5e03c1d0a5779acdfda365627545/14dca3cdf069e880b6fbe9e526d42260.png"
+                src="/logo.png"
               />
             </div>
             <p className="text-[15px] font-semibold mb-2">Gráfica e Web Sites</p>
@@ -365,16 +368,8 @@ function Footer() {
       {/* Bottom Bar */}
       <div className="bg-[#1A1A1A] py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[13px] text-[#808080]">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-[13px] text-[#808080]">
             <p>© 2026 Gráfica Curitiba - Impressão Profissional | Todos os direitos reservados</p>
-            <a
-              href="https://readdy.ai/?ref=logo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#00A859] transition-colors cursor-pointer"
-            >
-              Website Builder
-            </a>
           </div>
         </div>
       </div>
@@ -388,28 +383,28 @@ const services = [
     icon: 'ri-bank-card-line',
     title: 'Cartões de Visita',
     description: 'Cartões de visita personalizados com impressão offset e digital de alta qualidade. Acabamento premium e papel diferenciado. Produção local em Curitiba com entrega rápida para todo o Brasil.',
-    image: 'https://readdy.ai/api/search-image?query=elegant%20professional%20business%20cards%20with%20orange%20accents%20on%20wooden%20desk%2C%20high%20quality%20printing%2C%20premium%20paper%20texture%2C%20modern%20design%2C%20professional%20photography%2C%20clean%20background&width=600&height=400&seq=cartoes-visita-service&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=400&fit=crop',
     href: '/cartoes-de-visita',
   },
   {
     icon: 'ri-file-paper-2-line',
     title: 'Panfletos',
     description: 'Panfletos e folders personalizados para divulgação eficiente do seu negócio. Impressão colorida em alta resolução, diversos formatos e acabamentos. Gráfica em Curitiba atendendo todo o Brasil.',
-    image: 'https://readdy.ai/api/search-image?query=colorful%20promotional%20flyers%20and%20brochures%20spread%20on%20table%2C%20vibrant%20orange%20colors%2C%20high%20quality%20print%20materials%2C%20professional%20marketing%20materials%2C%20bright%20lighting%2C%20clean%20composition&width=600&height=400&seq=panfletos-service&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=600&h=400&fit=crop',
     href: '/panfletos',
   },
   {
     icon: 'ri-id-card-line',
     title: 'Crachás e Cordões',
     description: 'Crachás personalizados e cordões para eventos corporativos, convenções e empresas. Material resistente, impressão profissional e durabilidade garantida. Produzido em Curitiba para todo o país.',
-    image: 'https://readdy.ai/api/search-image?query=professional%20event%20badges%20and%20lanyards%20with%20orange%20branding%2C%20corporate%20identification%20cards%2C%20high%20quality%20materials%2C%20business%20conference%20accessories%2C%20modern%20design%2C%20clean%20white%20background&width=600&height=400&seq=crachas-cordoes-service&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1540553016722-983e48a2cd10?w=600&h=400&fit=crop',
     href: '/crachas-e-cordoes',
   },
   {
     icon: 'ri-image-line',
     title: 'Banners',
     description: 'Banners personalizados para eventos, fachadas e pontos de venda. Impressão digital em altíssima resolução com materiais duráveis e resistentes. Gráfica Curitiba com entrega nacional.',
-    image: 'https://readdy.ai/api/search-image?query=large%20format%20promotional%20banner%20display%20with%20orange%20design%2C%20professional%20trade%20show%20banner%2C%20high%20resolution%20printing%2C%20durable%20vinyl%20material%2C%20business%20event%20display%2C%20modern%20storefront%20banner&width=600&height=400&seq=banners-service&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
     href: '/banners',
   },
 ]
@@ -510,7 +505,7 @@ function HomePage() {
         id="hero"
         className="relative min-h-[85vh] flex items-center justify-center pt-20"
         style={{
-          backgroundImage: 'url("https://readdy.ai/api/search-image?query=professional%20printing%20materials%20business%20cards%20flyers%20folders%20banners%20high%20quality%20printed%20products%20on%20clean%20modern%20desk%20with%20soft%20lighting%20professional%20photography%20style%20minimalist%20background%20corporate%20branding%20materials%20arranged%20neatly%20shallow%20depth%20of%20field%20bright%20clean%20aesthetic&width=1920&height=1080&seq=hero-grafica-001&orientation=landscape")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -830,6 +825,9 @@ function Layout() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/cartoes-de-visita" element={<CartoesDeVisita />} />
+            <Route path="/panfletos" element={<Panfletos />} />
+            <Route path="/crachas-e-cordoes" element={<CrachasCordoes />} />
+            <Route path="/banners" element={<Banners />} />
           </Routes>
         </main>
       </div>
