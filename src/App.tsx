@@ -39,25 +39,25 @@ function Header({ scrolled }: { scrolled: boolean }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-4 cursor-pointer">
+          <Link to="/" className="flex items-center gap-2 sm:gap-4 cursor-pointer">
             <img
               alt="Gráfica Curitiba Logo"
-              className="h-14 w-auto"
+              className="h-10 sm:h-14 w-auto"
               src="/logo.png"
             />
             <div className="flex flex-col">
-              <span className="text-[18px] font-bold text-[#1A1A1A] leading-tight">Gráfica e Web Sites</span>
-              <span className="text-[13px] text-[#666] font-medium">Curitiba</span>
+              <span className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] leading-tight">Gráfica e Web Sites</span>
+              <span className="text-[11px] sm:text-[13px] text-[#666] font-medium">Curitiba</span>
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
             {['servicos', 'diferenciais', 'como-funciona', 'contato'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-[15px] font-medium text-[#333] hover:text-[#FF6B35] transition-colors relative group whitespace-nowrap cursor-pointer capitalize"
+                className="text-[14px] xl:text-[15px] font-medium text-[#333] hover:text-[#FF6B35] transition-colors relative group whitespace-nowrap cursor-pointer capitalize"
               >
                 {item.replace('-', ' ')}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF6B35] group-hover:w-full transition-all duration-300"></span>
@@ -70,16 +70,16 @@ function Header({ scrolled }: { scrolled: boolean }) {
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-[#20BD5A] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
+            className="hidden lg:flex items-center gap-2 bg-[#25D366] text-white px-4 xl:px-6 py-2.5 xl:py-3 rounded-full font-medium text-[14px] xl:text-base shadow-lg hover:bg-[#20BD5A] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-xl"></i>
+            <i className="ri-whatsapp-line text-lg xl:text-xl"></i>
             <span>(41) 3024-0080</span>
           </a>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center text-[#1A1A1A] cursor-pointer"
+            className="lg:hidden w-10 h-10 flex items-center justify-center text-[#1A1A1A] cursor-pointer"
           >
             <i className={`${menuOpen ? 'ri-close-line' : 'ri-menu-line'} text-2xl`}></i>
           </button>
@@ -87,13 +87,13 @@ function Header({ scrolled }: { scrolled: boolean }) {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
-            <nav className="flex flex-col gap-4">
+          <div className="lg:hidden py-4 border-t border-gray-200">
+            <nav className="flex flex-col gap-3">
               {['servicos', 'diferenciais', 'como-funciona', 'contato'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-[15px] font-medium text-[#333] hover:text-[#FF6B35] transition-colors text-left cursor-pointer capitalize"
+                  className="text-[15px] font-medium text-[#333] hover:text-[#FF6B35] transition-colors text-left cursor-pointer capitalize py-2"
                 >
                   {item.replace('-', ' ')}
                 </button>
@@ -102,7 +102,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
                 href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-medium justify-center whitespace-nowrap cursor-pointer"
+                className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-medium justify-center whitespace-nowrap cursor-pointer mt-2"
               >
                 <i className="ri-whatsapp-line text-xl"></i>
                 <span>(41) 3024-0080</span>
@@ -212,11 +212,19 @@ function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) 
   }
 
   return (
-    <aside
-      className={`fixed lg:sticky top-20 left-0 h-[calc(100vh-5rem)] bg-white border-r border-[#E5E5E5] overflow-y-auto z-30 transition-transform duration-300 w-72 ${
-        isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
-      }`}
-    >
+    <>
+      {/* Overlay for mobile */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-20 lg:hidden"
+          onClick={onClose}
+        />
+      )}
+      <aside
+        className={`fixed lg:sticky top-20 left-0 h-[calc(100vh-5rem)] bg-white border-r border-[#E5E5E5] overflow-y-auto z-30 transition-transform duration-300 w-[280px] sm:w-72 ${
+          isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
+        }`}
+      >
       <div className="p-6">
         {/* Home Link */}
         <Link
@@ -273,6 +281,7 @@ function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) 
         </a>
       </div>
     </aside>
+    </>
   )
 }
 
@@ -280,61 +289,61 @@ function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) 
 function Footer() {
   return (
     <footer id="contato" className="bg-[#2C2C2C] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
           {/* Column 1 - Brand */}
-          <div>
-            <div className="flex items-center gap-3 mb-4">
+          <div className="col-span-2 md:col-span-1">
+            <div className="flex items-center gap-3 mb-3 sm:mb-4">
               <img
                 alt="Gráfica Curitiba Logo"
-                className="h-12 w-auto"
+                className="h-10 sm:h-12 w-auto"
                 src="/logo.png"
               />
             </div>
-            <p className="text-[15px] font-semibold mb-2">Gráfica e Web Sites</p>
-            <p className="text-[14px] text-[#B0B0B0] leading-relaxed">
-              Impressão gráfica profissional em Curitiba desde 2010. Qualidade, agilidade e atendimento personalizado para sua empresa.
+            <p className="text-[14px] sm:text-[15px] font-semibold mb-2">Gráfica e Web Sites</p>
+            <p className="text-[12px] sm:text-[14px] text-[#B0B0B0] leading-relaxed">
+              Impressão gráfica profissional em Curitiba desde 2010. Qualidade e atendimento personalizado.
             </p>
           </div>
 
           {/* Column 2 - Contact */}
           <div>
-            <h3 className="text-[16px] font-bold mb-4">Contato</h3>
-            <div className="space-y-3">
-              <a href="tel:+554130240080" className="flex items-center gap-3 text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer">
-                <i className="ri-phone-line text-lg"></i>
+            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4">Contato</h3>
+            <div className="space-y-2 sm:space-y-3">
+              <a href="tel:+554130240080" className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer">
+                <i className="ri-phone-line text-base sm:text-lg"></i>
                 <span>(41) 3024-0080</span>
               </a>
-              <a href="https://wa.me/554130240080" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[15px] text-[#25D366] hover:text-[#20BD5A] transition-colors cursor-pointer">
-                <i className="ri-whatsapp-line text-lg"></i>
+              <a href="https://wa.me/554130240080" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#25D366] hover:text-[#20BD5A] transition-colors cursor-pointer">
+                <i className="ri-whatsapp-line text-base sm:text-lg"></i>
                 <span>(41) 3024-0080</span>
               </a>
-              <a href="mailto:contato@graficacuritiba.com.br" className="flex items-center gap-3 text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer">
-                <i className="ri-mail-line text-lg"></i>
-                <span>contato@graficacuritiba.com.br</span>
+              <a href="mailto:contato@graficacuritiba.com.br" className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer break-all">
+                <i className="ri-mail-line text-base sm:text-lg flex-shrink-0"></i>
+                <span className="text-[11px] sm:text-[15px]">contato@graficacuritiba.com.br</span>
               </a>
             </div>
           </div>
 
           {/* Column 3 - Location */}
           <div>
-            <h3 className="text-[16px] font-bold mb-4">Localização</h3>
-            <div className="space-y-3 text-[15px] text-[#D0D0D0]">
-              <div className="flex items-start gap-3">
-                <i className="ri-map-pin-line text-lg mt-0.5 flex-shrink-0"></i>
+            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4">Localização</h3>
+            <div className="space-y-2 sm:space-y-3 text-[13px] sm:text-[15px] text-[#D0D0D0]">
+              <div className="flex items-start gap-2 sm:gap-3">
+                <i className="ri-map-pin-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
                 <span>Curitiba – PR<br />Região Metropolitana</span>
               </div>
-              <div className="flex items-start gap-3">
-                <i className="ri-time-line text-lg mt-0.5 flex-shrink-0"></i>
+              <div className="flex items-start gap-2 sm:gap-3">
+                <i className="ri-time-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
                 <span>Seg a Sex: 8h às 18h<br />Sábado: 8h às 12h</span>
               </div>
             </div>
           </div>
 
           {/* Column 4 - Quick Links */}
-          <div>
-            <h3 className="text-[16px] font-bold mb-4">Serviços</h3>
-            <ul className="space-y-2 text-[15px]">
+          <div className="hidden lg:block">
+            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4">Serviços</h3>
+            <ul className="space-y-2 text-[13px] sm:text-[15px]">
               <li>
                 <a href="#servicos" className="text-[#D0D0D0] hover:text-[#00A859] transition-colors cursor-pointer">
                   Cartões de Visita
@@ -366,10 +375,11 @@ function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#1A1A1A] py-6">
+      <div className="bg-[#1A1A1A] py-4 sm:py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-[13px] text-[#808080]">
-            <p>© 2026 Gráfica Curitiba - Impressão Profissional | Todos os direitos reservados</p>
+          <div className="flex flex-col items-center justify-center gap-2 text-[11px] sm:text-[13px] text-[#808080] text-center">
+            <p>© 2026 Gráfica Curitiba - Impressão Profissional</p>
+            <p>Todos os direitos reservados</p>
           </div>
         </div>
       </div>
@@ -503,21 +513,21 @@ function HomePage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative min-h-[85vh] flex items-center justify-center pt-20"
+        className="relative min-h-[100svh] sm:min-h-[85vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/55 to-black/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
+          <h1 className="text-[28px] sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
             Gráfica em Curitiba com Impressão Profissional e Entrega Rápida
           </h1>
 
-          <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Cartões, folders, banners e materiais corporativos com qualidade superior. Atendimento via WhatsApp e produção local.
           </p>
 
@@ -525,46 +535,46 @@ function HomePage() {
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#FF6B35] text-white px-12 py-5 rounded-full text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 md:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-2xl"></i>
-            <span>Solicitar Orçamento Agora</span>
-            <i className="ri-arrow-right-line text-xl"></i>
+            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
+            <span>Solicitar Orçamento</span>
+            <i className="ri-arrow-right-line text-lg sm:text-xl hidden sm:inline"></i>
           </a>
 
-          <div className="mt-8 flex items-center justify-center gap-2 text-white/80 text-sm">
-            <div className="flex items-center gap-1">
-              <i className="ri-star-fill text-[#FFB800] text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-lg"></i>
+          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white/80 text-xs sm:text-sm">
+            <div className="flex items-center gap-0.5 sm:gap-1">
+              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
+              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
+              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
+              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
+              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
             </div>
-            <span className="font-medium">Avaliação 4.9 no Google | +500 clientes atendidos</span>
+            <span className="font-medium">Avaliação 4.9 no Google | +500 clientes</span>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-20 bg-white">
+      <section id="servicos" className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-[42px] font-bold text-[#1A1A1A] mb-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-bold text-[#1A1A1A] mb-3 sm:mb-4 px-2">
               Serviços de Impressão Gráfica em Curitiba
             </h2>
-            <p className="text-lg text-[#666] max-w-3xl mx-auto leading-relaxed">
-              <strong>Gráfica em Curitiba</strong> especializada em materiais promocionais e corporativos de alta qualidade. Produção local com <strong>entrega para todo o Brasil</strong>. Impressão profissional com os melhores acabamentos do mercado.
+            <p className="text-sm sm:text-base lg:text-lg text-[#666] max-w-3xl mx-auto leading-relaxed px-2">
+              <strong>Gráfica em Curitiba</strong> especializada em materiais promocionais e corporativos de alta qualidade. Produção local com <strong>entrega para todo o Brasil</strong>.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {services.map((service) => (
               <Link
                 key={service.title}
                 to={service.href}
                 className="group bg-white border border-[#E5E5E5] rounded-xl overflow-hidden hover:shadow-[0_12px_32px_rgba(255,107,53,0.15)] hover:border-[#FF6B35] transition-all duration-300 cursor-pointer"
               >
-                <div className="w-full h-64 overflow-hidden">
+                <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden">
                   <img
                     alt={`${service.title} - Gráfica Curitiba`}
                     title={`${service.title} impressão digital em Curitiba`}
@@ -572,13 +582,13 @@ function HomePage() {
                     src={service.image}
                   />
                 </div>
-                <div className="p-8">
-                  <div className="w-14 h-14 flex items-center justify-center bg-[#FFF4F0] rounded-lg mb-5 group-hover:scale-110 transition-transform duration-300">
-                    <i className={`${service.icon} text-2xl text-[#FF6B35]`}></i>
+                <div className="p-4 sm:p-6 lg:p-8">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#FFF4F0] rounded-lg mb-3 sm:mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <i className={`${service.icon} text-xl sm:text-2xl text-[#FF6B35]`}></i>
                   </div>
-                  <h3 className="text-[24px] font-bold text-[#1A1A1A] mb-3">{service.title}</h3>
-                  <p className="text-[15px] text-[#555] leading-relaxed mb-5">{service.description}</p>
-                  <div className="inline-flex items-center gap-1 text-[14px] text-[#FF6B35] font-semibold group-hover:gap-2 transition-all duration-300">
+                  <h3 className="text-lg sm:text-xl lg:text-[24px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">{service.title}</h3>
+                  <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-[#555] leading-relaxed mb-4 sm:mb-5 line-clamp-3">{service.description}</p>
+                  <div className="inline-flex items-center gap-1 text-[13px] sm:text-[14px] text-[#FF6B35] font-semibold group-hover:gap-2 transition-all duration-300">
                     Solicitar Orçamento
                     <i className="ri-arrow-right-line"></i>
                   </div>
@@ -587,58 +597,58 @@ function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <p className="text-[15px] text-[#666] mb-6">
+          <div className="text-center mt-8 sm:mt-12">
+            <p className="text-[13px] sm:text-[15px] text-[#666] mb-4 sm:mb-6 px-2">
               <strong>Atendimento em Curitiba e Região Metropolitana</strong> • Entregamos para todo o Brasil
             </p>
             <a
               href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#FF6B35] text-white px-8 py-4 rounded-lg font-semibold text-[15px] hover:bg-[#E5562A] transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap cursor-pointer"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[14px] sm:text-[15px] hover:bg-[#E5562A] transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
             >
-              <i className="ri-whatsapp-line text-xl"></i>
-              Solicitar Orçamento via WhatsApp
+              <i className="ri-whatsapp-line text-lg sm:text-xl"></i>
+              <span>Solicitar Orçamento</span>
             </a>
           </div>
         </div>
       </section>
 
       {/* Differentials Section */}
-      <section id="diferenciais" className="py-20 bg-[#F8F9FA]">
+      <section id="diferenciais" className="py-12 sm:py-16 lg:py-20 bg-[#F8F9FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-            <div className="lg:col-span-2">
-              <h2 className="text-4xl lg:text-[38px] font-bold text-[#1A1A1A] mb-6 leading-tight">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-2 text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6 leading-tight">
                 Por Que Escolher a Gráfica Curitiba?
               </h2>
-              <p className="text-[17px] text-[#555] leading-relaxed mb-8">
+              <p className="text-sm sm:text-base lg:text-[17px] text-[#555] leading-relaxed mb-6 sm:mb-8">
                 Somos especialistas em impressão gráfica com atendimento personalizado e produção local. Qualidade garantida para sua empresa.
               </p>
               <a
                 href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-2 border-[#00A859] text-[#00A859] px-8 py-3.5 rounded-lg font-medium hover:bg-[#00A859] hover:text-white transition-all duration-300 whitespace-nowrap cursor-pointer"
+                className="inline-flex items-center gap-2 border-2 border-[#00A859] text-[#00A859] px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-medium text-sm sm:text-base hover:bg-[#00A859] hover:text-white transition-all duration-300 cursor-pointer"
               >
-                <i className="ri-customer-service-2-line text-xl"></i>
+                <i className="ri-customer-service-2-line text-lg sm:text-xl"></i>
                 Falar com Especialista
               </a>
             </div>
 
             <div className="lg:col-span-3">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {differentials.map((item) => (
                   <div
                     key={item.title}
-                    className="bg-white rounded-lg p-6 flex items-start gap-4 hover:shadow-lg transition-all duration-300"
+                    className="bg-white rounded-lg p-4 sm:p-6 flex items-start gap-3 sm:gap-4 hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="w-14 h-14 flex items-center justify-center bg-[#FFF4F0] rounded-full flex-shrink-0">
-                      <i className={`${item.icon} text-2xl text-[#FF6B35]`}></i>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#FFF4F0] rounded-full flex-shrink-0">
+                      <i className={`${item.icon} text-xl sm:text-2xl text-[#FF6B35]`}></i>
                     </div>
-                    <div>
-                      <h3 className="text-[16px] font-bold text-[#1A1A1A] mb-1">{item.title}</h3>
-                      <p className="text-[14px] text-[#666] leading-relaxed">{item.description}</p>
+                    <div className="min-w-0">
+                      <h3 className="text-[14px] sm:text-[16px] font-bold text-[#1A1A1A] mb-1">{item.title}</h3>
+                      <p className="text-[12px] sm:text-[14px] text-[#666] leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -649,86 +659,86 @@ function HomePage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="como-funciona" className="py-24 bg-[#FAFAFA]">
+      <section id="como-funciona" className="py-12 sm:py-16 lg:py-24 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-[40px] font-bold text-[#1A1A1A] mb-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-bold text-[#1A1A1A] mb-2 sm:mb-4">
               Como Funciona Nosso Processo
             </h2>
-            <p className="text-lg text-[#666]">Simples, rápido e profissional</p>
+            <p className="text-sm sm:text-base lg:text-lg text-[#666]">Simples, rápido e profissional</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
             {howItWorks.map((item, index) => (
               <div key={item.step} className="relative">
                 {index < howItWorks.length - 1 && (
                   <div className="hidden lg:block absolute top-10 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 border-t-2 border-dashed border-[#00A859]/30"></div>
                 )}
                 <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="w-16 h-16 flex items-center justify-center bg-[#FF6B35] text-white text-2xl font-bold rounded-full mb-5 shadow-lg">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-[#FF6B35] text-white text-lg sm:text-xl lg:text-2xl font-bold rounded-full mb-3 sm:mb-5 shadow-lg">
                     {item.step}
                   </div>
-                  <div className="w-20 h-20 flex items-center justify-center bg-[#FFF4F0] rounded-full mb-5">
-                    <i className={`${item.icon} text-4xl text-[#FF6B35]`}></i>
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center bg-[#FFF4F0] rounded-full mb-3 sm:mb-5">
+                    <i className={`${item.icon} text-2xl sm:text-3xl lg:text-4xl text-[#FF6B35]`}></i>
                   </div>
-                  <h3 className="text-[20px] font-bold text-[#1A1A1A] mb-3">{item.title}</h3>
-                  <p className="text-[15px] text-[#666] max-w-[240px]">{item.description}</p>
+                  <h3 className="text-[14px] sm:text-[16px] lg:text-[20px] font-bold text-[#1A1A1A] mb-1 sm:mb-3">{item.title}</h3>
+                  <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-[#666] max-w-[200px] sm:max-w-[240px]">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <a
               href="https://wa.me/554130240080?text=Olá!%20Quero%20iniciar%20meu%20pedido"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#FF6B35] text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#FF6B35] text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
             >
-              <i className="ri-whatsapp-line text-2xl"></i>
-              Iniciar Meu Pedido
+              <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
+              <span>Iniciar Meu Pedido</span>
             </a>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-b from-[#F1F8F4] to-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#F1F8F4] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[38px] font-bold text-[#1A1A1A] mb-2 sm:mb-4">
               O Que Nossos Clientes Dizem
             </h2>
-            <p className="text-lg text-[#666]">
+            <p className="text-sm sm:text-base lg:text-lg text-[#666]">
               Avaliações reais de empresas que confiam em nosso trabalho
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.name}
-                className="bg-white rounded-2xl p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] transition-all duration-300"
+                className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] transition-all duration-300"
               >
-                <div className="flex items-center gap-1 mb-4">
-                  <i className="ri-star-fill text-[#FFB800] text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-xl"></i>
+                <div className="flex items-center gap-0.5 sm:gap-1 mb-3 sm:mb-4">
+                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
+                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
+                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
+                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
+                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
                 </div>
-                <p className="text-[16px] text-[#333] leading-relaxed italic mb-6 relative">
-                  <span className="text-[#00A859] text-3xl absolute -top-2 -left-1">"</span>
-                  <span className="pl-4">{testimonial.text}</span>
-                  <span className="text-[#00A859] text-3xl">"</span>
+                <p className="text-[14px] sm:text-[16px] text-[#333] leading-relaxed italic mb-4 sm:mb-6 relative">
+                  <span className="text-[#00A859] text-2xl sm:text-3xl absolute -top-1 sm:-top-2 -left-1">"</span>
+                  <span className="pl-3 sm:pl-4">{testimonial.text}</span>
+                  <span className="text-[#00A859] text-2xl sm:text-3xl">"</span>
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className={`w-12 h-12 flex items-center justify-center rounded-full ${testimonial.color} text-white font-bold text-lg flex-shrink-0`}>
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full ${testimonial.color} text-white font-bold text-base sm:text-lg flex-shrink-0`}>
                     {testimonial.initial}
                   </div>
-                  <div>
-                    <div className="text-[15px] font-bold text-[#1A1A1A]">{testimonial.name}</div>
-                    <div className="text-[13px] text-[#666]">{testimonial.role}</div>
+                  <div className="min-w-0">
+                    <div className="text-[14px] sm:text-[15px] font-bold text-[#1A1A1A]">{testimonial.name}</div>
+                    <div className="text-[11px] sm:text-[13px] text-[#666] truncate">{testimonial.role}</div>
                   </div>
                 </div>
               </div>
@@ -736,17 +746,17 @@ function HomePage() {
           </div>
 
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 bg-white px-6 py-4 rounded-full shadow-md">
-              <div className="w-8 h-8 flex items-center justify-center">
-                <i className="ri-google-fill text-2xl text-[#4285F4]"></i>
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-white px-4 sm:px-6 py-3 sm:py-4 rounded-full shadow-md">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                <i className="ri-google-fill text-xl sm:text-2xl text-[#4285F4]"></i>
               </div>
               <div className="text-left">
-                <div className="text-[15px] font-bold text-[#1A1A1A]">Avaliação 4.9 de 5.0 no Google</div>
+                <div className="text-[13px] sm:text-[15px] font-bold text-[#1A1A1A]">Avaliação 4.9 de 5.0 no Google</div>
                 <a
                   href="https://www.google.com/search?q=gráfica+curitiba"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[13px] text-[#00A859] hover:underline cursor-pointer"
+                  className="text-[11px] sm:text-[13px] text-[#00A859] hover:underline cursor-pointer"
                 >
                   Ver todas as avaliações →
                 </a>
@@ -757,32 +767,32 @@ function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-24 bg-gradient-to-br from-[#00A859] to-[#00875A] overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-[#00A859] to-[#00875A] overflow-hidden">
         {/* Decorative Circles */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 border-4 border-white rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-24 h-24 border-4 border-white rounded-full"></div>
+        <div className="absolute inset-0 opacity-10 hidden sm:block">
+          <div className="absolute top-10 left-10 w-24 sm:w-32 h-24 sm:h-32 border-4 border-white rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-32 sm:w-40 h-32 sm:h-40 border-4 border-white rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-20 sm:w-24 h-20 sm:h-24 border-4 border-white rounded-full"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl lg:text-[44px] font-bold text-white mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-white mb-4 sm:mb-6 leading-tight">
             Pronto para Imprimir com Qualidade Profissional?
           </h2>
-          <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-10 leading-relaxed max-w-2xl mx-auto px-2">
             Fale agora com nossa equipe e receba seu orçamento personalizado em minutos
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#FF6B35] text-white px-12 py-5 rounded-full text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-2xl"></i>
-            <span>Falar com Especialista Agora</span>
-            <i className="ri-arrow-right-line text-xl"></i>
+            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
+            <span className="whitespace-nowrap">Falar com Especialista</span>
+            <i className="ri-arrow-right-line text-lg sm:text-xl hidden sm:inline"></i>
           </a>
-          <p className="mt-8 text-sm text-white/70">
+          <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-white/70">
             Atendimento de segunda a sexta, 8h às 18h
           </p>
         </div>
@@ -800,6 +810,19 @@ function ScrollToTop() {
   }, [pathname])
 
   return null
+}
+
+// Sidebar Toggle Button Component
+function SidebarToggle({ onClick }: { onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      className="fixed bottom-6 left-6 w-14 h-14 lg:hidden flex items-center justify-center bg-[#FF6B35] text-white rounded-full shadow-lg hover:bg-[#E5562A] transition-all duration-300 z-40 cursor-pointer"
+      aria-label="Abrir menu de produtos"
+    >
+      <i className="ri-menu-2-line text-2xl"></i>
+    </button>
+  )
 }
 
 // Layout Component
@@ -821,7 +844,7 @@ function Layout() {
       <Header scrolled={scrolled} />
       <div className="flex">
         <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-        <main className="flex-1">
+        <main className="flex-1 w-full overflow-x-hidden">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/cartoes-de-visita" element={<CartoesDeVisita />} />
@@ -833,6 +856,7 @@ function Layout() {
       </div>
       <Footer />
       <WhatsAppFloat />
+      <SidebarToggle onClick={() => setSidebarOpen(true)} />
     </div>
   )
 }
