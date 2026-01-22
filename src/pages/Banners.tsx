@@ -71,7 +71,7 @@ function Banners() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://readdy.ai/api/search-image?query=large%20format%20printing%20banner%20production%20professional%20print%20shop%20wide%20format%20printer%20creating%20colorful%20banners%20advertising%20materials%20high%20resolution%20digital%20printing%20industrial%20printing%20equipment%20modern%20facility%20bright%20lighting&width=1920&height=1080&seq=banners-hero-001&orientation=landscape")',
+            'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -134,7 +134,7 @@ function Banners() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://readdy.ai/api/search-image?query=outdoor%20advertising%20banners%20colorful%20promotional%20displays%20storefront%20marketing%20materials%20business%20signage%20roll%20up%20banners%20exhibition%20stands%20trade%20show%20displays%20modern%20commercial%20environment%20bright%20daylight%20professional%20photography&width=800&height=600&seq=banners-content-001&orientation=landscape")',
+                  'url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}

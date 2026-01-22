@@ -71,7 +71,7 @@ function Panfletos() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://readdy.ai/api/search-image?query=colorful%20promotional%20flyers%20leaflets%20brochures%20spread%20on%20table%20marketing%20materials%20advertising%20campaign%20printed%20materials%20vibrant%20colors%20professional%20design%20clean%20layout%20business%20promotion%20tools%20modern%20graphic%20design%20bright%20studio%20lighting&width=1920&height=1080&seq=panfletos-hero-001&orientation=landscape")',
+            'url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -134,7 +134,7 @@ function Panfletos() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://readdy.ai/api/search-image?query=person%20distributing%20colorful%20flyers%20promotional%20materials%20marketing%20campaign%20street%20marketing%20business%20advertising%20printed%20leaflets%20in%20hands%20urban%20environment%20professional%20photography%20bright%20daylight%20modern%20city%20background&width=800&height=600&seq=panfletos-content-001&orientation=landscape")',
+                  'url("https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=800&h=600&fit=crop")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}

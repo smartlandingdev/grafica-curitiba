@@ -71,7 +71,7 @@ function CrachasCordoes() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://readdy.ai/api/search-image?query=professional%20id%20badges%20lanyards%20name%20tags%20corporate%20identification%20cards%20event%20credentials%20personalized%20badges%20with%20colorful%20lanyards%20business%20conference%20materials%20clean%20white%20background%20modern%20office%20setting%20professional%20photography&width=1920&height=1080&seq=crachas-hero-001&orientation=landscape")',
+            'url("https://images.unsplash.com/photo-1540553016722-983e48a2cd10?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -134,7 +134,7 @@ function CrachasCordoes() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://readdy.ai/api/search-image?query=business%20conference%20attendees%20wearing%20id%20badges%20colorful%20lanyards%20professional%20event%20corporate%20meeting%20people%20networking%20with%20name%20tags%20modern%20office%20environment%20bright%20lighting%20professional%20photography&width=800&height=600&seq=crachas-content-001&orientation=landscape")',
+                  'url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
