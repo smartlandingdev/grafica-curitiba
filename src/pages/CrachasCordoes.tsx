@@ -2,29 +2,29 @@ import { Link } from 'react-router-dom'
 
 // Features Data
 const features = [
-  { icon: 'ri-id-card-line', label: 'Crachás Personalizados' },
   { icon: 'ri-shield-check-line', label: 'Material Resistente' },
-  { icon: 'ri-timer-line', label: 'Entrega Rápida' },
-  { icon: 'ri-building-line', label: 'Ideal para Empresas' },
+  { icon: 'ri-palette-line', label: 'Personalização Total' },
+  { icon: 'ri-group-line', label: 'Para Eventos e Empresas' },
+  { icon: 'ri-timer-line', label: 'Produção Rápida' },
 ]
 
 // Product Options Data
 const productOptions = [
   {
     title: 'Crachá PVC',
-    description: 'Durável e resistente, impressão digital de alta qualidade',
+    description: 'Durável e resistente, ideal para uso diário em empresas',
   },
   {
-    title: 'Crachá Papel Cartão',
-    description: 'Econômico para eventos e convenções de curta duração',
+    title: 'Crachá Papel',
+    description: 'Econômico, perfeito para eventos e congressos',
   },
   {
     title: 'Cordão Personalizado',
-    description: 'Diversos materiais e cores com impressão da sua marca',
+    description: 'Cordões com impressão da sua marca em diversas cores',
   },
   {
     title: 'Kit Completo',
-    description: 'Crachá + cordão + porta-crachá com sua identidade visual',
+    description: 'Crachá + cordão + porta-crachá em conjunto',
   },
 ]
 
@@ -38,7 +38,7 @@ function CrachasCordoes() {
           '@type': 'Product',
           name: 'Crachás e Cordões',
           description:
-            'Crachás personalizados e cordões para eventos e empresas em Curitiba. Material resistente, impressão profissional e entrega rápida. Solicite orçamento via WhatsApp (41) 3024-0080.',
+            'Crachás personalizados e cordões para eventos e empresas em Curitiba. Material resistente, impressão profissional e produção rápida. Ideal para congressos e identificação corporativa. Orçamento (41) 3024-0080.',
           brand: {
             '@type': 'Organization',
             name: 'Gráfica Curitiba',
@@ -71,19 +71,18 @@ function CrachasCordoes() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1540553016722-983e48a2cd10?w=1920&h=1080&fit=crop")',
+            'url("https://readdy.ai/api/search-image?query=professional%20id%20badges%20lanyards%20name%20tags%20corporate%20identification%20cards%20event%20credentials%20personalized%20badges%20with%20colorful%20lanyards%20business%20conference%20materials%20clean%20white%20background%20modern%20office%20setting%20professional%20photography&width=1920&height=1080&seq=crachas-hero-001&orientation=landscape")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
             Crachás e Cordões em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Crachás personalizados e cordões para eventos corporativos, convenções e identificação
-            de funcionários. Material resistente e impressão profissional.
+            Crachás personalizados e cordões para eventos, empresas e congressos. Material de qualidade com impressão profissional.
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Crachás%20e%20Cordões"
@@ -119,26 +118,23 @@ function CrachasCordoes() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-                Identificação Profissional para Sua Empresa
+                Crachás e Cordões Personalizados
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Na Gráfica Curitiba, produzimos crachás e cordões personalizados de alta qualidade
-                para empresas, eventos corporativos, feiras e convenções.
+                Na Gráfica Curitiba, produzimos crachás e cordões personalizados para empresas, eventos, congressos, feiras e convenções. Oferecemos diversas opções de materiais e acabamentos para atender suas necessidades.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Oferecemos crachás em PVC rígido para uso permanente ou em papel cartão para
-                eventos de curta duração. Todos podem ser personalizados com foto e QR Code.
+                Nossos crachás podem ser produzidos em PVC para uso permanente ou em papel para eventos pontuais. Os cordões são personalizados com a logo da sua empresa ou evento, disponíveis em diversas cores e larguras.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Nossos cordões são produzidos em diversos materiais como poliéster, cetim e
-                nylon, com impressão sublimática da sua marca.
+                Ideal para identificação de colaboradores, participantes de eventos, visitantes e congressistas. Trabalhamos com pequenas e grandes quantidades, sempre com qualidade e entrega rápida em Curitiba.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop")',
+                  'url("https://readdy.ai/api/search-image?query=business%20conference%20attendees%20wearing%20id%20badges%20colorful%20lanyards%20professional%20event%20corporate%20meeting%20people%20networking%20with%20name%20tags%20modern%20office%20environment%20bright%20lighting%20professional%20photography&width=800&height=600&seq=crachas-content-001&orientation=landscape")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
@@ -147,7 +143,7 @@ function CrachasCordoes() {
 
           <div>
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-6 sm:mb-10 text-center">
-              Produtos Disponíveis
+              Opções Disponíveis
             </h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
               {productOptions.map((option) => (
@@ -168,11 +164,10 @@ function CrachasCordoes() {
       <section className="py-12 sm:py-20 bg-[#FFF4F0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-            Pronto para Criar Seus Crachás?
+            Precisa de Crachás para Seu Evento?
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e receba um orçamento personalizado para crachás e cordões
-            em Curitiba.
+            Entre em contato agora e receba um orçamento personalizado para crachás e cordões em Curitiba.
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Crachás%20e%20Cordões"

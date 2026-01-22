@@ -2,29 +2,29 @@ import { Link } from 'react-router-dom'
 
 // Features Data
 const features = [
-  { icon: 'ri-image-line', label: 'Alta Resolução' },
-  { icon: 'ri-sun-line', label: 'Resistente ao Sol' },
-  { icon: 'ri-ruler-line', label: 'Tamanhos Variados' },
-  { icon: 'ri-truck-line', label: 'Entrega Rápida' },
+  { icon: 'ri-hd-line', label: 'Alta Resolução' },
+  { icon: 'ri-sun-line', label: 'Material Resistente' },
+  { icon: 'ri-ruler-line', label: 'Tamanhos Personalizados' },
+  { icon: 'ri-paint-brush-line', label: 'Cores Vibrantes' },
 ]
 
 // Product Options Data
 const productOptions = [
   {
-    title: 'Banner Lona 440g',
-    description: 'Material padrão com excelente custo-benefício e durabilidade',
-  },
-  {
-    title: 'Banner Lona Backlight',
-    description: 'Ideal para caixas luminosas e vitrines iluminadas',
+    title: 'Banner em Lona',
+    description: 'Resistente e durável, ideal para uso externo e fachadas',
   },
   {
     title: 'Banner Roll-Up',
-    description: 'Portátil com estrutura retrátil, perfeito para eventos',
+    description: 'Portátil e retrátil, perfeito para eventos e feiras',
   },
   {
-    title: 'Faixa em Lona',
-    description: 'Para fachadas, promoções e comunicação de grande formato',
+    title: 'Banner X-Banner',
+    description: 'Leve e prático, fácil montagem para divulgação',
+  },
+  {
+    title: 'Banner Gigante',
+    description: 'Grandes formatos para máximo impacto visual',
   },
 ]
 
@@ -36,9 +36,9 @@ function Banners() {
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Product',
-          name: 'Banners e Lonas',
+          name: 'Banners',
           description:
-            'Banners personalizados e impressão em lona em Curitiba. Alta resolução, material resistente ao tempo e acabamento profissional. Solicite orçamento via WhatsApp (41) 3024-0080.',
+            'Impressão de banners em alta resolução em Curitiba. Material resistente, cores vibrantes e tamanhos personalizados para eventos e fachadas. Roll-up, X-banner e lona. Orçamento via WhatsApp (41) 3024-0080.',
           brand: {
             '@type': 'Organization',
             name: 'Gráfica Curitiba',
@@ -71,19 +71,18 @@ function Banners() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop")',
+            'url("https://readdy.ai/api/search-image?query=large%20format%20printing%20banner%20production%20professional%20print%20shop%20wide%20format%20printer%20creating%20colorful%20banners%20advertising%20materials%20high%20resolution%20digital%20printing%20industrial%20printing%20equipment%20modern%20facility%20bright%20lighting&width=1920&height=1080&seq=banners-hero-001&orientation=landscape")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Banners e Lonas em Curitiba
+            Banners em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Impressão de banners em alta resolução para eventos, fachadas e pontos de venda.
-            Material resistente ao tempo e acabamento profissional.
+            Impressão de banners em alta resolução para eventos, fachadas e divulgação. Material resistente e cores vibrantes que destacam sua marca.
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Banners"
@@ -119,26 +118,23 @@ function Banners() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-                Banners de Grande Impacto Visual
+                Banners Profissionais para Seu Negócio
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Na Gráfica Curitiba, produzimos banners e impressões em lona com tecnologia
-                de ponta. Impressão digital em alta resolução que garante cores vibrantes.
+                A Gráfica Curitiba é especializada em impressão de banners de alta qualidade. Utilizamos tecnologia de impressão digital em alta resolução para garantir cores vibrantes e imagens nítidas que destacam sua mensagem.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Nossos materiais são resistentes ao sol, chuva e intempéries, ideais para
-                uso interno e externo.
+                Nossos banners são produzidos em lona resistente, ideal para uso interno e externo. Oferecemos diversos tamanhos e formatos, desde pequenos banners para eventos até grandes painéis para fachadas comerciais.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Oferecemos acabamentos como ilhós, bastão, estrutura roll-up e instalação.
-                Atendemos desde pequenos banners até grandes painéis para fachadas.
+                Perfeito para lojas, eventos, feiras, congressos, inaugurações e campanhas promocionais em Curitiba. Trabalhamos com acabamento profissional incluindo ilhoses, bastão e suporte quando necessário.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop")',
+                  'url("https://readdy.ai/api/search-image?query=outdoor%20advertising%20banners%20colorful%20promotional%20displays%20storefront%20marketing%20materials%20business%20signage%20roll%20up%20banners%20exhibition%20stands%20trade%20show%20displays%20modern%20commercial%20environment%20bright%20daylight%20professional%20photography&width=800&height=600&seq=banners-content-001&orientation=landscape")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
@@ -168,11 +164,10 @@ function Banners() {
       <section className="py-12 sm:py-20 bg-[#FFF4F0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-            Pronto para Criar Seu Banner?
+            Pronto para Destacar Sua Marca?
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e receba um orçamento personalizado para banners e lonas
-            em Curitiba.
+            Entre em contato agora e receba um orçamento personalizado para seus banners em Curitiba.
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Banners"

@@ -4,6 +4,7 @@ import CartoesDeVisita from './pages/CartoesDeVisita'
 import Panfletos from './pages/Panfletos'
 import CrachasCordoes from './pages/CrachasCordoes'
 import Banners from './pages/Banners'
+import PaginaEmBreve from './pages/PaginaEmBreve'
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -43,10 +44,10 @@ function Header({ scrolled }: { scrolled: boolean }) {
             <img
               alt="Gráfica Curitiba Logo"
               className="h-10 sm:h-14 w-auto"
-              src="/logo.png"
+              src="logo.png"
             />
             <div className="flex flex-col">
-              <span className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] leading-tight">Gráfica e Web Sites</span>
+              <span className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] leading-tight">Impressão Gráfica Offset e Digital</span>
               <span className="text-[11px] sm:text-[13px] text-[#666] font-medium">Curitiba</span>
             </div>
           </Link>
@@ -297,7 +298,7 @@ function Footer() {
               <img
                 alt="Gráfica Curitiba Logo"
                 className="h-10 sm:h-12 w-auto"
-                src="/logo.png"
+                src="logo.png"
               />
             </div>
             <p className="text-[14px] sm:text-[15px] font-semibold mb-2">Gráfica e Web Sites</p>
@@ -378,8 +379,18 @@ function Footer() {
       <div className="bg-[#1A1A1A] py-4 sm:py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center gap-2 text-[11px] sm:text-[13px] text-[#808080] text-center">
-            <p>© 2026 Gráfica Curitiba - Impressão Profissional</p>
-            <p>Todos os direitos reservados</p>
+            <p>© 2026 Gráfica Curitiba - Impressão Profissional | Todos os direitos reservados</p>
+            <p>
+              Desenvolvido por{' '}
+              <a
+                href="https://www.smartlanding.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#FF6B35] hover:text-[#00A859] transition-colors cursor-pointer"
+              >
+                SmartLanding
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -851,6 +862,30 @@ function Layout() {
             <Route path="/panfletos" element={<Panfletos />} />
             <Route path="/crachas-e-cordoes" element={<CrachasCordoes />} />
             <Route path="/banners" element={<Banners />} />
+            {/* Páginas em desenvolvimento */}
+            <Route path="/verniz-localizado" element={<PaginaEmBreve />} />
+            <Route path="/hotstamping" element={<PaginaEmBreve />} />
+            <Route path="/pvc-transparente" element={<PaginaEmBreve />} />
+            <Route path="/abridor-de-garrafa" element={<PaginaEmBreve />} />
+            <Route path="/cordoes-personalizado" element={<PaginaEmBreve />} />
+            <Route path="/credenciais" element={<PaginaEmBreve />} />
+            <Route path="/lixocar" element={<PaginaEmBreve />} />
+            <Route path="/lacre-de-alimentos" element={<PaginaEmBreve />} />
+            <Route path="/pulseiras-de-festa" element={<PaginaEmBreve />} />
+            <Route path="/etiqueta-troca-oleo" element={<PaginaEmBreve />} />
+            <Route path="/ima-de-geladeira" element={<PaginaEmBreve />} />
+            <Route path="/roller-clip" element={<PaginaEmBreve />} />
+            <Route path="/pastas-personalizadas" element={<PaginaEmBreve />} />
+            <Route path="/envelopes" element={<PaginaEmBreve />} />
+            <Route path="/papel-timbrado" element={<PaginaEmBreve />} />
+            <Route path="/blocos-anotacoes-recibo" element={<PaginaEmBreve />} />
+            <Route path="/blocos-de-anotacoes" element={<PaginaEmBreve />} />
+            <Route path="/receituario-especial" element={<PaginaEmBreve />} />
+            <Route path="/folder-a4-2-dobras" element={<PaginaEmBreve />} />
+            <Route path="/adesivo-resinado" element={<PaginaEmBreve />} />
+            <Route path="/adesivo-casca-de-ovo" element={<PaginaEmBreve />} />
+            <Route path="/adesivos-papel-vinil" element={<PaginaEmBreve />} />
+            <Route path="/calendarios" element={<PaginaEmBreve />} />
           </Routes>
         </main>
       </div>

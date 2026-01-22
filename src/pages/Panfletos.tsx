@@ -3,28 +3,28 @@ import { Link } from 'react-router-dom'
 // Features Data
 const features = [
   { icon: 'ri-palette-line', label: 'Impressão Colorida' },
-  { icon: 'ri-stack-line', label: 'Diversos Formatos' },
-  { icon: 'ri-timer-line', label: 'Entrega Rápida' },
-  { icon: 'ri-money-dollar-circle-line', label: 'Preço Competitivo' },
+  { icon: 'ri-layout-grid-line', label: 'Diversos Formatos' },
+  { icon: 'ri-rocket-line', label: 'Produção Rápida' },
+  { icon: 'ri-price-tag-3-line', label: 'Preço Competitivo' },
 ]
 
 // Format Options Data
 const formatOptions = [
   {
-    title: 'Panfleto A5 (15x21cm)',
-    description: 'Tamanho ideal para distribuição em mãos e panfletagem',
+    title: 'A5 (14,8 x 21 cm)',
+    description: 'Formato compacto, ideal para distribuição em mãos',
   },
   {
-    title: 'Panfleto A6 (10x15cm)',
-    description: 'Compacto e econômico, perfeito para grande tiragem',
+    title: 'A4 (21 x 29,7 cm)',
+    description: 'Tamanho padrão, perfeito para informações detalhadas',
   },
   {
-    title: 'Folder 2 Dobras',
-    description: 'Mais espaço para informações com design profissional',
+    title: 'A6 (10,5 x 14,8 cm)',
+    description: 'Formato pequeno, econômico para grandes tiragens',
   },
   {
-    title: 'Folder 3 Dobras',
-    description: 'Ideal para cardápios, apresentações e catálogos',
+    title: 'Personalizado',
+    description: 'Tamanhos especiais sob medida para sua campanha',
   },
 ]
 
@@ -36,9 +36,9 @@ function Panfletos() {
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Product',
-          name: 'Panfletos e Folders',
+          name: 'Panfletos',
           description:
-            'Panfletos e folders personalizados em Curitiba com impressão colorida de alta qualidade. Diversos formatos, acabamentos e tiragens. Solicite orçamento via WhatsApp (41) 3024-0080.',
+            'Impressão de panfletos personalizados em Curitiba. Alta qualidade, cores vibrantes e entrega rápida. Formatos A5, A4, A6 e personalizados. Orçamento via WhatsApp (41) 3024-0080.',
           brand: {
             '@type': 'Organization',
             name: 'Gráfica Curitiba',
@@ -71,19 +71,18 @@ function Panfletos() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=1920&h=1080&fit=crop")',
+            'url("https://readdy.ai/api/search-image?query=colorful%20promotional%20flyers%20leaflets%20brochures%20spread%20on%20table%20marketing%20materials%20advertising%20campaign%20printed%20materials%20vibrant%20colors%20professional%20design%20clean%20layout%20business%20promotion%20tools%20modern%20graphic%20design%20bright%20studio%20lighting&width=1920&height=1080&seq=panfletos-hero-001&orientation=landscape")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Panfletos e Folders em Curitiba
+            Panfletos em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Impressão de panfletos e folders com cores vibrantes e acabamento profissional.
-            Ideal para divulgação, promoções e eventos.
+            Impressão de panfletos personalizados para divulgação. Alta qualidade, cores vibrantes e entrega rápida para sua campanha de marketing.
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Panfletos"
@@ -119,27 +118,23 @@ function Panfletos() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-                Panfletos de Alta Qualidade para Sua Divulgação
+                Panfletos Personalizados para Sua Campanha
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Na Gráfica Curitiba, produzimos panfletos e folders com impressão offset e digital
-                de alta qualidade. Cores vibrantes, papel de qualidade e acabamento profissional
-                para destacar sua marca.
+                Os panfletos são ferramentas essenciais para divulgação de produtos, serviços e eventos. Na Gráfica Curitiba, produzimos panfletos com impressão colorida de alta qualidade que garantem o impacto visual necessário para sua campanha.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Oferecemos diversos formatos e tiragens para atender às necessidades do seu
-                negócio. Desde pequenas quantidades para testes até grandes volumes.
+                Trabalhamos com diversos formatos e gramaturas de papel, desde o econômico 75g até o premium 170g. Todos os panfletos são impressos com tecnologia digital ou offset, dependendo da tiragem e necessidade do cliente.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Nosso time de especialistas auxilia na escolha do melhor formato, papel e
-                acabamento para sua campanha.
+                Ideal para comércios, imobiliárias, restaurantes, academias e empresas que buscam divulgar promoções, eventos ou serviços em Curitiba e região. Entrega rápida e preços especiais para grandes quantidades.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=800&h=600&fit=crop")',
+                  'url("https://readdy.ai/api/search-image?query=person%20distributing%20colorful%20flyers%20promotional%20materials%20marketing%20campaign%20street%20marketing%20business%20advertising%20printed%20leaflets%20in%20hands%20urban%20environment%20professional%20photography%20bright%20daylight%20modern%20city%20background&width=800&height=600&seq=panfletos-content-001&orientation=landscape")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
@@ -169,11 +164,10 @@ function Panfletos() {
       <section className="py-12 sm:py-20 bg-[#FFF4F0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-            Pronto para Imprimir Seus Panfletos?
+            Pronto para Divulgar Seu Negócio?
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e receba um orçamento personalizado para panfletos e folders
-            em Curitiba.
+            Entre em contato agora e receba um orçamento personalizado para seus panfletos em Curitiba.
           </p>
           <a
             href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Panfletos"
