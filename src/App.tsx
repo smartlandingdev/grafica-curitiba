@@ -319,9 +319,9 @@ function Footer() {
                 <i className="ri-whatsapp-line text-base sm:text-lg"></i>
                 <span>(41) 3024-0080</span>
               </a>
-              <a href="mailto:contato@graficacuritiba.com.br" className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer break-all">
+              <a href="mailto:curitibagrafica@gmail.com" className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer break-all">
                 <i className="ri-mail-line text-base sm:text-lg flex-shrink-0"></i>
-                <span className="text-[11px] sm:text-[15px]">contato@graficacuritiba.com.br</span>
+                <span className="text-[11px] sm:text-[15px]">curitibagrafica@gmail.com</span>
               </a>
             </div>
           </div>
