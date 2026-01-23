@@ -612,6 +612,7 @@ function HomePage() {
             <p className="text-[13px] sm:text-[15px] text-[#666] mb-4 sm:mb-6 px-2">
               <strong>Atendimento em Curitiba e Região Metropolitana</strong> • Entregamos para todo o Brasil
             </p>
+            
             <a
               href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
               target="_blank"
