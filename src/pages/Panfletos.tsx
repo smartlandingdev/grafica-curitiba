@@ -71,7 +71,7 @@ function Panfletos() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=1920&h=1080&fit=crop")',
+            'url("/assets/produtos/folder.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}

@@ -411,7 +411,7 @@ const services = [
     icon: 'ri-file-paper-2-line',
     title: 'Panfletos',
     description: 'Panfletos e folders personalizados para divulgação eficiente do seu negócio. Impressão colorida em alta resolução, diversos formatos e acabamentos. Gráfica em Curitiba atendendo todo o Brasil.',
-    image: 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=600&h=400&fit=crop',
+    image: '/assets/produtos/folder.jpeg',
     href: '/panfletos',
   },
   {
