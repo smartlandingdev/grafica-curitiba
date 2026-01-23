@@ -71,7 +71,7 @@ function Panfletos() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=1920&h=1080&fit=crop")',
+            'url("https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=1920&h=1080&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -134,7 +134,7 @@ function Panfletos() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=800&h=600&fit=crop")',
+                  'url("https://images.unsplash.com/photo-1568702846914-96b305d2uj38?w=800&h=600&fit=crop")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
