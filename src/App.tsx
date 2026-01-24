@@ -300,6 +300,7 @@ function Sidebar({
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 px-4 py-3 mt-6 bg-[#25D366] text-white rounded-lg font-medium text-[15px] hover:bg-[#20BD5A] transition-all cursor-pointer"
+            id="btn-whatsapp-orcamento"
           >
             <i className="ri-whatsapp-line text-lg"></i>
             <span>Solicitar Orçamento</span>
