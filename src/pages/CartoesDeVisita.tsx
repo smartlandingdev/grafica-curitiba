@@ -71,7 +71,7 @@ function CartoesDeVisita() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1920&h=1080&fit=crop")',
+            'url("/assets/produtos/cartao-visita.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
@@ -139,7 +139,7 @@ function CartoesDeVisita() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=600&fit=crop")',
+                  'url("/assets/produtos/cartao-visita.jpeg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
               }}
