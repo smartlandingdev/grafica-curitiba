@@ -1,67 +1,70 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { useWhatsApp } from "../hooks/useWhatsApp";
 
 // Features Data
 const features = [
-  { icon: 'ri-printer-line', label: 'Impressão Offset e Digital' },
-  { icon: 'ri-palette-line', label: 'Acabamento Premium' },
-  { icon: 'ri-timer-line', label: 'Entrega Rápida' },
-  { icon: 'ri-shield-check-line', label: 'Qualidade Garantida' },
-]
+  { icon: "ri-printer-line", label: "Impressão Offset e Digital" },
+  { icon: "ri-palette-line", label: "Acabamento Premium" },
+  { icon: "ri-timer-line", label: "Entrega Rápida" },
+  { icon: "ri-shield-check-line", label: "Qualidade Garantida" },
+];
 
 // Paper Options Data
 const paperOptions = [
   {
-    title: 'Papel Couché 300g',
-    description: 'Acabamento fosco ou brilhante, ideal para impressão colorida',
+    title: "Papel Couché 300g",
+    description: "Acabamento fosco ou brilhante, ideal para impressão colorida",
   },
   {
-    title: 'Papel Supremo 250g',
-    description: 'Textura premium, perfeito para acabamento sofisticado',
+    title: "Papel Supremo 250g",
+    description: "Textura premium, perfeito para acabamento sofisticado",
   },
   {
-    title: 'Papel Reciclado',
-    description: 'Opção sustentável com excelente qualidade de impressão',
+    title: "Papel Reciclado",
+    description: "Opção sustentável com excelente qualidade de impressão",
   },
   {
-    title: 'Laminação',
-    description: 'Proteção extra com acabamento fosco ou brilhante',
+    title: "Laminação",
+    description: "Proteção extra com acabamento fosco ou brilhante",
   },
-]
+];
 
 function CartoesDeVisita() {
+  const { getUrl } = useWhatsApp();
+
   return (
     <>
       {/* JSON-LD Schema */}
       <script type="application/ld+json">
         {JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Product',
-          name: 'Cartões de Visita',
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Cartões de Visita",
           description:
-            'Cartões de visita personalizados em Curitiba com impressão offset e digital. Acabamento premium, diversos tipos de papel e entrega rápida. Solicite orçamento via WhatsApp (41) 3024-0080.',
+            "Cartões de visita personalizados em Curitiba com impressão offset e digital. Acabamento premium, diversos tipos de papel e entrega rápida. Solicite orçamento via WhatsApp (41) 3024-0080.",
           brand: {
-            '@type': 'Organization',
-            name: 'Gráfica Curitiba',
+            "@type": "Organization",
+            name: "Gráfica Curitiba",
           },
           offers: {
-            '@type': 'Offer',
-            availability: 'https://schema.org/InStock',
-            priceCurrency: 'BRL',
+            "@type": "Offer",
+            availability: "https://schema.org/InStock",
+            priceCurrency: "BRL",
             seller: {
-              '@type': 'Organization',
-              name: 'Gráfica Curitiba',
+              "@type": "Organization",
+              name: "Gráfica Curitiba",
             },
           },
           provider: {
-            '@type': 'LocalBusiness',
-            name: 'Gráfica Curitiba',
+            "@type": "LocalBusiness",
+            name: "Gráfica Curitiba",
             address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Curitiba',
-              addressRegion: 'PR',
-              addressCountry: 'BR',
+              "@type": "PostalAddress",
+              addressLocality: "Curitiba",
+              addressRegion: "PR",
+              addressCountry: "BR",
             },
-            telephone: '+55-41-3024-0080',
+            telephone: "+55-41-3024-0080",
           },
         })}
       </script>
@@ -70,10 +73,9 @@ function CartoesDeVisita() {
       <section
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
-          backgroundImage:
-            'url("/assets/produtos/cartao-visita.jpeg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
+          backgroundImage: 'url("/assets/produtos/cartao-visita.jpeg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
@@ -82,14 +84,15 @@ function CartoesDeVisita() {
             Cartões de Visita em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Impressão profissional de cartões de visita com acabamento premium. Diversos tipos de
-            papel e acabamentos para sua marca se destacar.
+            Impressão profissional de cartões de visita com acabamento premium.
+            Diversos tipos de papel e acabamentos para sua marca se destacar.
           </p>
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Cartões%20de%20Visita"
+            href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            id="btn-whatsapp-orcamento"
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
@@ -102,11 +105,18 @@ function CartoesDeVisita() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
-                <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">{feature.label}</p>
+                <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
+                  {feature.label}
+                </p>
               </div>
             ))}
           </div>
@@ -122,26 +132,27 @@ function CartoesDeVisita() {
                 Cartões de Visita Profissionais para Sua Empresa
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Na Gráfica Curitiba, oferecemos impressão de cartões de visita com a mais alta
-                qualidade. Utilizamos tecnologia de impressão offset e digital para garantir cores
-                vibrantes e acabamento impecável.
+                Na Gráfica Curitiba, oferecemos impressão de cartões de visita
+                com a mais alta qualidade. Utilizamos tecnologia de impressão
+                offset e digital para garantir cores vibrantes e acabamento
+                impecável.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Nossos cartões de visita são produzidos em diversos tipos de papel, desde o
-                tradicional couché até opções premium como supremo e reciclado.
+                Nossos cartões de visita são produzidos em diversos tipos de
+                papel, desde o tradicional couché até opções premium como
+                supremo e reciclado.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Atendemos empresas de todos os portes em Curitiba e região metropolitana, com
-                entrega rápida e preços competitivos.
+                Atendemos empresas de todos os portes em Curitiba e região
+                metropolitana, com entrega rápida e preços competitivos.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage:
-                  'url("/assets/produtos/cartao-visita.jpeg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center',
+                backgroundImage: 'url("/assets/produtos/cartao-visita.jpeg")',
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
               }}
             ></div>
           </div>
@@ -156,8 +167,12 @@ function CartoesDeVisita() {
                   key={option.title}
                   className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300"
                 >
-                  <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">{option.title}</h4>
-                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed">{option.description}</p>
+                  <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                    {option.title}
+                  </h4>
+                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed">
+                    {option.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -172,11 +187,11 @@ function CartoesDeVisita() {
             Pronto para Criar Seus Cartões de Visita?
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e receba um orçamento personalizado para seus cartões de visita
-            em Curitiba.
+            Entre em contato agora e receba um orçamento personalizado para seus
+            cartões de visita em Curitiba.
           </p>
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Cartões%20de%20Visita"
+            href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -196,7 +211,7 @@ function CartoesDeVisita() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default CartoesDeVisita
+export default CartoesDeVisita;

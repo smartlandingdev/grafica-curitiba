@@ -12,6 +12,7 @@ import Panfletos from "./pages/Panfletos";
 import CrachasCordoes from "./pages/CrachasCordoes";
 import Banners from "./pages/Banners";
 import PaginaEmBreve from "./pages/PaginaEmBreve";
+import { useWhatsApp } from "./hooks/useWhatsApp";
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -19,6 +20,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
+  const { getUrl } = useWhatsApp();
 
   const scrollToSection = (id: string) => {
     if (!isHome) {
@@ -84,7 +86,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
 
           {/* WhatsApp Button Desktop */}
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+            href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:flex items-center gap-2 bg-[#25D366] text-white px-4 xl:px-6 py-2.5 xl:py-3 rounded-full font-medium text-[14px] xl:text-base shadow-lg hover:bg-[#20BD5A] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
@@ -120,7 +122,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
                 ),
               )}
               <a
-                href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+                href={getUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-medium justify-center whitespace-nowrap cursor-pointer mt-2"
@@ -138,9 +140,11 @@ function Header({ scrolled }: { scrolled: boolean }) {
 
 // WhatsApp Float Component
 function WhatsAppFloat() {
+  const { getUrl } = useWhatsApp();
+
   return (
     <a
-      href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+      href={getUrl()}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 w-16 h-16 md:w-14 md:h-14 flex items-center justify-center bg-[#25D366] rounded-full shadow-[0_4px_16px_rgba(37,211,102,0.4)] hover:scale-110 transition-all duration-300 z-50 animate-pulse-glow cursor-pointer"
@@ -227,6 +231,7 @@ function Sidebar({
   onClose: () => void;
 }) {
   const [openCategories, setOpenCategories] = useState<string[]>([]);
+  const { getUrl } = useWhatsApp();
 
   const toggleCategory = (title: string) => {
     setOpenCategories((prev) =>
@@ -296,7 +301,7 @@ function Sidebar({
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+            href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 px-4 py-3 mt-6 bg-[#25D366] text-white rounded-lg font-medium text-[15px] hover:bg-[#20BD5A] transition-all cursor-pointer"
@@ -313,6 +318,8 @@ function Sidebar({
 
 // Footer Component
 function Footer() {
+  const { simpleUrl } = useWhatsApp();
+
   return (
     <footer id="contato" className="bg-[#2C2C2C] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
@@ -349,7 +356,7 @@ function Footer() {
                 <span>(41) 3024-0080</span>
               </a>
               <a
-                href="https://wa.me/554130240080"
+                href={simpleUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#25D366] hover:text-[#20BD5A] transition-colors cursor-pointer"
@@ -599,6 +606,8 @@ const testimonials = [
 
 // Home Page Content Component
 function HomePage() {
+  const { getUrl } = useWhatsApp();
+
   return (
     <>
       {/* Hero Section */}
@@ -625,7 +634,7 @@ function HomePage() {
           </p>
 
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+            href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 md:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -707,10 +716,11 @@ function HomePage() {
             </p>
 
             <a
-              href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+              href={getUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[14px] sm:text-[15px] hover:bg-[#E5562A] transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+              id="btn-whatsapp-orcamento"
             >
               <i className="ri-whatsapp-line text-lg sm:text-xl"></i>
               <span>Solicitar Orçamento</span>
@@ -736,7 +746,7 @@ function HomePage() {
                 empresa.
               </p>
               <a
-                href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista"
+                href={getUrl("especialista")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border-2 border-[#00A859] text-[#00A859] px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-medium text-sm sm:text-base hover:bg-[#00A859] hover:text-white transition-all duration-300 cursor-pointer"
@@ -817,7 +827,7 @@ function HomePage() {
 
           <div className="text-center mt-8 sm:mt-12">
             <a
-              href="https://wa.me/554130240080?text=Olá!%20Quero%20iniciar%20meu%20pedido"
+              href={getUrl("iniciar-pedido")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#FF6B35] text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -921,7 +931,7 @@ function HomePage() {
             minutos
           </p>
           <a
-            href="https://wa.me/554130240080?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento"
+            href={getUrl("especialista")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
