@@ -13,6 +13,7 @@ import CrachasCordoes from "./pages/CrachasCordoes";
 import Banners from "./pages/Banners";
 import PaginaEmBreve from "./pages/PaginaEmBreve";
 import { useWhatsApp } from "./hooks/useWhatsApp";
+import Tapete from "./pages/Tapate";
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -214,6 +215,15 @@ const sidebarCategories = [
       { label: "Adesivo Resinado", href: "/adesivo-resinado" },
       { label: "Adesivo Casca de Ovo", href: "/adesivo-casca-de-ovo" },
       { label: "Adesivos Papel - Vinil", href: "/adesivos-papel-vinil" },
+    ],
+  },
+  {
+    title: "Tapetes Automotivos",
+    items: [
+      {
+        label: "Tapetes Automotivos Personalizados",
+        href: "/tapetes-personalizados",
+      },
     ],
   },
   {
@@ -486,7 +496,7 @@ const services = [
     title: "Cartões de Visita",
     description:
       "Cartões de visita personalizados com impressão offset e digital de alta qualidade. Acabamento premium e papel diferenciado. Produção local em Curitiba com entrega rápida para todo o Brasil.",
-    image: "/assets/produtos/cartao-visita.jpeg",
+    image: "/assets/produtos/cartaovisita2.jpeg",
     href: "/cartoes-de-visita",
   },
   {
@@ -494,7 +504,7 @@ const services = [
     title: "Panfletos",
     description:
       "Panfletos e folders personalizados para divulgação eficiente do seu negócio. Impressão colorida em alta resolução, diversos formatos e acabamentos. Gráfica em Curitiba atendendo todo o Brasil.",
-    image: "/assets/produtos/folder.jpeg",
+    image: "/assets/produtos/panfletos.jpeg",
     href: "/panfletos",
   },
   {
@@ -502,8 +512,7 @@ const services = [
     title: "Crachás e Cordões",
     description:
       "Crachás personalizados e cordões para eventos corporativos, convenções e empresas. Material resistente, impressão profissional e durabilidade garantida. Produzido em Curitiba para todo o país.",
-    image:
-      "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?w=600&h=400&fit=crop",
+    image: "/assets/produtos/cracha.jpeg",
     href: "/crachas-e-cordoes",
   },
   {
@@ -511,8 +520,7 @@ const services = [
     title: "Banners",
     description:
       "Banners personalizados para eventos, fachadas e pontos de venda. Impressão digital em altíssima resolução com materiais duráveis e resistentes. Gráfica Curitiba com entrega nacional.",
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+    image: "/assets/produtos/banner.jpeg",
     href: "/banners",
   },
 ];
@@ -1019,6 +1027,7 @@ function Layout() {
               path="/blocos-anotacoes-recibo"
               element={<PaginaEmBreve />}
             />
+            <Route path="/tapetes-personalizados" element={<Tapete />} />
             <Route path="/blocos-de-anotacoes" element={<PaginaEmBreve />} />
             <Route path="/receituario-especial" element={<PaginaEmBreve />} />
             <Route path="/folder-a4-2-dobras" element={<PaginaEmBreve />} />
