@@ -2,11 +2,32 @@ import { Link } from "react-router-dom";
 import { useWhatsApp } from "../hooks/useWhatsApp";
 
 // Features Data
+// Features Data
 const features = [
-  { icon: "ri-roadster-line", label: "Tapetes Personalizados" },
-  { icon: "ri-palette-line", label: "Acabamento Premium" },
-  { icon: "ri-timer-line", label: "Entrega Rápida" },
-  { icon: "ri-shield-check-line", label: "Qualidade Garantida" },
+  {
+    icon: "ri-car-line",
+    label: "Encaixe sob medida para cada veículo",
+  },
+  {
+    icon: "ri-shield-line",
+    label: "Vinil resistente e de alta durabilidade",
+  },
+  {
+    icon: "ri-drop-line",
+    label: "Proteção contra líquidos e sujeira",
+  },
+  {
+    icon: "ri-brush-line",
+    label: "Fácil limpeza e manutenção",
+  },
+  {
+    icon: "ri-award-line",
+    label: "Acabamento premium e design moderno",
+  },
+  {
+    icon: "ri-lock-line",
+    label: "Mais segurança e conforto no dia a dia",
+  },
 ];
 
 // Paper Options Data
@@ -30,22 +51,21 @@ function Tapete() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Tapetes Automotivos Personalizados
+            Tapetes Automotivos Tapetes Automotivos de Vinil Sob Medida para Seu
+            Veículo
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Tapetes automotivos personalizados com acabamento premium. Produção
-            sob medida, materiais resistentes e personalização para valorizar o
-            interior do seu veículo.
+            Tapete Automotivo Kapazi – Proteção, Conforto e Sofisticação para
+            Seu Veículo
           </p>
           <a
-            href={getUrl()}
+            href="https://graficacuritiba.wixsite.com/website"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-            id="btn-whatsapp-orcamento"
           >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
+            <i className="ri-shopping-cart-2-line text-xl sm:text-2xl"></i>
+            <span>Comprar Agora</span>
           </a>
         </div>
       </section>
@@ -53,7 +73,7 @@ function Tapete() {
       {/* Features Section */}
       <section className="py-10 sm:py-16 bg-[#FFF4F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
             {features.map((feature) => (
               <div
                 key={feature.label}
@@ -83,23 +103,26 @@ function Tapete() {
               </h2>
 
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Na Gráfica Curitiba, produzimos tapetes automotivos
-                personalizados com alto padrão de qualidade. Utilizamos
-                materiais resistentes e técnicas de impressão duráveis para
-                garantir um excelente acabamento e longa vida útil.
+                O Tapete Automotivo Kapazi é desenvolvido para oferecer máxima
+                proteção, durabilidade e acabamento premium ao interior do seu
+                veículo. Produzido com materiais de alta qualidade, ele protege
+                o carpete original contra sujeira, líquidos, poeira e desgaste
+                do uso diário, mantendo o carro sempre limpo e valorizado.
               </p>
 
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Nossos tapetes são desenvolvidos sob medida, com opções de
-                personalização como logotipo, cores e detalhes exclusivos,
-                garantindo encaixe perfeito e visual diferenciado para o
-                interior do veículo.
+                Com encaixe preciso para cada modelo de veículo, o tapete Kapazi
+                garante segurança e estabilidade, evitando deslizamentos durante
+                a condução. Seu design moderno alia funcionalidade e estética,
+                proporcionando um visual elegante e acabamento superior ao
+                interior automotivo.
               </p>
 
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Atendemos Curitiba e região metropolitana, oferecendo produção
-                ágil, personalização completa e preços competitivos para
-                clientes finais e empresas.
+                Além disso, o Tapete Automotivo Kapazi é fácil de limpar,
+                resistente à umidade e ideal tanto para uso urbano quanto para
+                quem enfrenta rotinas mais intensas, como estradas de terra ou
+                ambientes corporativos.
               </p>
             </div>
             <div
@@ -120,19 +143,22 @@ function Tapete() {
           <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
             Pronto para Tapetes Personalizados?
           </h2>
+
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e receba um orçamento personalizado para seus
-            cartões de visita em Curitiba.
+            Entre em contato agora e receba um orçamento personalizado para
+            tapetes automotivos de vinil sob medida para o seu veículo.
           </p>
+
           <a
-            href={getUrl()}
+            href="https://graficacuritiba.wixsite.com/website"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
+            <i className="ri-shopping-cart-2-line text-xl sm:text-2xl"></i>
+            <span>Comprar Agora</span>
           </a>
+
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"
