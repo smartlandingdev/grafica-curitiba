@@ -33,8 +33,6 @@ const features = [
 // Paper Options Data
 
 function Tapete() {
-  const { getUrl } = useWhatsApp();
-
   return (
     <>
       {/* JSON-LD Schema */}
