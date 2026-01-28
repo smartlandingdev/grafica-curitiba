@@ -64,7 +64,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
                 Impressão Gráfica Offset e Digital
               </span>
               <span className="text-[11px] sm:text-[13px] text-[#666] font-medium">
-                Curitiba
+                Entregamos em todo Brasil
               </span>
             </div>
           </Link>
