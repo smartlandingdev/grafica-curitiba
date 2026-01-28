@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { useWhatsApp } from "../hooks/useWhatsApp";
-
 // Features Data
 // Features Data
 const features = [
@@ -49,15 +47,12 @@ function Tapete() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Tapetes Automotivos Tapetes Automotivos de Vinil Sob Medida para Seu
-            Veículo
+            Tapetes Automotivos de Vinil Sob Medida para Seu Veículo
           </h1>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Tapete Automotivo Kapazi – Proteção, Conforto e Sofisticação para
-            Seu Veículo
-          </p>
+
           <a
-            href="https://graficacuritiba.wixsite.com/website"
+            href="
+https://automotivo.kapazi.com.br/?cupom=Rafaelgarcia10"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -97,7 +92,7 @@ function Tapete() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-                Tapetes Automotivos Personalizados para Seu Veículo
+                Tapetes Automotivos para Seu Veículo
               </h2>
 
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
@@ -148,7 +143,7 @@ function Tapete() {
           </p>
 
           <a
-            href="https://graficacuritiba.wixsite.com/website"
+            href="https://automotivo.kapazi.com.br/?cupom=Rafaelgarcia10"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
