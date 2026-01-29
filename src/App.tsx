@@ -14,6 +14,7 @@ import Banners from "./pages/Banners";
 import PaginaEmBreve from "./pages/PaginaEmBreve";
 import { useWhatsApp } from "./hooks/useWhatsApp";
 import Tapete from "./pages/Tapate";
+import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -624,7 +625,7 @@ function HomePage() {
         className="relative min-h-[100svh] sm:min-h-[85vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?w=1920&h=1080&fit=crop")',
+            `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
