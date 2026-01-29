@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "../hooks/useWhatsApp";
+import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import crachaImg from "../assets/produtos/cracha.jpeg";
 
 // Features Data
 const features = [
@@ -74,7 +76,7 @@ function CrachasCordoes() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1540553016722-983e48a2cd10?w=1920&h=1080&fit=crop")',
+            `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -155,7 +157,7 @@ function CrachasCordoes() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop")',
+                  `url("${crachaImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

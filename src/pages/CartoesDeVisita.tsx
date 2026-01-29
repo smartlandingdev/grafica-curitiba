@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "../hooks/useWhatsApp";
+import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import cartaoVisitaImg from "../assets/produtos/cartao-visita.jpeg";
 
 // Features Data
 const features = [
@@ -73,7 +75,7 @@ function CartoesDeVisita() {
       <section
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
-          backgroundImage: 'url("/assets/produtos/cartao-visita.jpeg")',
+          backgroundImage: `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -150,7 +152,7 @@ function CartoesDeVisita() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: 'url("/assets/produtos/cartao-visita.jpeg")',
+                backgroundImage: `url("${cartaoVisitaImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

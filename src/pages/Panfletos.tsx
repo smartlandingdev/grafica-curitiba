@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "../hooks/useWhatsApp";
+import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import folderImg from "../assets/produtos/folder.jpeg";
 
 // Features Data
 const features = [
@@ -73,7 +75,7 @@ function Panfletos() {
       <section
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
-          backgroundImage: 'url("/assets/produtos/folder.jpeg")',
+          backgroundImage: `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -155,7 +157,7 @@ function Panfletos() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1568702846914-96b305d2uj38?w=800&h=600&fit=crop")',
+                  `url("${folderImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

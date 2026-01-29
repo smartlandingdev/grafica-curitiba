@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "../hooks/useWhatsApp";
+import bannerImg from "../assets/produtos/banner.jpeg";
+import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 
 // Features Data
 const features = [
@@ -70,7 +72,7 @@ function Banners() {
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop")',
+            `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -151,7 +153,7 @@ function Banners() {
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop")',
+                  `url("${bannerImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
