@@ -19,11 +19,7 @@ const productOptions = [
     title: "Banner Roll-Up",
     description: "Portátil e retrátil, perfeito para eventos e feiras",
   },
-  {
-    title: "Banner X-Banner",
-    description: "Leve e prático, fácil montagem para divulgação",
-  },
-  {
+{
     title: "Banner Gigante",
     description: "Grandes formatos para máximo impacto visual",
   },
@@ -41,7 +37,7 @@ function Banners() {
           "@type": "Product",
           name: "Banners",
           description:
-            "Impressão de banners em alta resolução em Curitiba. Material resistente, cores vibrantes e tamanhos personalizados para eventos e fachadas. Roll-up, X-banner e lona. Orçamento via WhatsApp (41) 3024-0080.",
+            "Impressão de banners em alta resolução em Curitiba. Material resistente, cores vibrantes e tamanhos personalizados para eventos e fachadas. Roll-up e lona. Orçamento via WhatsApp (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
