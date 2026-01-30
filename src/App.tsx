@@ -417,11 +417,7 @@ function Footer() {
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
                 <i className="ri-time-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
-                <span>
-                  Seg a Sex: 8:30h às 18h
-                  <br />
-                  Sábado e Domingo: Não atendemos
-                </span>
+                <span>Seg a Sex: 8:30h às 18h</span>
               </div>
             </div>
           </div>
