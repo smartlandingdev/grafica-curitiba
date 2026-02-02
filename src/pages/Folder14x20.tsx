@@ -193,7 +193,7 @@ function Folder14x20() {
             folders 14x20 cm em Curitiba.
           </p>
           <a
-            href={getUrl()}
+            href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
