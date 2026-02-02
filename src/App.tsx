@@ -14,6 +14,9 @@ import Banners from "./pages/Banners";
 import PaginaEmBreve from "./pages/PaginaEmBreve";
 import { useWhatsApp } from "./hooks/useWhatsApp";
 import Tapete from "./pages/Tapate";
+import Folder10x14 from "./pages/Folder10x14";
+import Folder14x20 from "./pages/Folder14x20";
+import Folder20x28 from "./pages/Folder20x28";
 import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
 
 // Header Component
@@ -207,6 +210,9 @@ const sidebarCategories = [
     title: "Folders e Panfletos",
     items: [
       { label: "Folders e Panfletos", href: "/panfletos" },
+      { label: "Folder 10x14", href: "/folder-10x14" },
+      { label: "Folder 14x20", href: "/folder-14x20" },
+      { label: "Folder 20x28", href: "/folder-20x28" },
       { label: "Folder A4 2 Dobras", href: "/folder-a4-2-dobras" },
     ],
   },
@@ -1027,6 +1033,9 @@ function Layout() {
             <Route path="/tapetes-personalizados" element={<Tapete />} />
             <Route path="/blocos-de-anotacoes" element={<PaginaEmBreve />} />
             <Route path="/receituario-especial" element={<PaginaEmBreve />} />
+            <Route path="/folder-10x14" element={<Folder10x14 />} />
+            <Route path="/folder-14x20" element={<Folder14x20 />} />
+            <Route path="/folder-20x28" element={<Folder20x28 />} />
             <Route path="/folder-a4-2-dobras" element={<PaginaEmBreve />} />
             <Route path="/adesivo-resinado" element={<PaginaEmBreve />} />
             <Route path="/adesivo-casca-de-ovo" element={<PaginaEmBreve />} />
