@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useWhatsApp } from "../hooks/useWhatsApp";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import folderImg from "../assets/produtos/folder.jpeg";
 
@@ -32,8 +31,6 @@ const formatOptions = [
 ];
 
 function Folder14x20() {
-  const { getUrl } = useWhatsApp();
-
   return (
     <>
       {/* JSON-LD Schema */}
