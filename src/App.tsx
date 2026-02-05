@@ -17,6 +17,7 @@ import Tapete from "./pages/Tapate";
 import Folder10x14 from "./pages/Folder10x14";
 import Folder14x20 from "./pages/Folder14x20";
 import Folder20x28 from "./pages/Folder20x28";
+import Couche90g from "./pages/Folder10x14";
 import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
 
 // Header Component
@@ -210,9 +211,10 @@ const sidebarCategories = [
     title: "Folders e Panfletos",
     items: [
       { label: "Folders e Panfletos", href: "/panfletos" },
-      { label: "Folder 10x14", href: "/folder-10x14" },
-      { label: "Folder 14x20", href: "/folder-14x20" },
-      { label: "Folder 20x28", href: "/folder-20x28" },
+      { label: " Couche 90g", href: "/folder-90" },
+      { label: " Couche 120g", href: "/folder-10x14" },
+      { label: "Couche 150g", href: "/folder-14x20" },
+      { label: "Couche 170g Fosco", href: "/folder-20x28" },
       { label: "Folder A4 2 Dobras", href: "/folder-a4-2-dobras" },
     ],
   },
@@ -354,7 +356,7 @@ function Footer() {
               Gráfica e Web Sites
             </p>
             <p className="text-[12px] sm:text-[14px] text-[#B0B0B0] leading-relaxed">
-              Impressão gráfica profissional em Curitiba desde 2010. Qualidade e
+              Impressão gráfica profissional em Curitiba desde 2004. Qualidade e
               atendimento personalizado.
             </p>
           </div>
@@ -626,8 +628,7 @@ function HomePage() {
         id="hero"
         className="relative min-h-[100svh] sm:min-h-[85vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
-          backgroundImage:
-            `url("${fundosProdutosImg}")`,
+          backgroundImage: `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -1036,6 +1037,8 @@ function Layout() {
             <Route path="/folder-10x14" element={<Folder10x14 />} />
             <Route path="/folder-14x20" element={<Folder14x20 />} />
             <Route path="/folder-20x28" element={<Folder20x28 />} />
+            <Route path="/folder-90" element={<Couche90g />} />
+
             <Route path="/folder-a4-2-dobras" element={<PaginaEmBreve />} />
             <Route path="/adesivo-resinado" element={<PaginaEmBreve />} />
             <Route path="/adesivo-casca-de-ovo" element={<PaginaEmBreve />} />

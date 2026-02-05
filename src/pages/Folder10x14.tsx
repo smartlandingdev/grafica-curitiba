@@ -30,7 +30,7 @@ const formatOptions = [
   },
 ];
 
-function Folder10x14() {
+function Couche90g() {
   return (
     <>
       {/* JSON-LD Schema */}
@@ -80,14 +80,14 @@ function Folder10x14() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Folder 10x14 cm em Curitiba
+            Couche 90g cm em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Impressão de folders 10x14 cm personalizados para divulgação.
-            Formato compacto, prático e ideal para distribuição em mãos.
+            Impressão de Couche 90g cm personalizados para divulgação. Formato
+            compacto, prático e ideal para distribuição em mãos.
           </p>
           <a
-            href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
+            href="https://conversaicrm.com.br/grafica-curitiba/folder.html"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -128,10 +128,10 @@ function Folder10x14() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-                Folder 10x14 cm Personalizado
+                Couche 90g cm Personalizado
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                O folder 10x14 cm é o formato mais compacto e prático para
+                OCouche 90g cm é o formato mais compacto e prático para
                 distribuição. Ideal para divulgação de produtos, serviços e
                 promoções em pontos de venda, eventos e ações de marketing
                 direto.
@@ -188,10 +188,10 @@ function Folder10x14() {
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para seus
-            folders 10x14 cm em Curitiba.
+            Couche 90g cm em Curitiba.
           </p>
           <a
-            href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
+            href="https://conversaicrm.com.br/grafica-curitiba/folder.html"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -214,4 +214,4 @@ function Folder10x14() {
   );
 }
 
-export default Folder10x14;
+export default Couche90g;
