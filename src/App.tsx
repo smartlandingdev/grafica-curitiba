@@ -52,12 +52,12 @@ function Header({ scrolled }: { scrolled: boolean }) {
         scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 sm:gap-4 cursor-pointer"
+            className="flex items-center gap-2 sm:gap-4 cursor-pointer ml-0"
           >
             <img
               alt="Gráfica Curitiba Logo"
@@ -272,12 +272,12 @@ function Sidebar({
           isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         }`}
       >
-        <div className="p-6">
+        <div className="px-4 sm:px-6 py-6">
           {/* Home Link */}
           <Link
             to="/"
             onClick={onClose}
-            className="flex items-center gap-3 px-4 py-3 rounded-lg mb-2 transition-all cursor-pointer bg-[#FF6B35] text-white"
+            className="flex items-center gap-2 sm:gap-4 px-4 py-3 rounded-lg mb-2 transition-all cursor-pointer bg-[#FF6B35] text-white"
           >
             <i className="ri-home-line text-lg"></i>
             <span className="font-medium text-[15px]">Início</span>
