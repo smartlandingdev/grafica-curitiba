@@ -89,7 +89,7 @@ function CartoesDeVisita() {
             Impressão profissional de cartões de visita com acabamento premium.
             Diversos tipos de papel e acabamentos para sua marca se destacar.
           </p>
-          <a
+          {/*  <a
             href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
@@ -98,7 +98,7 @@ function CartoesDeVisita() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>
+          </a>*/}
         </div>
       </section>
 

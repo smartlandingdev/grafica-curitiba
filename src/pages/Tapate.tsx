@@ -50,7 +50,7 @@ function Tapete() {
             Tapetes Automotivos de Vinil Sob Medida para Seu Veículo
           </h1>
 
-          <a
+          {/*  <a
             href="
 https://automotivo.kapazi.com.br/?cupom=Rafaelgarcia10"
             target="_blank"
@@ -59,7 +59,7 @@ https://automotivo.kapazi.com.br/?cupom=Rafaelgarcia10"
           >
             <i className="ri-shopping-cart-2-line text-xl sm:text-2xl"></i>
             <span>Comprar Agora</span>
-          </a>
+          </a> */}
         </div>
       </section>
 

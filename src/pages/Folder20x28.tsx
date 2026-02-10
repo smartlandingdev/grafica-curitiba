@@ -86,7 +86,7 @@ function Folder20x28() {
             Impressão de Couche 150g cm personalizados. O maior formato,
             perfeito para apresentações detalhadas e materiais institucionais.
           </p>
-          <a
+          {/*   <a
             href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +95,7 @@ function Folder20x28() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>
+          </a>*/}
         </div>
       </section>
 

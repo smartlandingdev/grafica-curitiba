@@ -86,7 +86,7 @@ function Folder14x20() {
             Impressão de folders 14x20 cm personalizados. Formato intermediário,
             versátil e com espaço ideal para informações detalhadas.
           </p>
-          <a
+          {/*<a
             href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +95,7 @@ function Folder14x20() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>
+          </a>*/}
         </div>
       </section>
 

@@ -90,7 +90,7 @@ function Panfletos() {
             qualidade, cores vibrantes e entrega rápida para sua campanha de
             marketing.
           </p>
-          <a
+          {/* <a
             href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
@@ -99,7 +99,7 @@ function Panfletos() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>
+          </a>*/}
         </div>
       </section>
 
@@ -156,8 +156,7 @@ function Panfletos() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage:
-                  `url("${folderImg}")`,
+                backgroundImage: `url("${folderImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

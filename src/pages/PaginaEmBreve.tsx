@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
-import { useWhatsApp } from '../hooks/useWhatsApp'
+import { Link } from "react-router-dom";
+import { useWhatsApp } from "../hooks/useWhatsApp";
 
 function PaginaEmBreve() {
-  const { getUrl, productName } = useWhatsApp()
+  // const { getUrl, productName } = useWhatsApp()
+  const { productName } = useWhatsApp();
 
   return (
     <section className="min-h-[80vh] flex items-center justify-center pt-24 sm:pt-20 pb-10 bg-gradient-to-b from-[#FFF4F0] to-white">
@@ -20,10 +21,11 @@ function PaginaEmBreve() {
         {/* Description */}
         <p className="text-base sm:text-lg lg:text-xl text-[#555] mb-6 sm:mb-8 leading-relaxed px-2">
           Quer saber mais sobre <strong>{productName.toLowerCase()}</strong>?
-          Entre em contato conosco pelo WhatsApp e nossa equipe terá prazer em ajudá-lo!
+          Entre em contato conosco pelo WhatsApp e nossa equipe terá prazer em
+          ajudá-lo!
         </p>
 
-        {/* WhatsApp Button */}
+        {/* WhatsApp Button 
         <a
           href={getUrl('saber-mais')}
           target="_blank"
@@ -32,11 +34,17 @@ function PaginaEmBreve() {
         >
           <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
           <span>Nos chame para saber mais!</span>
-        </a>
+        </a>*/}
 
         {/* Phone Number */}
         <p className="text-[#666] text-sm sm:text-base mb-6 sm:mb-8">
-          Ou ligue: <a href="tel:+554130240080" className="text-[#FF6B35] font-semibold hover:underline">(41) 3024-0080</a>
+          Ou ligue:{" "}
+          <a
+            href="tel:+554130240080"
+            className="text-[#FF6B35] font-semibold hover:underline"
+          >
+            (41) 3024-0080
+          </a>
         </p>
 
         {/* Back Link */}
@@ -49,7 +57,7 @@ function PaginaEmBreve() {
         </Link>
       </div>
     </section>
-  )
+  );
 }
 
-export default PaginaEmBreve
+export default PaginaEmBreve;

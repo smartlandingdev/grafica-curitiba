@@ -26,7 +26,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
-  const { getUrl } = useWhatsApp();
+  // const { getUrl } = useWhatsApp();
 
   const scrollToSection = (id: string) => {
     if (!isHome) {
@@ -90,7 +90,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
             )}
           </nav>
 
-          {/* WhatsApp Button Desktop */}
+          {/* WhatsApp Button Desktop 
           <a
             href={getUrl()}
             target="_blank"
@@ -99,7 +99,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
           >
             <i className="ri-whatsapp-line text-lg xl:text-xl"></i>
             <span>(41) 3024-0080</span>
-          </a>
+          </a>*/}
 
           {/* Mobile Menu Button - Hidden on mobile, using sidebar toggle instead */}
           <button
@@ -127,7 +127,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
                   </button>
                 ),
               )}
-              <a
+              {/*  <a
                 href={getUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,6 +136,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
                 <i className="ri-whatsapp-line text-xl"></i>
                 <span>(41) 3024-0080</span>
               </a>
+              */}
             </nav>
           </div>
         )}
@@ -145,6 +146,9 @@ function Header({ scrolled }: { scrolled: boolean }) {
 }
 
 // WhatsApp Float Component
+
+{
+  /* 
 function WhatsAppFloat() {
   const { getUrl } = useWhatsApp();
 
@@ -159,6 +163,8 @@ function WhatsAppFloat() {
       <i className="ri-whatsapp-line text-white text-3xl md:text-2xl"></i>
     </a>
   );
+}
+  */
 }
 
 // Sidebar Menu Data
@@ -250,7 +256,7 @@ function Sidebar({
   onClose: () => void;
 }) {
   const [openCategories, setOpenCategories] = useState<string[]>([]);
-  const { getUrl } = useWhatsApp();
+  //const { getUrl } = useWhatsApp();
 
   const toggleCategory = (title: string) => {
     setOpenCategories((prev) =>
@@ -318,7 +324,7 @@ function Sidebar({
             ))}
           </div>
 
-          {/* WhatsApp Button */}
+          {/* WhatsApp Button 
           <a
             href={getUrl()}
             target="_blank"
@@ -328,7 +334,10 @@ function Sidebar({
           >
             <i className="ri-whatsapp-line text-lg"></i>
             <span>Solicitar Orçamento</span>
+
+            
           </a>
+          */}
         </div>
       </aside>
     </>
@@ -645,7 +654,7 @@ function HomePage() {
             superior. Atendimento via WhatsApp e produção local.
           </p>
 
-          <a
+          {/*  <a
             href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
@@ -654,7 +663,7 @@ function HomePage() {
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
             <i className="ri-arrow-right-line text-lg sm:text-xl hidden sm:inline"></i>
-          </a>
+          </a>*/}
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white/80 text-xs sm:text-sm">
             <div className="flex items-center gap-0.5 sm:gap-1">
@@ -1048,7 +1057,7 @@ function Layout() {
         </main>
       </div>
       <Footer />
-      <WhatsAppFloat />
+      {/*   <WhatsAppFloat />*/}
       <SidebarToggle onClick={() => setSidebarOpen(true)} />
     </div>
   );

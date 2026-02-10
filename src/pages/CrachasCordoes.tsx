@@ -75,8 +75,7 @@ function CrachasCordoes() {
       <section
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
-          backgroundImage:
-            `url("${fundosProdutosImg}")`,
+          backgroundImage: `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -90,7 +89,7 @@ function CrachasCordoes() {
             Crachás personalizados e cordões para eventos, empresas e
             congressos. Material de qualidade com impressão profissional.
           </p>
-          <a
+          {/*<a
             href={getUrl()}
             target="_blank"
             rel="noopener noreferrer"
@@ -99,7 +98,7 @@ function CrachasCordoes() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>
+          </a>*/}
         </div>
       </section>
 
@@ -156,8 +155,7 @@ function CrachasCordoes() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage:
-                  `url("${crachaImg}")`,
+                backgroundImage: `url("${crachaImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

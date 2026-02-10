@@ -86,7 +86,7 @@ function Couche90g() {
             Impressão de Couche 90g cm personalizados para divulgação. Formato
             compacto, prático e ideal para distribuição em mãos.
           </p>
-          <a
+          {/*   <a
             href="https://conversaicrm.com.br/grafica-curitiba/folder.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +95,7 @@ function Couche90g() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>
+          </a>*/}
         </div>
       </section>
 
