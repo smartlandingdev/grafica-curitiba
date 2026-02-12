@@ -86,16 +86,15 @@ function Couche90g() {
             Impressão de Couche 90g cm personalizados para divulgação. Formato
             compacto, prático e ideal para distribuição em mãos.
           </p>
-          {/*   <a
-            href="https://conversaicrm.com.br/grafica-curitiba/folder.html"
+          <a
+            href=" https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=folder"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
             id="btn-whatsapp-orcamento"
           >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>*/}
+          </a>
         </div>
       </section>
 
@@ -191,7 +190,7 @@ function Couche90g() {
             Couche 90g cm em Curitiba.
           </p>
           <a
-            href="https://conversaicrm.com.br/grafica-curitiba/folder.html"
+            href=" https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=folder"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"

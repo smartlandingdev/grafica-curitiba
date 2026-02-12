@@ -86,8 +86,8 @@ function Folder20x28() {
             Impressão de Couche 150g cm personalizados. O maior formato,
             perfeito para apresentações detalhadas e materiais institucionais.
           </p>
-          {/*  <a
-            href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
+          <a
+            href=" https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=folder"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -95,7 +95,7 @@ function Folder20x28() {
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
-          </a>*/}
+          </a>
         </div>
       </section>
 
@@ -191,7 +191,7 @@ function Folder20x28() {
             Couche 170g Fosco em Curitiba.
           </p>
           <a
-            href="https://conversaicrm.com.br/grafica-curitiba/panfletos_integrado.html"
+            href=" https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=folder"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
