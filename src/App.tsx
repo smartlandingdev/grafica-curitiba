@@ -13,7 +13,6 @@ import CrachasCordoes from "./pages/CrachasCordoes";
 import Banners from "./pages/Banners";
 import PaginaEmBreve from "./pages/PaginaEmBreve";
 import { useWhatsApp } from "./hooks/useWhatsApp";
-import Tapete from "./pages/Tapate";
 import Folder10x14 from "./pages/Folder10x14";
 import Folder14x20 from "./pages/Folder14x20";
 import Folder20x28 from "./pages/Folder20x28";
@@ -231,19 +230,6 @@ const sidebarCategories = [
       { label: "Adesivo Casca de Ovo", href: "/adesivo-casca-de-ovo" },
       { label: "Adesivos Papel - Vinil", href: "/adesivos-papel-vinil" },
     ],
-  },
-  {
-    title: "Tapetes Automotivos",
-    items: [
-      {
-        label: "Tapetes Automotivos Personalizados",
-        href: "/tapetes-personalizados",
-      },
-    ],
-  },
-  {
-    title: "Outros Produtos",
-    items: [{ label: "Calendários", href: "/calendarios" }],
   },
 ];
 
@@ -1040,7 +1026,7 @@ function Layout() {
               path="/blocos-anotacoes-recibo"
               element={<PaginaEmBreve />}
             />
-            <Route path="/tapetes-personalizados" element={<Tapete />} />
+            {/*  <Route path="/tapetes-personalizados" element={<Tapete />} />*/}
             <Route path="/blocos-de-anotacoes" element={<PaginaEmBreve />} />
             <Route path="/receituario-especial" element={<PaginaEmBreve />} />
             <Route path="/folder-10x14" element={<Folder10x14 />} />
@@ -1052,7 +1038,7 @@ function Layout() {
             <Route path="/adesivo-resinado" element={<PaginaEmBreve />} />
             <Route path="/adesivo-casca-de-ovo" element={<PaginaEmBreve />} />
             <Route path="/adesivos-papel-vinil" element={<PaginaEmBreve />} />
-            <Route path="/calendarios" element={<PaginaEmBreve />} />
+            {/*<Route path="/calendarios" element={<PaginaEmBreve />} />*/}
           </Routes>
         </main>
       </div>
