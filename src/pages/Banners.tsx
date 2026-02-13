@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { useWhatsApp } from "../hooks/useWhatsApp";
 import bannerImg from "../assets/produtos/banner.jpeg";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import { CTAButton } from "../components";
 
 // Features Data
 const features = [
@@ -21,15 +21,13 @@ const productOptions = [
     title: "Banner Roll-Up",
     description: "Portátil e retrátil, perfeito para eventos e feiras",
   },
-{
+  {
     title: "Banner Gigante",
     description: "Grandes formatos para máximo impacto visual",
   },
 ];
 
 function Banners() {
-  const { getUrl } = useWhatsApp();
-
   return (
     <>
       {/* JSON-LD Schema */}
@@ -71,8 +69,7 @@ function Banners() {
       <section
         className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
-          backgroundImage:
-            `url("${fundosProdutosImg}")`,
+          backgroundImage: `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
@@ -87,15 +84,7 @@ function Banners() {
             divulgação. Material resistente e cores vibrantes que destacam sua
             marca.
           </p>
-          <a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-          </a>
+          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
         </div>
       </section>
 
@@ -152,8 +141,7 @@ function Banners() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage:
-                  `url("${bannerImg}")`,
+                backgroundImage: `url("${bannerImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
@@ -193,16 +181,8 @@ function Banners() {
             Entre em contato agora e receba um orçamento personalizado para seus
             banners em Curitiba.
           </p>
-          <a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-            id="btn-whatsapp-orcamento"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-          </a>
+          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
+
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"

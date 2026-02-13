@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { useWhatsApp } from "../hooks/useWhatsApp";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import cartaoVisitaImg from "../assets/produtos/cartao-visita.jpeg";
+import { CTAButton } from "../components";
 
 // Features Data
 const features = [
@@ -32,8 +32,6 @@ const paperOptions = [
 ];
 
 function CartoesDeVisita() {
-  const { getUrl } = useWhatsApp();
-
   return (
     <>
       {/* JSON-LD Schema */}
@@ -89,16 +87,7 @@ function CartoesDeVisita() {
             Impressão profissional de cartões de visita com acabamento premium.
             Diversos tipos de papel e acabamentos para sua marca se destacar.
           </p>
-          {/*  <a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-            id="btn-whatsapp-orcamento"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-          </a>*/}
+          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
         </div>
       </section>
 
@@ -192,15 +181,8 @@ function CartoesDeVisita() {
             Entre em contato agora e receba um orçamento personalizado para seus
             cartões de visita em Curitiba.
           </p>
-          <a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-          </a>
+          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
+
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"
