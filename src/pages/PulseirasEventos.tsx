@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import pulseiras from "../assets/produtos/pulseiras.jpg";
 
 // Features Data
 const features = [
@@ -201,7 +202,7 @@ function PulseirasEventos() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("${fundosProdutosImg}")`,
+                backgroundImage: `url("${pulseiras}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
