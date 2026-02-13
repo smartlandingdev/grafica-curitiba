@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useWhatsApp } from "../hooks/useWhatsApp";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import crachaImg from "../assets/produtos/cracha.jpeg";
 import { CTAButton } from "../components";
@@ -33,8 +32,6 @@ const productOptions = [
 ];
 
 function CrachasCordoes() {
-  const { getUrl } = useWhatsApp();
-
   return (
     <>
       {/* JSON-LD Schema */}
