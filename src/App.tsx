@@ -17,6 +17,8 @@ import Folder10x14 from "./pages/Folder10x14";
 import Folder14x20 from "./pages/Folder14x20";
 import Folder20x28 from "./pages/Folder20x28";
 import Couche90g from "./pages/Folder10x14";
+import PulseirasEventos from "./pages/PulseirasEventos";
+import CarteirinhaCiptea from "./pages/CarteirinhaCiptea";
 import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
 
 // Header Component
@@ -169,13 +171,21 @@ function WhatsAppFloat() {
 // Sidebar Menu Data
 const sidebarCategories = [
   {
+    title: "Pulseiras para Eventos",
+    items: [
+      {
+        label: "Pulseiras para Eventos e Identificação",
+        href: "/pulseiras-para-eventos-e-identificacao",
+      },
+    ],
+  },
+  {
     title: "Cartões de Visita",
     items: [
       { label: "Cartões de Visita", href: "/cartoes-de-visita" },
       { label: "Verniz Localizado", href: "/verniz-localizado" },
       { label: "HotStamping", href: "/hotstamping" },
       { label: "PVC Transparente", href: "/pvc-transparente" },
-      { label: "Abridor de Garrafa", href: "/abridor-de-garrafa" },
     ],
   },
   {
@@ -184,6 +194,10 @@ const sidebarCategories = [
       { label: "Crachás Personalizados", href: "/crachas-e-cordoes" },
       { label: "Cordões Personalizado", href: "/cordoes-personalizado" },
       { label: "Credenciais Papel e PVC", href: "/credenciais" },
+      {
+        label: "Carteirinha CIPTEA",
+        href: "/cartoes-e-crachas/carteirinha-ciptea",
+      },
     ],
   },
   {
@@ -192,7 +206,7 @@ const sidebarCategories = [
       { label: "LixoCar", href: "/lixocar" },
       { label: "Lacre de Alimentos", href: "/lacre-de-alimentos" },
       { label: "Pulseiras de Festa", href: "/pulseiras-de-festa" },
-      { label: "Etiqueta Troca Óleo", href: "/etiqueta-troca-oleo" },
+
       { label: "Imã de Geladeira", href: "/ima-de-geladeira" },
       { label: "Roller Clip", href: "/roller-clip" },
     ],
@@ -1010,13 +1024,13 @@ function Layout() {
             <Route path="/verniz-localizado" element={<PaginaEmBreve />} />
             <Route path="/hotstamping" element={<PaginaEmBreve />} />
             <Route path="/pvc-transparente" element={<PaginaEmBreve />} />
-            <Route path="/abridor-de-garrafa" element={<PaginaEmBreve />} />
+            {/*<Route path="/abridor-de-garrafa" element={<PaginaEmBreve />} />*/}
             <Route path="/cordoes-personalizado" element={<PaginaEmBreve />} />
             <Route path="/credenciais" element={<PaginaEmBreve />} />
             <Route path="/lixocar" element={<PaginaEmBreve />} />
             <Route path="/lacre-de-alimentos" element={<PaginaEmBreve />} />
             <Route path="/pulseiras-de-festa" element={<PaginaEmBreve />} />
-            <Route path="/etiqueta-troca-oleo" element={<PaginaEmBreve />} />
+            {/*<Route path="/etiqueta-troca-oleo" element={<PaginaEmBreve />} />*/}
             <Route path="/ima-de-geladeira" element={<PaginaEmBreve />} />
             <Route path="/roller-clip" element={<PaginaEmBreve />} />
             <Route path="/pastas-personalizadas" element={<PaginaEmBreve />} />
@@ -1038,6 +1052,14 @@ function Layout() {
             <Route path="/adesivo-resinado" element={<PaginaEmBreve />} />
             <Route path="/adesivo-casca-de-ovo" element={<PaginaEmBreve />} />
             <Route path="/adesivos-papel-vinil" element={<PaginaEmBreve />} />
+            <Route
+              path="/pulseiras-para-eventos-e-identificacao"
+              element={<PulseirasEventos />}
+            />
+            <Route
+              path="/cartoes-e-crachas/carteirinha-ciptea"
+              element={<CarteirinhaCiptea />}
+            />
             {/*<Route path="/calendarios" element={<PaginaEmBreve />} />*/}
           </Routes>
         </main>

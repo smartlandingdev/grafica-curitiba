@@ -87,7 +87,7 @@ function CartoesDeVisita() {
             Impressão profissional de cartões de visita com acabamento premium.
             Diversos tipos de papel e acabamentos para sua marca se destacar.
           </p>
-          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
+          <CTAButton type="cartoes" size="lg" id="btn-whatsapp-orcamento" />
         </div>
       </section>
 
@@ -181,7 +181,7 @@ function CartoesDeVisita() {
             Entre em contato agora e receba um orçamento personalizado para seus
             cartões de visita em Curitiba.
           </p>
-          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
+          <CTAButton type="cartoes" size="lg" id="btn-whatsapp-orcamento" />
 
           <div className="mt-6 sm:mt-8">
             <Link

@@ -11,7 +11,13 @@
  */
 
 // Tipos de CTA disponíveis - adicione novos tipos aqui
-export type CTAType = "folder" | "whatsapp" | "cordao" | "banner";
+export type CTAType =
+  | "folder"
+  | "whatsapp"
+  | "cordao"
+  | "banner"
+  | "pulseira"
+  | "cartoes";
 
 // Interface para a configuração de cada CTA
 export interface CTAConfig {
@@ -52,6 +58,18 @@ export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   banner: {
     url: `https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=banner`,
     label: "Falar no WhatsApp",
+    icon: "ri-whatsapp-line",
+  },
+
+  pulseira: {
+    url: `https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=pulseira`,
+    label: "Solicitar Orçamento",
+    icon: "ri-whatsapp-line",
+  },
+
+  cartoes: {
+    url: `https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=cartao`,
+    label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 };

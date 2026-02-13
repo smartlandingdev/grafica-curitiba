@@ -38,6 +38,8 @@ const routeNames: Record<string, string> = {
   '/adesivo-casca-de-ovo': 'Adesivo Casca de Ovo',
   '/adesivos-papel-vinil': 'Adesivos Papel - Vinil',
   '/calendarios': 'Calendários',
+  '/pulseiras-para-eventos-e-identificacao': 'Pulseiras para Eventos e Identificação',
+  '/cartoes-e-crachas/carteirinha-ciptea': 'Carteirinha CIPTEA',
 }
 
 // Tipos de mensagem predefinidos
