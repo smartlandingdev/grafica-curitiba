@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useWhatsApp } from "../hooks/useWhatsApp";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import crachaImg from "../assets/produtos/cracha.jpeg";
+import { CTAButton } from "../components";
 
 // Features Data
 const features = [
@@ -89,16 +90,7 @@ function CrachasCordoes() {
             Crachás personalizados e cordões para eventos, empresas e
             congressos. Material de qualidade com impressão profissional.
           </p>
-          {/*<a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-            id="btn-whatsapp-orcamento"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-          </a>*/}
+          <CTAButton type="cordao" size="lg" id="btn-whatsapp-orcamento" />
         </div>
       </section>
 
@@ -195,15 +187,8 @@ function CrachasCordoes() {
             Entre em contato agora e receba um orçamento personalizado para
             crachás e cordões em Curitiba.
           </p>
-          <a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-          </a>
+          <CTAButton type="cordao" size="lg" id="btn-whatsapp-orcamento" />
+
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"

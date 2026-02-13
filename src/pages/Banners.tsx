@@ -84,7 +84,7 @@ function Banners() {
             divulgação. Material resistente e cores vibrantes que destacam sua
             marca.
           </p>
-          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
+          <CTAButton type="banner" size="lg" id="btn-whatsapp-orcamento" />
         </div>
       </section>
 
@@ -181,7 +181,7 @@ function Banners() {
             Entre em contato agora e receba um orçamento personalizado para seus
             banners em Curitiba.
           </p>
-          <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
+          <CTAButton type="banner" size="lg" id="btn-whatsapp-orcamento" />
 
           <div className="mt-6 sm:mt-8">
             <Link

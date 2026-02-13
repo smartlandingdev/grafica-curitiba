@@ -11,7 +11,7 @@
  */
 
 // Tipos de CTA disponíveis - adicione novos tipos aqui
-export type CTAType = 'folder' | 'whatsapp';
+export type CTAType = "folder" | "whatsapp" | "cordao" | "banner";
 
 // Interface para a configuração de cada CTA
 export interface CTAConfig {
@@ -21,7 +21,7 @@ export interface CTAConfig {
 }
 
 // Número do WhatsApp (usado para gerar URLs dinâmicas)
-export const WHATSAPP_NUMBER = '554130240080';
+export const WHATSAPP_NUMBER = "554130240080";
 
 /**
  * CONFIGURAÇÃO CENTRAL DOS CTAs
@@ -31,16 +31,28 @@ export const WHATSAPP_NUMBER = '554130240080';
 export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   // Botão para orçamento de Folder
   folder: {
-    url: 'https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=folder',
-    label: 'Solicitar Orçamento',
-    icon: 'ri-file-text-line',
+    url: "https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=folder",
+    label: "Solicitar Orçamento",
+    icon: "ri-file-text-line",
   },
 
   // Botão para WhatsApp
   whatsapp: {
     url: `https://wa.me/${WHATSAPP_NUMBER}`,
-    label: 'Falar no WhatsApp',
-    icon: 'ri-whatsapp-line',
+    label: "Falar no WhatsApp",
+    icon: "ri-whatsapp-line",
+  },
+
+  cordao: {
+    url: `https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=cordao`,
+    label: "Falar no WhatsApp",
+    icon: "ri-whatsapp-line",
+  },
+
+  banner: {
+    url: `https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=banner`,
+    label: "Falar no WhatsApp",
+    icon: "ri-whatsapp-line",
   },
 };
 
