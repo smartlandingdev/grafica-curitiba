@@ -23,11 +23,6 @@ const productOptions = [
       "Durável e confortável, perfeita para eventos de vários dias e parques temáticos",
   },
   {
-    title: "Pulseira Tecido",
-    description:
-      "Personalização premium com impressão sublimática, ideal para festivais e congressos",
-  },
-  {
     title: "Pulseira Identificação",
     description:
       "Para hospitais, clínicas e empresas que precisam de identificação segura e profissional",
@@ -74,7 +69,7 @@ const differentials = [
     icon: "ri-shapes-line",
     title: "Diversos Materiais",
     description:
-      "Tyvek, vinil, tecido e mais opções para atender diferentes tipos de evento e necessidade.",
+      "Tyvek, vinil e mais opções para atender diferentes tipos de evento e necessidade.",
   },
   {
     icon: "ri-truck-line",
@@ -100,7 +95,7 @@ function PulseirasEventos() {
           "@type": "Product",
           name: "Pulseiras para Eventos e Identificação em Curitiba",
           description:
-            "Pulseiras personalizadas para eventos, festas, hospitais, empresas e controle de acesso em Curitiba. Material resistente, impressão profissional e produção rápida. Tyvek, vinil e tecido. Orçamento (41) 3024-0080.",
+            "Pulseiras personalizadas para eventos, festas, hospitais, empresas e controle de acesso em Curitiba. Material resistente, impressão profissional e produção rápida. Tyvek e vinil. Orçamento (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
@@ -188,8 +183,8 @@ function PulseirasEventos() {
                 completas de identificação e controle de acesso.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Trabalhamos com os melhores materiais do mercado — Tyvek, vinil
-                e tecido — para garantir resistência, conforto e segurança.
+                Trabalhamos com os melhores materiais do mercado — Tyvek e vinil
+                — para garantir resistência, conforto e segurança.
                 Todas as pulseiras são totalmente personalizáveis com sua marca,
                 logo ou informação necessária.
               </p>
