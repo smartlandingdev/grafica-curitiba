@@ -245,6 +245,12 @@ const sidebarCategories = [
       { label: "Adesivos Papel - Vinil", href: "/adesivos-papel-vinil" },
     ],
   },
+  {
+    title: "Tapetes",
+    items: [
+      { label: "Tapetes Personalizados", href: "/tapetes-personalizados" },
+    ],
+  },
 ];
 
 // Sidebar Component
