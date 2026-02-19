@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import ciptea from "../assets/produtos/ciptea.jpg";
 
 // Features Data
 const features = [
@@ -123,7 +124,7 @@ function CarteirinhaCiptea() {
             Autista. Impressão em PVC resistente com dados personalizados,
             conforme a Lei 13.977/2020.
           </p>
-          <CTAButton type="cordao" size="lg" id="btn-whatsapp-orcamento" />
+          <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
         </div>
       </section>
 
@@ -182,7 +183,7 @@ function CarteirinhaCiptea() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("${fundosProdutosImg}")`,
+                backgroundImage: `url("${ciptea}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
@@ -270,7 +271,7 @@ function CarteirinhaCiptea() {
             Entre em contato agora e receba um orçamento personalizado para a
             Carteirinha CIPTEA em PVC com impressão profissional em Curitiba.
           </p>
-          <CTAButton type="cartoes" size="lg" id="btn-whatsapp-orcamento" />
+          <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
 
           <div className="mt-6 sm:mt-8">
             <Link

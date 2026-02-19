@@ -17,7 +17,8 @@ export type CTAType =
   | "cordao"
   | "banner"
   | "pulseira"
-  | "cartoes";
+  | "cartoes"
+  | "ciptea";
 
 // Interface para a configuração de cada CTA
 export interface CTAConfig {
@@ -69,6 +70,12 @@ export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
 
   cartoes: {
     url: `https://conversaicrm.com.br/grafica-curitiba/orcamento.html?produto=cartao`,
+    label: "Solicitar Orçamento",
+    icon: "ri-whatsapp-line",
+  },
+
+  ciptea: {
+    url: `https://www.graficacuritiba.com/cartoes-e-crachas/carteirinha-ciptea`,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
