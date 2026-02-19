@@ -20,7 +20,7 @@ import Couche90g from "./pages/Folder10x14";
 import PulseirasEventos from "./pages/PulseirasEventos";
 import CarteirinhaCiptea from "./pages/CarteirinhaCiptea";
 import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
-
+import Tapete from "./pages/Tapete";
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -1040,7 +1040,7 @@ function Layout() {
               path="/blocos-anotacoes-recibo"
               element={<PaginaEmBreve />}
             />
-            {/*  <Route path="/tapetes-personalizados" element={<Tapete />} />*/}
+            <Route path="/tapetes-personalizados" element={<Tapete />} />
             <Route path="/blocos-de-anotacoes" element={<PaginaEmBreve />} />
             <Route path="/receituario-especial" element={<PaginaEmBreve />} />
             <Route path="/folder-10x14" element={<Folder10x14 />} />
