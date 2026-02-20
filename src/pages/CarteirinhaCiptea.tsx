@@ -85,6 +85,7 @@ function CarteirinhaCiptea() {
           offers: {
             "@type": "Offer",
             availability: "https://schema.org/InStock",
+            price: "45.00",
             priceCurrency: "BRL",
             seller: {
               "@type": "Organization",
@@ -119,12 +120,14 @@ function CarteirinhaCiptea() {
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
             Carteirinha CIPTEA Personalizada em Curitiba
           </h1>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
+          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
             Carteira de Identificação da Pessoa com Transtorno do Espectro
             Autista. Impressão em PVC resistente com dados personalizados,
             conforme a Lei 13.977/2020.
           </p>
-          <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
+          <div className="block">
+            <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
+          </div>
         </div>
       </section>
 
@@ -180,14 +183,33 @@ function CarteirinhaCiptea() {
                 associações e órgãos públicos em Curitiba e em todo o Brasil.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("${ciptea}")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="flex flex-col">
+              <div
+                className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
+                style={{
+                  backgroundImage: `url("${ciptea}")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center center",
+                }}
+              ></div>
+              <div className="bg-[#FFF4F0] rounded-xl sm:rounded-2xl px-6 py-4 mt-4 text-center shadow-lg">
+                <p className="text-[#FF6B35] font-bold text-base sm:text-lg mb-1">
+                  Kit Completo apenas
+                </p>
+                <p className="text-[#1A1A1A] font-extrabold text-2xl sm:text-3xl mb-2">
+                  R$ 45,00
+                </p>
+                <a
+                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"
+                >
+                  <i className="ri-whatsapp-line text-lg"></i>
+                  <span>Encomende pelo WhatsApp</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

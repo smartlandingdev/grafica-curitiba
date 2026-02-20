@@ -64,7 +64,7 @@ function ImaGeladeira() {
             Imãs personalizados para marketing direto. Sua marca na geladeira do
             cliente com impressão colorida de alta qualidade.
           </p>
-          <CTAButton type="whatsapp" size="lg" />
+          <CTAButton type="ima" size="lg" />
         </div>
       </section>
 
@@ -125,14 +125,23 @@ function ImaGeladeira() {
               {benefits.map((benefit) => (
                 <div
                   key={benefit.title}
-                  className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300"
+                  className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300 flex flex-col"
                 >
                   <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
                     {benefit.title}
                   </h4>
-                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed">
+                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed mb-3 flex-grow">
                     {benefit.description}
                   </p>
+                  <a
+                    href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de solicitar orçamento para Imã de Geladeira`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-1 bg-[#25D366] text-white px-3 py-1.5 rounded-md text-[11px] sm:text-xs font-medium hover:bg-[#20BD5A] transition-all duration-300"
+                  >
+                    <i className="ri-whatsapp-line text-sm"></i>
+                    <span>Solicitar Orçamento</span>
+                  </a>
                 </div>
               ))}
             </div>
@@ -149,7 +158,7 @@ function ImaGeladeira() {
             Entre em contato e leve sua marca para a casa dos seus clientes com
             imãs de geladeira personalizados.
           </p>
-          <CTAButton type="whatsapp" size="lg" />
+          <CTAButton type="ima" size="lg" />
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"
