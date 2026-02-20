@@ -11,16 +11,31 @@ import CartoesDeVisita from "./pages/CartoesDeVisita";
 import Panfletos from "./pages/Panfletos";
 import CrachasCordoes from "./pages/CrachasCordoes";
 import Banners from "./pages/Banners";
-import PaginaEmBreve from "./pages/PaginaEmBreve";
 import { useWhatsApp } from "./hooks/useWhatsApp";
-import Folder10x14 from "./pages/Folder10x14";
-import Folder14x20 from "./pages/Folder14x20";
-import Folder20x28 from "./pages/Folder20x28";
-import Couche90g from "./pages/Folder10x14";
 import PulseirasEventos from "./pages/PulseirasEventos";
 import CarteirinhaCiptea from "./pages/CarteirinhaCiptea";
 import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
 import Tapete from "./pages/Tapete";
+import VernizLocalizado from "./pages/VernizLocalizado";
+import HotStamping from "./pages/HotStamping";
+import PVCTransparente from "./pages/PVCTransparente";
+import CordoesPersonalizado from "./pages/CordoesPersonalizado";
+import Credenciais from "./pages/Credenciais";
+import LixoCar from "./pages/LixoCar";
+import LacreAlimentos from "./pages/LacreAlimentos";
+import PulseirasFesta from "./pages/PulseirasFesta";
+import ImaGeladeira from "./pages/ImaGeladeira";
+import RollerClip from "./pages/RollerClip";
+import PastasPersonalizadas from "./pages/PastasPersonalizadas";
+import Envelopes from "./pages/Envelopes";
+import PapelTimbrado from "./pages/PapelTimbrado";
+import BlocosAnotacoesRecibo from "./pages/BlocosAnotacoesRecibo";
+import BlocosAnotacoes from "./pages/BlocosAnotacoes";
+import ReceituarioEspecial from "./pages/ReceituarioEspecial";
+import FolderA4Dobras from "./pages/FolderA4Dobras";
+import AdesivoResinado from "./pages/AdesivoResinado";
+import AdesivoCascaOvo from "./pages/AdesivoCascaOvo";
+import AdesivoPapelVinil from "./pages/AdesivoPapelVinil";
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -171,21 +186,19 @@ function WhatsAppFloat() {
 // Sidebar Menu Data
 const sidebarCategories = [
   {
-    title: "Pulseiras para Eventos",
-    items: [
-      {
-        label: "Pulseiras para Eventos e Identificação",
-        href: "/pulseiras-para-eventos-e-identificacao",
-      },
-    ],
-  },
-  {
     title: "Cartões de Visita",
     items: [
       { label: "Cartões de Visita", href: "/cartoes-de-visita" },
       { label: "Verniz Localizado", href: "/verniz-localizado" },
       { label: "HotStamping", href: "/hotstamping" },
       { label: "PVC Transparente", href: "/pvc-transparente" },
+    ],
+  },
+  {
+    title: "Folders e Panfletos",
+    items: [
+      { label: "Folders e Panfletos", href: "/panfletos" },
+      { label: "Folder A4 2 Dobras", href: "/folder-a4-2-dobras" },
     ],
   },
   {
@@ -201,19 +214,27 @@ const sidebarCategories = [
     ],
   },
   {
+    title: "Banner e Lonas",
+    items: [{ label: "Banner e Lonas", href: "/banners" }],
+  },
+  {
+    title: "Pulseiras para Eventos",
+    items: [
+      {
+        label: "Pulseiras para Eventos e Identificação",
+        href: "/pulseiras-para-eventos-e-identificacao",
+      },
+    ],
+  },
+  {
     title: "Identificação e Etiquetas",
     items: [
       { label: "LixoCar", href: "/lixocar" },
       { label: "Lacre de Alimentos", href: "/lacre-de-alimentos" },
       { label: "Pulseiras de Festa", href: "/pulseiras-de-festa" },
-
       { label: "Imã de Geladeira", href: "/ima-de-geladeira" },
       { label: "Roller Clip", href: "/roller-clip" },
     ],
-  },
-  {
-    title: "Banner e Lonas",
-    items: [{ label: "Banner e Lonas", href: "/banners" }],
   },
   {
     title: "Pastas e Papelaria",
@@ -224,17 +245,6 @@ const sidebarCategories = [
       { label: "Blocos Anotações/Recibo", href: "/blocos-anotacoes-recibo" },
       { label: "Blocos de Anotações", href: "/blocos-de-anotacoes" },
       { label: "Receituário Especial", href: "/receituario-especial" },
-    ],
-  },
-  {
-    title: "Folders e Panfletos",
-    items: [
-      { label: "Folders e Panfletos", href: "/panfletos" },
-      { label: " Couche 90g", href: "/folder-90" },
-      { label: " Couche 120g", href: "/folder-10x14" },
-      { label: "Couche 150g", href: "/folder-14x20" },
-      { label: "Couche 170g Fosco", href: "/folder-20x28" },
-      { label: "Folder A4 2 Dobras", href: "/folder-a4-2-dobras" },
     ],
   },
   {
@@ -1026,38 +1036,28 @@ function Layout() {
             <Route path="/panfletos" element={<Panfletos />} />
             <Route path="/crachas-e-cordoes" element={<CrachasCordoes />} />
             <Route path="/banners" element={<Banners />} />
-            {/* Páginas em desenvolvimento */}
-            <Route path="/verniz-localizado" element={<PaginaEmBreve />} />
-            <Route path="/hotstamping" element={<PaginaEmBreve />} />
-            <Route path="/pvc-transparente" element={<PaginaEmBreve />} />
-            {/*<Route path="/abridor-de-garrafa" element={<PaginaEmBreve />} />*/}
-            <Route path="/cordoes-personalizado" element={<PaginaEmBreve />} />
-            <Route path="/credenciais" element={<PaginaEmBreve />} />
-            <Route path="/lixocar" element={<PaginaEmBreve />} />
-            <Route path="/lacre-de-alimentos" element={<PaginaEmBreve />} />
-            <Route path="/pulseiras-de-festa" element={<PaginaEmBreve />} />
-            {/*<Route path="/etiqueta-troca-oleo" element={<PaginaEmBreve />} />*/}
-            <Route path="/ima-de-geladeira" element={<PaginaEmBreve />} />
-            <Route path="/roller-clip" element={<PaginaEmBreve />} />
-            <Route path="/pastas-personalizadas" element={<PaginaEmBreve />} />
-            <Route path="/envelopes" element={<PaginaEmBreve />} />
-            <Route path="/papel-timbrado" element={<PaginaEmBreve />} />
-            <Route
-              path="/blocos-anotacoes-recibo"
-              element={<PaginaEmBreve />}
-            />
+            {/* Páginas de produtos */}
+            <Route path="/verniz-localizado" element={<VernizLocalizado />} />
+            <Route path="/hotstamping" element={<HotStamping />} />
+            <Route path="/pvc-transparente" element={<PVCTransparente />} />
+            <Route path="/cordoes-personalizado" element={<CordoesPersonalizado />} />
+            <Route path="/credenciais" element={<Credenciais />} />
+            <Route path="/lixocar" element={<LixoCar />} />
+            <Route path="/lacre-de-alimentos" element={<LacreAlimentos />} />
+            <Route path="/pulseiras-de-festa" element={<PulseirasFesta />} />
+            <Route path="/ima-de-geladeira" element={<ImaGeladeira />} />
+            <Route path="/roller-clip" element={<RollerClip />} />
+            <Route path="/pastas-personalizadas" element={<PastasPersonalizadas />} />
+            <Route path="/envelopes" element={<Envelopes />} />
+            <Route path="/papel-timbrado" element={<PapelTimbrado />} />
+            <Route path="/blocos-anotacoes-recibo" element={<BlocosAnotacoesRecibo />} />
             <Route path="/tapetes-personalizados" element={<Tapete />} />
-            <Route path="/blocos-de-anotacoes" element={<PaginaEmBreve />} />
-            <Route path="/receituario-especial" element={<PaginaEmBreve />} />
-            <Route path="/folder-10x14" element={<Folder10x14 />} />
-            <Route path="/folder-14x20" element={<Folder14x20 />} />
-            <Route path="/folder-20x28" element={<Folder20x28 />} />
-            <Route path="/folder-90" element={<Couche90g />} />
-
-            <Route path="/folder-a4-2-dobras" element={<PaginaEmBreve />} />
-            <Route path="/adesivo-resinado" element={<PaginaEmBreve />} />
-            <Route path="/adesivo-casca-de-ovo" element={<PaginaEmBreve />} />
-            <Route path="/adesivos-papel-vinil" element={<PaginaEmBreve />} />
+            <Route path="/blocos-de-anotacoes" element={<BlocosAnotacoes />} />
+            <Route path="/receituario-especial" element={<ReceituarioEspecial />} />
+            <Route path="/folder-a4-2-dobras" element={<FolderA4Dobras />} />
+            <Route path="/adesivo-resinado" element={<AdesivoResinado />} />
+            <Route path="/adesivo-casca-de-ovo" element={<AdesivoCascaOvo />} />
+            <Route path="/adesivos-papel-vinil" element={<AdesivoPapelVinil />} />
             <Route
               path="/pulseiras-para-eventos-e-identificacao"
               element={<PulseirasEventos />}

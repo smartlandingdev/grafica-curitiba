@@ -14,20 +14,40 @@ const features = [
 // Format Options Data
 const formatOptions = [
   {
-    title: "A5 (14,8 x 21 cm)",
-    description: "Formato compacto, ideal para distribuição em mãos",
+    title: "10x14 cm",
+    description: "Formato compacto, ideal para distribuição em mãos e panfletagem",
   },
   {
-    title: "A4 (21 x 29,7 cm)",
-    description: "Tamanho padrão, perfeito para informações detalhadas",
+    title: "14x20 cm",
+    description: "Tamanho intermediário, equilíbrio entre espaço e praticidade",
   },
   {
-    title: "A6 (10,5 x 14,8 cm)",
-    description: "Formato pequeno, econômico para grandes tiragens",
+    title: "20x28 cm",
+    description: "Formato amplo, perfeito para catálogos e materiais detalhados",
   },
   {
-    title: "Personalizado",
-    description: "Tamanhos especiais sob medida para sua campanha",
+    title: "A4 / A5 / A6",
+    description: "Formatos padrão para diferentes necessidades de comunicação",
+  },
+];
+
+// Paper Options Data
+const paperOptions = [
+  {
+    title: "Couché 90g",
+    description: "Papel leve e econômico, ideal para grandes tiragens e panfletagem",
+  },
+  {
+    title: "Couché 115g",
+    description: "Boa qualidade com custo acessível, versátil para diversos usos",
+  },
+  {
+    title: "Couché 150g",
+    description: "Espessura intermediária, equilíbrio entre qualidade e custo",
+  },
+  {
+    title: "Couché 170g Fosco",
+    description: "Papel encorpado com acabamento sofisticado e premium",
   },
 ];
 
@@ -39,9 +59,9 @@ function Panfletos() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          name: "Panfletos",
+          name: "Folders e Panfletos",
           description:
-            "Impressão de panfletos personalizados em Curitiba. Alta qualidade, cores vibrantes e entrega rápida. Formatos A5, A4, A6 e personalizados. Orçamento via WhatsApp (41) 3024-0080.",
+            "Impressão de folders e panfletos personalizados em Curitiba. Diversos formatos (10x14, 14x20, 20x28, A4, A5, A6) e gramaturas (Couché 90g, 115g, 150g, 170g). Alta qualidade e entrega rápida. Orçamento via WhatsApp (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
@@ -81,12 +101,11 @@ function Panfletos() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Panfletos em Curitiba
+            Folders e Panfletos em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Impressão de panfletos personalizados para divulgação. Alta
-            qualidade, cores vibrantes e entrega rápida para sua campanha de
-            marketing.
+            Impressão de folders e panfletos personalizados para divulgação.
+            Diversos formatos e gramaturas de papel couché para sua campanha de marketing.
           </p>
           <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
         </div>
@@ -121,19 +140,19 @@ function Panfletos() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
-                Panfletos Personalizados para Sua Campanha
+                Folders e Panfletos Personalizados
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os panfletos são ferramentas essenciais para divulgação de
+                Os folders e panfletos são ferramentas essenciais para divulgação de
                 produtos, serviços e eventos. Na Gráfica Curitiba, produzimos
-                panfletos com impressão colorida de alta qualidade que garantem
+                materiais com impressão colorida de alta qualidade que garantem
                 o impacto visual necessário para sua campanha.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Trabalhamos com diversos formatos e gramaturas de papel, desde o
-                econômico 75g até o premium 170g. Todos os panfletos são
-                impressos com tecnologia digital ou offset, dependendo da
-                tiragem e necessidade do cliente.
+                Trabalhamos com diversos formatos: desde o compacto 10x14 cm ideal
+                para panfletagem, passando pelo versátil 14x20 cm, até o amplo 20x28 cm
+                perfeito para catálogos e materiais institucionais. Também oferecemos
+                os formatos padrão A4, A5 e A6.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
                 Ideal para comércios, imobiliárias, restaurantes, academias e
@@ -152,12 +171,35 @@ function Panfletos() {
             ></div>
           </div>
 
-          <div>
+          {/* Formatos Section */}
+          <div className="mb-12 sm:mb-20">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-6 sm:mb-10 text-center">
               Formatos Disponíveis
             </h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
               {formatOptions.map((option) => (
+                <div
+                  key={option.title}
+                  className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300"
+                >
+                  <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                    {option.title}
+                  </h4>
+                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed">
+                    {option.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Gramaturas Section */}
+          <div>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-6 sm:mb-10 text-center">
+              Opções de Papel Couché
+            </h3>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+              {paperOptions.map((option) => (
                 <div
                   key={option.title}
                   className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300"
@@ -183,7 +225,7 @@ function Panfletos() {
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para seus
-            panfletos em Curitiba.
+            folders e panfletos em Curitiba.
           </p>
           <CTAButton type="folder" size="lg" showIcon={false} />
           <div className="mt-6 sm:mt-8">
