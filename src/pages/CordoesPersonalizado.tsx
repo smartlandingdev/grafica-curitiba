@@ -5,7 +5,7 @@ import { CTAButton } from "../components";
 const features = [
   { icon: "ri-t-shirt-line", label: "Diversos Materiais" },
   { icon: "ri-paint-brush-line", label: "Impressão Sublimática" },
-  { icon: "ri-ruler-line", label: "Medidas Personalizadas" },
+  { icon: "ri-ruler-line", label: "Medida de 20mmx900mm " },
   { icon: "ri-building-line", label: "Ideal para Empresas" },
 ];
 
@@ -61,8 +61,8 @@ function CordoesPersonalizado() {
             Cordões Personalizados em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Cordões para crachás com impressão personalizada. Sublimação de alta qualidade,
-            diversas cores e materiais para empresas e eventos.
+            Cordões para crachás com impressão personalizada. Sublimação de alta
+            qualidade, diversas cores e materiais para empresas e eventos.
           </p>
           <CTAButton type="cordao" size="lg" />
         </div>
@@ -72,9 +72,14 @@ function CordoesPersonalizado() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,18 +98,18 @@ function CordoesPersonalizado() {
                 Cordões para Crachás Corporativos
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os cordões personalizados são essenciais para a identidade visual da sua
-                empresa. Com impressão sublimática, é possível reproduzir seu logotipo,
-                cores e padrões com alta fidelidade.
+                Os cordões personalizados são essenciais para a identidade
+                visual da sua empresa. Com impressão sublimática, é possível
+                reproduzir seu logotipo, cores e padrões com alta fidelidade.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Fabricamos cordões em diversos materiais como poliéster, nylon e cetim,
-                com diferentes larguras e acabamentos. Todos são equipados com presilhas
-                de segurança e engates de qualidade.
+                Fabricamos cordões em diversos materiais como poliéster, nylon e
+                cetim, com diferentes larguras e acabamentos. Todos são
+                equipados com presilhas de segurança e engates de qualidade.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideal para empresas, eventos corporativos, feiras, congressos e qualquer
-                ocasião que necessite de identificação profissional.
+                Ideal para empresas, eventos corporativos, feiras, congressos e
+                qualquer ocasião que necessite de identificação profissional.
               </p>
             </div>
             <div
@@ -155,8 +160,8 @@ function CordoesPersonalizado() {
             Solicite Seu Orçamento de Cordões
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e personalize os cordões da sua empresa com qualidade
-            profissional e preços competitivos.
+            Entre em contato e personalize os cordões da sua empresa com
+            qualidade profissional e preços competitivos.
           </p>
           <CTAButton type="cordao" size="lg" />
           <div className="mt-6 sm:mt-8">
