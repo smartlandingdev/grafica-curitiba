@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import rollerClipImg from "../assets/produtos/roller-clip.jpeg";
 import { CTAButton } from "../components";
 
 const features = [
@@ -107,14 +108,13 @@ function RollerClip() {
                 organização que utilize crachás de identificação.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800&h=600&fit=crop")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
+              <img
+                src={rollerClipImg}
+                alt="Roller Clip personalizado"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
           </div>
 
           <div>

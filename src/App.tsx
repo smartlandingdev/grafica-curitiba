@@ -207,6 +207,7 @@ const sidebarCategories = [
       { label: "Crachás Personalizados", href: "/crachas-e-cordoes" },
       { label: "Cordões Personalizado", href: "/cordoes-personalizado" },
       { label: "Credenciais Papel e PVC", href: "/credenciais" },
+      { label: "Roller Clip", href: "/roller-clip" },
       {
         label: "Carteirinha CIPTEA",
         href: "/cartoes-e-crachas/carteirinha-ciptea",
@@ -233,7 +234,6 @@ const sidebarCategories = [
       { label: "Lacre de Alimentos", href: "/lacre-de-alimentos" },
       { label: "Pulseiras de Festa", href: "/pulseiras-de-festa" },
       { label: "Imã de Geladeira", href: "/ima-de-geladeira" },
-      { label: "Roller Clip", href: "/roller-clip" },
     ],
   },
   {
