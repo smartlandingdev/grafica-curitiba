@@ -118,12 +118,16 @@ function CarteirinhaCiptea() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Carteirinha CIPTEA Personalizada em Curitiba
+            Impressão de Carteirinha CIPTEA em PVC Personalizada.
           </h1>
+          <h5 className="text-[15px] sm:text-2xl lg:text-[28px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
+            Entrega em todo o Paraná
+          </h5>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
-            Carteira de Identificação da Pessoa com Transtorno do Espectro
-            Autista. Impressão em PVC resistente com dados personalizados,
-            conforme a Lei 13.977/2020.
+            Facilite a identificação com carteirinha CIPTEA em PVC resistente e
+            profissional. Acompanha cordão. Ideal para escolas, passeios e
+            atendimento prioritário. Produção rápida em até 48h e com Envio para
+            todo Paraná.
           </p>
           <div className="block">
             <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
