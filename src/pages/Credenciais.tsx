@@ -107,14 +107,13 @@ function Credenciais() {
                 até grandes eventos com milhares de participantes.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
+              <img
+                src="/assets/produtos/credenciais.jpeg"
+                alt="Credenciais personalizadas em papel e PVC"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div>

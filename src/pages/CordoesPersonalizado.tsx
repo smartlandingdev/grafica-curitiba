@@ -98,28 +98,28 @@ function CordoesPersonalizado() {
                 Cordões para Crachás Corporativos
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os cordões personalizados são essenciais para a identidade
-                visual da sua empresa. Com impressão sublimática, é possível
-                reproduzir seu logotipo, cores e padrões com alta fidelidade.
+                Os cordões personalizados para crachá são essenciais para empresas,
+                eventos e equipes que precisam de identificação profissional com qualidade.
+                Produzidos em poliéster acetinado e impressão sublimada de alta definição,
+                garantem cores vivas, durabilidade e excelente acabamento.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Fabricamos cordões em diversos materiais como poliéster, nylon e
-                cetim, com diferentes larguras e acabamentos. Todos são
-                equipados com presilhas de segurança e engates de qualidade.
+                Fabricamos no tamanho padrão 900mm x 20mm, com diversas opções de engates:
+                mosquete, jacaré, argola, retrátil e presilha de segurança.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideal para empresas, eventos corporativos, feiras, congressos e
-                qualquer ocasião que necessite de identificação profissional.
+                Ideais para eventos corporativos, feiras, congressos, escolas, empresas
+                e credenciais de acesso. Personalize com sua marca e receba com produção
+                rápida e entrega para todo o Brasil.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
+              <img
+                src="/assets/produtos/cordao.jpeg"
+                alt="Cordões personalizados para crachá"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div>

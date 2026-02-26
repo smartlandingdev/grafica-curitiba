@@ -107,14 +107,13 @@ function PVCTransparente() {
                 garantir cores vibrantes e detalhes precisos em cada cartão transparente.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1572021335469-31706a17ber8?w=800&h=600&fit=crop")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
+              <img
+                src="/assets/produtos/pvc_transparente.jpeg"
+                alt="Cartão de visita em PVC transparente"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div>

@@ -107,14 +107,13 @@ function HotStamping() {
                 mercado, garantindo resultados impecáveis que impressionam à primeira vista.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=600&fit=crop")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
+              <img
+                src="/assets/produtos/hotstamping.jpeg"
+                alt="Cartão de visita com hot stamping metalizado"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div>
