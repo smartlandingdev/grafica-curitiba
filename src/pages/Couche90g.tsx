@@ -41,7 +41,7 @@ function Folder20x28() {
           "@type": "Product",
           name: "Folder 20x28 cm",
           description:
-            "Impressão de folders 20x28 cm personalizados em Curitiba. Alta qualidade, cores vibrantes e entrega rápida. Orçamento via WhatsApp (41) 3024-0080.",
+            "Impressão de folders 20x28 cm personalizados. Alta qualidade, cores vibrantes e entrega rápida. Orçamento via WhatsApp (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
@@ -81,7 +81,7 @@ function Folder20x28() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Folder 20x28 cm em Curitiba
+            Folder 20x28 cm
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Impressão de Couche 150g cm personalizados. O maior formato,
@@ -189,7 +189,7 @@ function Folder20x28() {
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para seus
-            Couche 170g Fosco em Curitiba.
+            Couche 170g Fosco
           </p>
           <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
 

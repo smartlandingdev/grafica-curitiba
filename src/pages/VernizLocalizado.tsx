@@ -13,11 +13,13 @@ const features = [
 const benefits = [
   {
     title: "Brilho Seletivo",
-    description: "Destaque elementos específicos do seu material com verniz brilhante",
+    description:
+      "Destaque elementos específicos do seu material com verniz brilhante",
   },
   {
     title: "Textura Tátil",
-    description: "Efeito de relevo que valoriza logotipos e detalhes importantes",
+    description:
+      "Efeito de relevo que valoriza logotipos e detalhes importantes",
   },
   {
     title: "Acabamento Sofisticado",
@@ -38,7 +40,7 @@ function VernizLocalizado() {
           "@type": "Product",
           name: "Verniz Localizado",
           description:
-            "Cartões de visita com verniz localizado em Curitiba. Acabamento premium com brilho seletivo e efeito relevo. Destaque sua marca com qualidade profissional.",
+            "Cartões de visita com verniz localizado. Acabamento premium com brilho seletivo e efeito relevo. Destaque sua marca com qualidade profissional.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -59,11 +61,11 @@ function VernizLocalizado() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Verniz Localizado em Curitiba
+            Verniz Localizado
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Cartões de visita com acabamento premium. Verniz UV localizado para destacar
-            sua marca com brilho seletivo e efeito relevo sofisticado.
+            Cartões de visita com acabamento premium. Verniz UV localizado para
+            destacar sua marca com brilho seletivo e efeito relevo sofisticado.
           </p>
           <CTAButton type="verniz" size="lg" />
         </div>
@@ -73,9 +75,14 @@ function VernizLocalizado() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -94,18 +101,21 @@ function VernizLocalizado() {
                 O Que é Verniz Localizado?
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                O verniz localizado é uma técnica de acabamento que aplica uma camada de verniz UV
-                brilhante em áreas específicas do material impresso. Isso cria um contraste visual
-                impressionante entre as áreas com verniz e as áreas sem.
+                O verniz localizado é uma técnica de acabamento que aplica uma
+                camada de verniz UV brilhante em áreas específicas do material
+                impresso. Isso cria um contraste visual impressionante entre as
+                áreas com verniz e as áreas sem.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Ideal para destacar logotipos, nomes e elementos gráficos importantes, o verniz
-                localizado transforma um simples cartão de visita em uma peça de impacto visual
-                que transmite profissionalismo e sofisticação.
+                Ideal para destacar logotipos, nomes e elementos gráficos
+                importantes, o verniz localizado transforma um simples cartão de
+                visita em uma peça de impacto visual que transmite
+                profissionalismo e sofisticação.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Na Gráfica Curitiba, utilizamos tecnologia de última geração para aplicação precisa
-                do verniz UV, garantindo resultados impecáveis em cada impressão.
+                Na Gráfica Curitiba, utilizamos tecnologia de última geração
+                para aplicação precisa do verniz UV, garantindo resultados
+                impecáveis em cada impressão.
               </p>
             </div>
             <div
@@ -155,8 +165,8 @@ function VernizLocalizado() {
             Solicite Seu Orçamento de Verniz Localizado
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e transforme seus cartões de visita com acabamento premium
-            em verniz localizado.
+            Entre em contato agora e transforme seus cartões de visita com
+            acabamento premium em verniz localizado.
           </p>
           <CTAButton type="verniz" size="lg" />
           <div className="mt-6 sm:mt-8">

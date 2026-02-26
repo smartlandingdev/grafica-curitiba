@@ -37,7 +37,7 @@ function BlocosAnotacoes() {
           "@type": "Product",
           name: "Blocos de Anotações",
           description:
-            "Blocos de anotações personalizados em Curitiba. Diversos tamanhos com impressão colorida. Ideal como brinde corporativo.",
+            "Blocos de anotações personalizados. Diversos tamanhos com impressão colorida. Ideal como brinde corporativo.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,11 +58,11 @@ function BlocosAnotacoes() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Blocos de Anotações em Curitiba
+            Blocos de Anotações
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Blocos de anotações personalizados para sua empresa. Brinde corporativo
-            útil com impressão de alta qualidade.
+            Blocos de anotações personalizados para sua empresa. Brinde
+            corporativo útil com impressão de alta qualidade.
           </p>
           <CTAButton type="blocosAnotacoes" size="lg" />
         </div>
@@ -72,9 +72,14 @@ function BlocosAnotacoes() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,19 +98,19 @@ function BlocosAnotacoes() {
                 O Brinde que Fica na Mesa do Cliente
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os blocos de anotações são brindes corporativos extremamente eficientes.
-                Por serem úteis no dia a dia, ficam sempre à mão do cliente, garantindo
-                que sua marca seja vista constantemente.
+                Os blocos de anotações são brindes corporativos extremamente
+                eficientes. Por serem úteis no dia a dia, ficam sempre à mão do
+                cliente, garantindo que sua marca seja vista constantemente.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Produzimos blocos em diversos tamanhos: de bolso, A6, A5 e A4. Com capa
-                personalizada em impressão colorida e miolo em papel offset branco ou
-                reciclado, conforme sua preferência.
+                Produzimos blocos em diversos tamanhos: de bolso, A6, A5 e A4.
+                Com capa personalizada em impressão colorida e miolo em papel
+                offset branco ou reciclado, conforme sua preferência.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideal para distribuir em eventos, feiras, visitas comerciais ou como
-                presente para clientes especiais. Um investimento de baixo custo com
-                alto retorno de visibilidade.
+                Ideal para distribuir em eventos, feiras, visitas comerciais ou
+                como presente para clientes especiais. Um investimento de baixo
+                custo com alto retorno de visibilidade.
               </p>
             </div>
             <div
@@ -156,8 +161,8 @@ function BlocosAnotacoes() {
             Solicite Seu Orçamento de Blocos
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e personalize blocos de anotações com a marca da sua
-            empresa.
+            Entre em contato e personalize blocos de anotações com a marca da
+            sua empresa.
           </p>
           <CTAButton type="blocosAnotacoes" size="lg" />
           <div className="mt-6 sm:mt-8">

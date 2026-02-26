@@ -37,7 +37,7 @@ function AdesivoCascaOvo() {
           "@type": "Product",
           name: "Adesivo Casca de Ovo",
           description:
-            "Adesivo casca de ovo em Curitiba. Selo de segurança anti-violação que fragmenta ao tentar remover. Ideal para garantia e controle patrimonial.",
+            "Adesivo casca de ovo. Selo de segurança anti-violação que fragmenta ao tentar remover. Ideal para garantia e controle patrimonial.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,11 +58,11 @@ function AdesivoCascaOvo() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Adesivo Casca de Ovo em Curitiba
+            Adesivo Casca de Ovo em
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Selo de segurança anti-violação que fragmenta ao tentar remover. Ideal
-            para garantia, controle patrimonial e autenticidade.
+            Selo de segurança anti-violação que fragmenta ao tentar remover.
+            Ideal para garantia, controle patrimonial e autenticidade.
           </p>
           <CTAButton type="adesivoCascaOvo" size="lg" />
         </div>
@@ -72,9 +72,14 @@ function AdesivoCascaOvo() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,19 +98,20 @@ function AdesivoCascaOvo() {
                 O Que é Adesivo Casca de Ovo?
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                O adesivo casca de ovo (também conhecido como adesivo destrutível) é
-                um material especial de segurança. Ao tentar removê-lo, ele se fragmenta
-                em pequenos pedaços, tornando impossível sua reutilização.
+                O adesivo casca de ovo (também conhecido como adesivo
+                destrutível) é um material especial de segurança. Ao tentar
+                removê-lo, ele se fragmenta em pequenos pedaços, tornando
+                impossível sua reutilização.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Essa característica o torna perfeito para selos de garantia, controle
-                de patrimônio, identificação de ativos e qualquer aplicação que exija
-                evidência de violação.
+                Essa característica o torna perfeito para selos de garantia,
+                controle de patrimônio, identificação de ativos e qualquer
+                aplicação que exija evidência de violação.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Personalizamos com logo, numeração sequencial, código de barras ou
-                QR code. A impressão é feita com tintas resistentes para garantir
-                legibilidade durante toda a vida útil.
+                Personalizamos com logo, numeração sequencial, código de barras
+                ou QR code. A impressão é feita com tintas resistentes para
+                garantir legibilidade durante toda a vida útil.
               </p>
             </div>
             <div

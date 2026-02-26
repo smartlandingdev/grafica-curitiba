@@ -94,7 +94,7 @@ function PulseirasEventos() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          name: "Pulseiras para Eventos e Identificação em Curitiba",
+          name: "Pulseiras para Eventos e Identificação",
           description:
             "Pulseiras personalizadas para eventos, festas, hospitais, empresas e controle de acesso em Curitiba. Material resistente, impressão profissional e produção rápida. Tyvek e vinil. Orçamento (41) 3024-0080.",
           brand: {
@@ -186,9 +186,9 @@ function PulseirasEventos() {
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
                 Trabalhamos com os melhores materiais do mercado — Tyvek e vinil
-                — para garantir resistência, conforto e segurança.
-                Todas as pulseiras são totalmente personalizáveis com sua marca,
-                logo ou informação necessária.
+                — para garantir resistência, conforto e segurança. Todas as
+                pulseiras são totalmente personalizáveis com sua marca, logo ou
+                informação necessária.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
                 Atendemos pedidos de pequenas e grandes quantidades com produção
@@ -320,7 +320,7 @@ function PulseirasEventos() {
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para
-            pulseiras de identificação e controle de acesso em Curitiba.
+            pulseiras de identificação e controle de acesso.
           </p>
           <CTAButton type="pulseirasEventos" size="lg" />
           <div className="mt-6 sm:mt-8">

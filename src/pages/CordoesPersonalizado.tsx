@@ -37,7 +37,7 @@ function CordoesPersonalizado() {
           "@type": "Product",
           name: "Cordões Personalizados",
           description:
-            "Cordões personalizados para crachás em Curitiba. Impressão sublimática, diversas cores e materiais. Ideal para empresas e eventos.",
+            "Cordões personalizados para crachás. Impressão sublimática, diversas cores e materiais. Ideal para empresas e eventos.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,7 +58,7 @@ function CordoesPersonalizado() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Cordões Personalizados em Curitiba
+            Cordões Personalizados
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Cordões para crachás com impressão personalizada. Sublimação de alta
@@ -98,19 +98,21 @@ function CordoesPersonalizado() {
                 Cordões para Crachás Corporativos
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os cordões personalizados para crachá são essenciais para empresas,
-                eventos e equipes que precisam de identificação profissional com qualidade.
-                Produzidos em poliéster acetinado e impressão sublimada de alta definição,
-                garantem cores vivas, durabilidade e excelente acabamento.
+                Os cordões personalizados para crachá são essenciais para
+                empresas, eventos e equipes que precisam de identificação
+                profissional com qualidade. Produzidos em poliéster acetinado e
+                impressão sublimada de alta definição, garantem cores vivas,
+                durabilidade e excelente acabamento.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Fabricamos no tamanho padrão 900mm x 20mm, com diversas opções de engates:
-                mosquete, jacaré, argola, retrátil e presilha de segurança.
+                Fabricamos no tamanho padrão 900mm x 20mm, com diversas opções
+                de engates: mosquete, jacaré, argola, retrátil e presilha de
+                segurança.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideais para eventos corporativos, feiras, congressos, escolas, empresas
-                e credenciais de acesso. Personalize com sua marca e receba com produção
-                rápida e entrega para todo o Brasil.
+                Ideais para eventos corporativos, feiras, congressos, escolas,
+                empresas e credenciais de acesso. Personalize com sua marca e
+                receba com produção rápida e entrega para todo o Brasil.
               </p>
             </div>
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">

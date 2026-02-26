@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import adesivo from "../assets/produtos/adesivo-laminado.jpg";
 
 const features = [
   { icon: "ri-drop-line", label: "Efeito 3D" },
@@ -37,7 +38,7 @@ function AdesivoResinado() {
           "@type": "Product",
           name: "Adesivo Resinado",
           description:
-            "Adesivo resinado em Curitiba. Efeito 3D com resina cristal, resistente à água e raios UV. Acabamento premium para sua marca.",
+            "Adesivo resinado. Efeito 3D com resina cristal, resistente à água e raios UV. Acabamento premium para sua marca.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,11 +59,11 @@ function AdesivoResinado() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Adesivo Resinado em Curitiba
+            Adesivo Resinado em
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Adesivos com efeito 3D em resina cristal. Acabamento premium resistente
-            à água e raios UV para sua marca se destacar.
+            Adesivos com efeito 3D em resina cristal. Acabamento premium
+            resistente à água e raios UV para sua marca se destacar.
           </p>
           <CTAButton type="adesivoResinado" size="lg" />
         </div>
@@ -72,9 +73,14 @@ function AdesivoResinado() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,25 +99,25 @@ function AdesivoResinado() {
                 O Que é Adesivo Resinado?
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                O adesivo resinado é um tipo especial de adesivo que recebe uma camada
-                de resina cristal (poliuretano) sobre a impressão. Isso cria um efeito
-                3D com aparência premium e proteção extra.
+                O adesivo resinado é um tipo especial de adesivo que recebe uma
+                camada de resina cristal (poliuretano) sobre a impressão. Isso
+                cria um efeito 3D com aparência premium e proteção extra.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                A resina protege a impressão contra raios UV, água, riscos e abrasão,
-                garantindo que as cores e o brilho durem por muitos anos. Ideal para
-                aplicações internas e externas.
+                A resina protege a impressão contra raios UV, água, riscos e
+                abrasão, garantindo que as cores e o brilho durem por muitos
+                anos. Ideal para aplicações internas e externas.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Produzimos adesivos resinados em diversos formatos e tamanhos, com
-                recorte preciso no contorno do design. Perfeito para logotipos,
-                emblemas e identificação de marca.
+                Produzimos adesivos resinados em diversos formatos e tamanhos,
+                com recorte preciso no contorno do design. Perfeito para
+                logotipos, emblemas e identificação de marca.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${adesivo}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

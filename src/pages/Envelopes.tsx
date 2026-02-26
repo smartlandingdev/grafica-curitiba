@@ -37,7 +37,7 @@ function Envelopes() {
           "@type": "Product",
           name: "Envelopes Personalizados",
           description:
-            "Envelopes personalizados em Curitiba. Impressão offset em diversos tamanhos e modelos. Identidade visual profissional para sua empresa.",
+            "Envelopes personalizados. Impressão offset em diversos tamanhos e modelos. Identidade visual profissional para sua empresa.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,11 +58,11 @@ function Envelopes() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Envelopes Personalizados em Curitiba
+            Envelopes Personalizados
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Envelopes com a identidade visual da sua empresa. Diversos tamanhos e
-            modelos com impressão profissional de alta qualidade.
+            Envelopes com a identidade visual da sua empresa. Diversos tamanhos
+            e modelos com impressão profissional de alta qualidade.
           </p>
           <CTAButton type="envelopes" size="lg" />
         </div>
@@ -72,9 +72,14 @@ function Envelopes() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -94,17 +99,19 @@ function Envelopes() {
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
                 Os envelopes personalizados são fundamentais para transmitir
-                profissionalismo em cada correspondência enviada pela sua empresa.
-                Com logo, cores e dados de contato, cada envelope reforça sua marca.
+                profissionalismo em cada correspondência enviada pela sua
+                empresa. Com logo, cores e dados de contato, cada envelope
+                reforça sua marca.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
                 Oferecemos envelopes em diversos tamanhos: ofício, saco, carta e
-                formatos especiais. Todos com impressão offset de alta qualidade em
-                papel resistente e adequado para cada finalidade.
+                formatos especiais. Todos com impressão offset de alta qualidade
+                em papel resistente e adequado para cada finalidade.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Também disponibilizamos envelopes com janela transparente, ideais para
-                boletos e correspondências onde o destinatário precisa ser visualizado.
+                Também disponibilizamos envelopes com janela transparente,
+                ideais para boletos e correspondências onde o destinatário
+                precisa ser visualizado.
               </p>
             </div>
             <div
@@ -155,8 +162,8 @@ function Envelopes() {
             Solicite Seu Orçamento de Envelopes
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e personalize os envelopes da sua empresa com qualidade
-            profissional.
+            Entre em contato e personalize os envelopes da sua empresa com
+            qualidade profissional.
           </p>
           <CTAButton type="envelopes" size="lg" />
           <div className="mt-6 sm:mt-8">

@@ -37,7 +37,7 @@ function Credenciais() {
           "@type": "Product",
           name: "Credenciais Papel e PVC",
           description:
-            "Credenciais personalizadas em papel e PVC em Curitiba. Impressão digital de alta qualidade para empresas e eventos. Identificação profissional.",
+            "Credenciais personalizadas em papel e PVC. Impressão digital de alta qualidade para empresas e eventos. Identificação profissional.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,11 +58,12 @@ function Credenciais() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Credenciais em Papel e PVC em Curitiba
+            Credenciais em Papel e PVC
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Credenciais personalizadas para empresas e eventos. Impressão digital em papel
-            ou PVC com alta qualidade e acabamento profissional.
+            Credenciais personalizadas para empresas e eventos. Impressão
+            digital em papel ou PVC com alta qualidade e acabamento
+            profissional.
           </p>
           <CTAButton type="credenciais" size="lg" />
         </div>
@@ -72,9 +73,14 @@ function Credenciais() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,18 +99,19 @@ function Credenciais() {
                 Credenciais Profissionais
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                As credenciais são essenciais para identificação e controle de acesso em
-                empresas, eventos, congressos e feiras. Oferecemos soluções em papel para
-                eventos temporários e em PVC para uso permanente.
+                As credenciais são essenciais para identificação e controle de
+                acesso em empresas, eventos, congressos e feiras. Oferecemos
+                soluções em papel para eventos temporários e em PVC para uso
+                permanente.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Nossas credenciais podem incluir foto, nome, cargo, QR Code e código de
-                barras para integração com sistemas de controle de acesso. Impressão
-                digital colorida com alta definição.
+                Nossas credenciais podem incluir foto, nome, cargo, QR Code e
+                código de barras para integração com sistemas de controle de
+                acesso. Impressão digital colorida com alta definição.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Trabalhamos com pedidos de qualquer quantidade, desde pequenas empresas
-                até grandes eventos com milhares de participantes.
+                Trabalhamos com pedidos de qualquer quantidade, desde pequenas
+                empresas até grandes eventos com milhares de participantes.
               </p>
             </div>
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
@@ -154,8 +161,8 @@ function Credenciais() {
             Solicite Seu Orçamento de Credenciais
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e receba um orçamento personalizado para suas credenciais
-            em papel ou PVC.
+            Entre em contato e receba um orçamento personalizado para suas
+            credenciais em papel ou PVC.
           </p>
           <CTAButton type="credenciais" size="lg" />
           <div className="mt-6 sm:mt-8">

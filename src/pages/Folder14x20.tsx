@@ -81,7 +81,7 @@ function Folder14x20() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Folder 14x20 cm em Curitiba
+            Folder 14x20 cm
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Impressão de folders 14x20 cm personalizados. Formato intermediário,
@@ -188,7 +188,7 @@ function Folder14x20() {
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para seus
-            folders 14x20 cm em Curitiba.
+            folders 14x20 cm.
           </p>
           <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
 

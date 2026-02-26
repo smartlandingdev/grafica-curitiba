@@ -15,7 +15,8 @@ const features = [
 const formatOptions = [
   {
     title: "10x14 cm",
-    description: "Formato compacto, ideal para distribuição em mãos e panfletagem",
+    description:
+      "Formato compacto, ideal para distribuição em mãos e panfletagem",
   },
   {
     title: "14x20 cm",
@@ -23,7 +24,8 @@ const formatOptions = [
   },
   {
     title: "20x28 cm",
-    description: "Formato amplo, perfeito para catálogos e materiais detalhados",
+    description:
+      "Formato amplo, perfeito para catálogos e materiais detalhados",
   },
   {
     title: "A4 / A5 / A6",
@@ -35,11 +37,13 @@ const formatOptions = [
 const paperOptions = [
   {
     title: "Couché 90g",
-    description: "Papel leve e econômico, ideal para grandes tiragens e panfletagem",
+    description:
+      "Papel leve e econômico, ideal para grandes tiragens e panfletagem",
   },
   {
     title: "Couché 115g",
-    description: "Boa qualidade com custo acessível, versátil para diversos usos",
+    description:
+      "Boa qualidade com custo acessível, versátil para diversos usos",
   },
   {
     title: "Couché 150g",
@@ -61,7 +65,7 @@ function Panfletos() {
           "@type": "Product",
           name: "Folders e Panfletos",
           description:
-            "Impressão de folders e panfletos personalizados em Curitiba. Diversos formatos (10x14, 14x20, 20x28, A4, A5, A6) e gramaturas (Couché 90g, 115g, 150g, 170g). Alta qualidade e entrega rápida. Orçamento via WhatsApp (41) 3024-0080.",
+            "Impressão de folders e panfletos personalizados. Diversos formatos (10x14, 14x20, 20x28, A4, A5, A6) e gramaturas (Couché 90g, 115g, 150g, 170g). Alta qualidade e entrega rápida. Orçamento via WhatsApp (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
@@ -101,11 +105,12 @@ function Panfletos() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Folders e Panfletos em Curitiba
+            Folders e Panfletos
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Impressão de folders e panfletos personalizados para divulgação.
-            Diversos formatos e gramaturas de papel couché para sua campanha de marketing.
+            Diversos formatos e gramaturas de papel couché para sua campanha de
+            marketing.
           </p>
           <CTAButton type="folder" size="lg" id="btn-whatsapp-orcamento" />
         </div>
@@ -143,16 +148,17 @@ function Panfletos() {
                 Folders e Panfletos Personalizados
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os folders e panfletos são ferramentas essenciais para divulgação de
-                produtos, serviços e eventos. Na Gráfica Curitiba, produzimos
-                materiais com impressão colorida de alta qualidade que garantem
-                o impacto visual necessário para sua campanha.
+                Os folders e panfletos são ferramentas essenciais para
+                divulgação de produtos, serviços e eventos. Na Gráfica Curitiba,
+                produzimos materiais com impressão colorida de alta qualidade
+                que garantem o impacto visual necessário para sua campanha.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Trabalhamos com diversos formatos: desde o compacto 10x14 cm ideal
-                para panfletagem, passando pelo versátil 14x20 cm, até o amplo 20x28 cm
-                perfeito para catálogos e materiais institucionais. Também oferecemos
-                os formatos padrão A4, A5 e A6.
+                Trabalhamos com diversos formatos: desde o compacto 10x14 cm
+                ideal para panfletagem, passando pelo versátil 14x20 cm, até o
+                amplo 20x28 cm perfeito para catálogos e materiais
+                institucionais. Também oferecemos os formatos padrão A4, A5 e
+                A6.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
                 Ideal para comércios, imobiliárias, restaurantes, academias e
@@ -243,7 +249,7 @@ function Panfletos() {
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para seus
-            folders e panfletos em Curitiba.
+            folders e panfletos.
           </p>
           <CTAButton type="folder" size="lg" showIcon={false} />
           <div className="mt-6 sm:mt-8">

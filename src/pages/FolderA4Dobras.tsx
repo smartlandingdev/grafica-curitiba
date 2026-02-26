@@ -58,7 +58,7 @@ function FolderA4Dobras() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Folder A4 com Dobras em Curitiba
+            Folder A4 com Dobras.
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Folders em formato A4 com 2 ou 3 dobras. Ideal para apresentar mais
@@ -72,9 +72,14 @@ function FolderA4Dobras() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,18 +98,18 @@ function FolderA4Dobras() {
                 Mais Espaço para Sua Mensagem
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                O folder A4 com dobras é perfeito quando você precisa de mais espaço
-                para apresentar produtos, serviços ou informações. Com 2 ou 3 dobras,
-                você tem até 6 painéis para organizar seu conteúdo.
+                O folder A4 com dobras é perfeito quando você precisa de mais
+                espaço para apresentar produtos, serviços ou informações. Com 2
+                ou 3 dobras, você tem até 6 painéis para organizar seu conteúdo.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Imprimimos em papel couché de diversas gramaturas, garantindo qualidade
-                de impressão e durabilidade. As dobras são feitas com precisão para
-                um acabamento perfeito.
+                Imprimimos em papel couché de diversas gramaturas, garantindo
+                qualidade de impressão e durabilidade. As dobras são feitas com
+                precisão para um acabamento perfeito.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideal para cardápios de restaurantes, catálogos de produtos, materiais
-                informativos, apresentações de serviços e muito mais.
+                Ideal para cardápios de restaurantes, catálogos de produtos,
+                materiais informativos, apresentações de serviços e muito mais.
               </p>
             </div>
             <div
@@ -155,8 +160,8 @@ function FolderA4Dobras() {
             Solicite Seu Orçamento de Folders
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e personalize seus folders A4 com dobras e impressão
-            de qualidade.
+            Entre em contato e personalize seus folders A4 com dobras e
+            impressão de qualidade.
           </p>
           <CTAButton type="folderA4Dobras" size="lg" />
           <div className="mt-6 sm:mt-8">

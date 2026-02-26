@@ -37,7 +37,7 @@ function AdesivoPapelVinil() {
           "@type": "Product",
           name: "Adesivos Papel e Vinil",
           description:
-            "Adesivos em papel e vinil em Curitiba. Impressão digital colorida com recorte preciso. Diversos materiais para cada aplicação.",
+            "Adesivos em papel e vinil. Impressão digital colorida com recorte preciso. Diversos materiais para cada aplicação.",
           brand: { "@type": "Organization", name: "Gráfica Curitiba" },
           offers: {
             "@type": "Offer",
@@ -58,7 +58,7 @@ function AdesivoPapelVinil() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Adesivos Papel e Vinil em Curitiba
+            Adesivos Papel e Vinil
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Adesivos personalizados em papel e vinil. Impressão digital colorida
@@ -72,9 +72,14 @@ function AdesivoPapelVinil() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,19 +98,20 @@ function AdesivoPapelVinil() {
                 Adesivos para Todas as Necessidades
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Oferecemos adesivos em diversos materiais para atender cada necessidade.
-                Adesivos em papel são ideais para uso interno e aplicações temporárias,
-                enquanto os de vinil são perfeitos para uso externo e longa duração.
+                Oferecemos adesivos em diversos materiais para atender cada
+                necessidade. Adesivos em papel são ideais para uso interno e
+                aplicações temporárias, enquanto os de vinil são perfeitos para
+                uso externo e longa duração.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Nossa impressão digital garante cores vibrantes e alta definição em
-                qualquer tamanho. O recorte pode ser em formatos padrão (quadrado,
-                retangular, circular) ou no contorno exato do design.
+                Nossa impressão digital garante cores vibrantes e alta definição
+                em qualquer tamanho. O recorte pode ser em formatos padrão
+                (quadrado, retangular, circular) ou no contorno exato do design.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideal para etiquetas de produtos, sinalização, decoração, brindes,
-                identificação e muito mais. Atendemos desde pequenas quantidades até
-                grandes tiragens.
+                Ideal para etiquetas de produtos, sinalização, decoração,
+                brindes, identificação e muito mais. Atendemos desde pequenas
+                quantidades até grandes tiragens.
               </p>
             </div>
             <div

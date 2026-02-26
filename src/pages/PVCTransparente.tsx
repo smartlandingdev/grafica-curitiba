@@ -58,11 +58,12 @@ function PVCTransparente() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Cartão PVC Transparente em Curitiba
+            Cartão PVC Transparente
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Cartões de visita em PVC transparente com design moderno e diferenciado.
-            Material resistente à água e durável para impressionar seus clientes.
+            Cartões de visita em PVC transparente com design moderno e
+            diferenciado. Material resistente à água e durável para impressionar
+            seus clientes.
           </p>
           <CTAButton type="pvcTransparente" size="lg" />
         </div>
@@ -72,9 +73,14 @@ function PVCTransparente() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,18 +99,21 @@ function PVCTransparente() {
                 Cartões em PVC Transparente
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os cartões em PVC transparente são a escolha ideal para quem busca um
-                visual moderno e diferenciado. A transparência do material cria um efeito
-                único que destaca sua marca de forma inovadora.
+                Os cartões em PVC transparente são a escolha ideal para quem
+                busca um visual moderno e diferenciado. A transparência do
+                material cria um efeito único que destaca sua marca de forma
+                inovadora.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Fabricados em PVC de alta qualidade, esses cartões são extremamente
-                resistentes à água, dobras e desgaste. Perfeitos para profissionais que
-                precisam de cartões duráveis para o dia a dia.
+                Fabricados em PVC de alta qualidade, esses cartões são
+                extremamente resistentes à água, dobras e desgaste. Perfeitos
+                para profissionais que precisam de cartões duráveis para o dia a
+                dia.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Na Gráfica Curitiba, utilizamos impressão digital de última geração para
-                garantir cores vibrantes e detalhes precisos em cada cartão transparente.
+                Na Gráfica Curitiba, utilizamos impressão digital de última
+                geração para garantir cores vibrantes e detalhes precisos em
+                cada cartão transparente.
               </p>
             </div>
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">

@@ -58,11 +58,12 @@ function HotStamping() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Hot Stamping em Curitiba
+            Hot Stamping
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Acabamento metalizado de luxo para seus cartões de visita. Hot stamping dourado,
-            prata e cores especiais que destacam sua marca com elegância.
+            Acabamento metalizado de luxo para seus cartões de visita. Hot
+            stamping dourado, prata e cores especiais que destacam sua marca com
+            elegância.
           </p>
           <CTAButton type="hotStamping" size="lg" />
         </div>
@@ -72,9 +73,14 @@ function HotStamping() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,18 +99,20 @@ function HotStamping() {
                 O Que é Hot Stamping?
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Hot Stamping é uma técnica de impressão a quente que aplica uma película
-                metalizada sobre o papel, criando um efeito brilhante e luxuoso. É o
-                acabamento preferido por marcas que buscam transmitir sofisticação e exclusividade.
+                Hot Stamping é uma técnica de impressão a quente que aplica uma
+                película metalizada sobre o papel, criando um efeito brilhante e
+                luxuoso. É o acabamento preferido por marcas que buscam
+                transmitir sofisticação e exclusividade.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                O processo utiliza calor e pressão para transferir a folha metalizada,
-                garantindo aderência perfeita e durabilidade. Ideal para logotipos, nomes
-                e detalhes que merecem destaque especial.
+                O processo utiliza calor e pressão para transferir a folha
+                metalizada, garantindo aderência perfeita e durabilidade. Ideal
+                para logotipos, nomes e detalhes que merecem destaque especial.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Na Gráfica Curitiba, trabalhamos com as melhores películas metalizadas do
-                mercado, garantindo resultados impecáveis que impressionam à primeira vista.
+                Na Gráfica Curitiba, trabalhamos com as melhores películas
+                metalizadas do mercado, garantindo resultados impecáveis que
+                impressionam à primeira vista.
               </p>
             </div>
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
@@ -154,8 +162,8 @@ function HotStamping() {
             Solicite Seu Orçamento de Hot Stamping
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e eleve o padrão dos seus cartões de visita com acabamento
-            hot stamping metalizado.
+            Entre em contato e eleve o padrão dos seus cartões de visita com
+            acabamento hot stamping metalizado.
           </p>
           <CTAButton type="hotStamping" size="lg" />
           <div className="mt-6 sm:mt-8">

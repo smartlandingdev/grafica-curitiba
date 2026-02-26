@@ -41,7 +41,7 @@ function CrachasCordoes() {
           "@type": "Product",
           name: "Crachás e Cordões",
           description:
-            "Crachás personalizados e cordões para eventos e empresas em Curitiba. Material resistente, impressão profissional e produção rápida. Ideal para congressos e identificação corporativa. Orçamento (41) 3024-0080.",
+            "Crachás personalizados e cordões para eventos e empresas. Material resistente, impressão profissional e produção rápida. Ideal para congressos e identificação corporativa. Orçamento (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
@@ -81,7 +81,7 @@ function CrachasCordoes() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Crachás e Cordões em Curitiba
+            Crachás e Cordões
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Crachás personalizados e cordões para eventos, empresas e

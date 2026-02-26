@@ -37,7 +37,7 @@ function Banners() {
           "@type": "Product",
           name: "Banners",
           description:
-            "Impressão de banners em alta resolução em Curitiba. Material resistente, cores vibrantes e tamanhos personalizados para eventos e fachadas. Roll-up e lona. Orçamento via WhatsApp (41) 3024-0080.",
+            "Impressão de banners em alta resolução. Material resistente, cores vibrantes e tamanhos personalizados para eventos e fachadas. Roll-up e lona. Orçamento via WhatsApp (41) 3024-0080.",
           brand: {
             "@type": "Organization",
             name: "Gráfica Curitiba",
@@ -77,7 +77,7 @@ function Banners() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Banners em Curitiba
+            Banners
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Impressão de banners em alta resolução para eventos, fachadas e
@@ -133,9 +133,8 @@ function Banners() {
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
                 Perfeito para lojas, eventos, feiras, congressos, inaugurações e
-                campanhas promocionais em Curitiba. Trabalhamos com acabamento
-                profissional incluindo ilhoses, bastão e suporte quando
-                necessário.
+                campanhas promocionais. Trabalhamos com acabamento profissional
+                incluindo ilhoses, bastão e suporte quando necessário.
               </p>
             </div>
             <div

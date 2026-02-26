@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import pasta from "../assets/produtos/pasta.jpg";
 
 const features = [
   { icon: "ri-folder-line", label: "Diversos Modelos" },
@@ -61,8 +62,8 @@ function PastasPersonalizadas() {
             Pastas Personalizadas em Curitiba
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Pastas corporativas com impressão personalizada. Diversos modelos com
-            acabamento profissional para sua empresa.
+            Pastas corporativas com impressão personalizada. Diversos modelos
+            com acabamento profissional para sua empresa.
           </p>
           <CTAButton type="pastas" size="lg" />
         </div>
@@ -72,9 +73,14 @@ function PastasPersonalizadas() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,24 +99,27 @@ function PastasPersonalizadas() {
                 Organize e Apresente com Profissionalismo
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                As pastas personalizadas são essenciais para organizar documentos e
-                transmitir profissionalismo em reuniões e apresentações. Com a identidade
-                visual da sua empresa, cada pasta se torna uma ferramenta de marketing.
+                As pastas personalizadas são essenciais para organizar
+                documentos e transmitir profissionalismo em reuniões e
+                apresentações. Com a identidade visual da sua empresa, cada
+                pasta se torna uma ferramenta de marketing.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Fabricamos pastas em diversos modelos: com bolso interno, abas, formato L
-                e executivas. Todas com impressão offset colorida em papel de alta gramatura
-                para garantir resistência e durabilidade.
+                Fabricamos pastas em diversos modelos: com bolso interno, abas,
+                formato L e executivas. Todas com impressão offset colorida em
+                papel de alta gramatura para garantir resistência e
+                durabilidade.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Ideal para apresentações comerciais, propostas, contratos, materiais de
-                treinamento e qualquer documento que mereça uma apresentação diferenciada.
+                Ideal para apresentações comerciais, propostas, contratos,
+                materiais de treinamento e qualquer documento que mereça uma
+                apresentação diferenciada.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${pasta}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
@@ -155,8 +164,8 @@ function PastasPersonalizadas() {
             Solicite Seu Orçamento de Pastas
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e personalize as pastas da sua empresa com qualidade
-            gráfica profissional.
+            Entre em contato e personalize as pastas da sua empresa com
+            qualidade gráfica profissional.
           </p>
           <CTAButton type="pastas" size="lg" />
           <div className="mt-6 sm:mt-8">

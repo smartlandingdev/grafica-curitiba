@@ -58,7 +58,7 @@ function LacreAlimentos() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Lacre de Alimentos em Curitiba
+            Lacre de Alimentos
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Lacres personalizados para segurança alimentar. Ideal para delivery,
@@ -72,9 +72,14 @@ function LacreAlimentos() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -93,18 +98,21 @@ function LacreAlimentos() {
                 Segurança e Profissionalismo no Delivery
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Os lacres de alimentos são essenciais para garantir a segurança das suas
-                embalagens durante o transporte. Eles mostram ao cliente que o produto
-                não foi violado, transmitindo confiança e profissionalismo.
+                Os lacres de alimentos são essenciais para garantir a segurança
+                das suas embalagens durante o transporte. Eles mostram ao
+                cliente que o produto não foi violado, transmitindo confiança e
+                profissionalismo.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Nossos lacres são fabricados com adesivo de alta aderência que rompe ao
-                tentar remover, garantindo inviolabilidade. Personalizamos com sua logo,
-                cores e até informações como telefone e redes sociais.
+                Nossos lacres são fabricados com adesivo de alta aderência que
+                rompe ao tentar remover, garantindo inviolabilidade.
+                Personalizamos com sua logo, cores e até informações como
+                telefone e redes sociais.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Atendemos restaurantes, lanchonetes, pizzarias, confeitarias e qualquer
-                estabelecimento que trabalhe com delivery ou embalagens lacradas.
+                Atendemos restaurantes, lanchonetes, pizzarias, confeitarias e
+                qualquer estabelecimento que trabalhe com delivery ou embalagens
+                lacradas.
               </p>
             </div>
             <div
@@ -155,8 +163,8 @@ function LacreAlimentos() {
             Solicite Seu Orçamento de Lacres
           </h2>
           <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato e personalize os lacres do seu delivery com qualidade
-            profissional.
+            Entre em contato e personalize os lacres do seu delivery com
+            qualidade profissional.
           </p>
           <CTAButton type="lacre" size="lg" />
           <div className="mt-6 sm:mt-8">
