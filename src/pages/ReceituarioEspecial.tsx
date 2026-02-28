@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import receituario from "../assets/produtos/receita.jpeg";
 
 const features = [
   { icon: "ri-heart-pulse-line", label: "Área da Saúde" },
@@ -118,7 +119,7 @@ function ReceituarioEspecial() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${receituario}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

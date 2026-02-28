@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import papeltim from "../assets/produtos/papel-timbrado.jpeg";
 
 const features = [
   { icon: "ri-file-text-line", label: "Formato A4" },
@@ -72,9 +73,14 @@ function PapelTimbrado() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
-              <div key={feature.label} className="flex flex-col items-center text-center">
+              <div
+                key={feature.label}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
+                  <i
+                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                  ></i>
                 </div>
                 <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
                   {feature.label}
@@ -94,23 +100,25 @@ function PapelTimbrado() {
               </h2>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
                 O papel timbrado é fundamental para qualquer empresa que deseja
-                transmitir profissionalismo em seus documentos. Cartas, propostas,
-                contratos e comunicados ganham mais credibilidade com papel personalizado.
+                transmitir profissionalismo em seus documentos. Cartas,
+                propostas, contratos e comunicados ganham mais credibilidade com
+                papel personalizado.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
-                Imprimimos em papel offset de alta qualidade, com gramatura adequada
-                para escrita e impressão posterior. O design inclui logo, dados da
-                empresa e elementos visuais da sua marca.
+                Imprimimos em papel offset de alta qualidade, com gramatura
+                adequada para escrita e impressão posterior. O design inclui
+                logo, dados da empresa e elementos visuais da sua marca.
               </p>
               <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
-                Oferecemos impressão em cores ou escala de cinza, com possibilidade
-                de acabamentos especiais como marca d'água e verniz.
+                Oferecemos impressão em cores ou escala de cinza, com
+                possibilidade de acabamentos especiais como marca d'água e
+                verniz.
               </p>
             </div>
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1568667256549-094345857637?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${papeltim}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

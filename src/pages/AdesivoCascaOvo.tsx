@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import adesivo from "../assets/produtos/adesivo-casca-de-ovo.jpeg";
 
 const features = [
   { icon: "ri-shield-check-line", label: "Segurança" },
@@ -117,7 +118,7 @@ function AdesivoCascaOvo() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${adesivo}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

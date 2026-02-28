@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import adesivos from "../assets/produtos/adesivo-papel-vinil.jpeg";
 
 const features = [
   { icon: "ri-price-tag-3-line", label: "Diversos Materiais" },
@@ -117,7 +118,7 @@ function AdesivoPapelVinil() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${adesivos}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

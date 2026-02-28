@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
+import a4dobras from "../assets/produtos/folder-a4-dobras.jpg";
 
 const features = [
   { icon: "ri-file-paper-2-line", label: "Formato A4" },
@@ -115,7 +116,7 @@ function FolderA4Dobras() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${a4dobras}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
