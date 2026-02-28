@@ -81,7 +81,7 @@ function CartoesDeVisita() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Cartões de Visita em Curitiba
+            Cartões de Visita
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Impressão profissional de cartões de visita com acabamento premium.
