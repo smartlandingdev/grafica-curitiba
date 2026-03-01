@@ -14,7 +14,6 @@ import Banners from "./pages/Banners";
 import { useWhatsApp } from "./hooks/useWhatsApp";
 import PulseirasEventos from "./pages/PulseirasEventos";
 import CarteirinhaCiptea from "./pages/CarteirinhaCiptea";
-import fundosProdutosImg from "./assets/produtos/fundos-produtos.jpeg";
 import Tapete from "./pages/Tapete";
 import VernizLocalizado from "./pages/VernizLocalizado";
 import HotStamping from "./pages/HotStamping";
@@ -36,6 +35,11 @@ import FolderA4Dobras from "./pages/FolderA4Dobras";
 import AdesivoResinado from "./pages/AdesivoResinado";
 import AdesivoCascaOvo from "./pages/AdesivoCascaOvo";
 import AdesivoPapelVinil from "./pages/AdesivoPapelVinil";
+import cartao from "./assets/produtos/cartao-promo.jpeg";
+import folder from "./assets/produtos/panfletos-promo.jpeg";
+import cordao from "./assets/produtos/cordao-promo.jpeg";
+import imagemPromocao from "./assets/produtos/imagem-promoção.png";
+
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -649,39 +653,13 @@ function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section
-        id="hero"
-        className="relative min-h-[100svh] sm:min-h-[85vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
-        style={{
-          backgroundImage: `url("${fundosProdutosImg}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
-
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-[28px] sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Gráfica em Curitiba com Impressão Profissional e Entrega Rápida
+      <section id="hero" className="bg-[#f2ede4] pt-24 pb-10 sm:pt-20">
+        <div className="text-center mt-10 mb-2">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight px-2">
+            Gráfica em Curitiba com Impressão Profissional e Entrega Rápida em
+            todo brasil
           </h1>
-
-          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Cartões, folders, banners e materiais corporativos com qualidade
-            superior. Atendimento via WhatsApp e produção local.
-          </p>
-
-          {/*  <a
-            href={getUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 md:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Solicitar Orçamento</span>
-            <i className="ri-arrow-right-line text-lg sm:text-xl hidden sm:inline"></i>
-          </a>*/}
-
-          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white/80 text-xs sm:text-sm">
+          <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-gray-500 text-xs sm:text-sm">
             <div className="flex items-center gap-0.5 sm:gap-1">
               <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
               <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
@@ -693,6 +671,71 @@ function HomePage() {
               Avaliação 4.9 no Google | +500 clientes
             </span>
           </div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Product Showcase */}
+          {/* Desktop: imagem combinada com áreas clicáveis sobrepostas */}
+          <div className="hidden sm:block relative rounded-2xl overflow-hidden shadow-md">
+            <img
+              src={imagemPromocao}
+              alt="Ofertas Especiais"
+              className="w-full object-contain"
+            />
+            {/* Overlay: metade esquerda → Cartão de Visita */}
+            <Link
+              to="/cartoes-de-visita"
+              className="absolute inset-y-0 left-0 w-1/2"
+              aria-label="Ver Cartão de Visita"
+            />
+            {/* Overlay: quarto superior direito → Panfletos */}
+            <Link
+              to="/panfletos"
+              className="absolute top-0 right-0 w-1/2 h-1/2"
+              aria-label="Ver Panfletos"
+            />
+            {/* Overlay: quarto inferior direito → Cordão */}
+            <Link
+              to="/cordoes-personalizado"
+              className="absolute bottom-0 right-0 w-1/2 h-1/2"
+              aria-label="Ver Cordão para Crachá"
+            />
+          </div>
+
+          {/* Mobile: 3 imagens empilhadas */}
+          <div className="flex flex-col gap-4 sm:hidden">
+            <Link
+              to="/cartoes-de-visita"
+              className="rounded-2xl overflow-hidden shadow-md block"
+            >
+              <img
+                src={cartao}
+                alt="Oferta Cartão de Visita"
+                className="w-full object-contain"
+              />
+            </Link>
+            <Link
+              to="/panfletos"
+              className="rounded-2xl overflow-hidden shadow-md block"
+            >
+              <img
+                src={folder}
+                alt="Oferta Panfletos"
+                className="w-full object-contain"
+              />
+            </Link>
+            <Link
+              to="/cordoes-personalizado"
+              className="rounded-2xl overflow-hidden shadow-md block"
+            >
+              <img
+                src={cordao}
+                alt="Oferta Cordão para Crachá"
+                className="w-full object-contain"
+              />
+            </Link>
+          </div>
+
+          {/* Tagline + Rating (moved below product grid) */}
         </div>
       </section>
 
@@ -1040,24 +1083,39 @@ function Layout() {
             <Route path="/verniz-localizado" element={<VernizLocalizado />} />
             <Route path="/hotstamping" element={<HotStamping />} />
             <Route path="/pvc-transparente" element={<PVCTransparente />} />
-            <Route path="/cordoes-personalizado" element={<CordoesPersonalizado />} />
+            <Route
+              path="/cordoes-personalizado"
+              element={<CordoesPersonalizado />}
+            />
             <Route path="/credenciais" element={<Credenciais />} />
             <Route path="/lixocar" element={<LixoCar />} />
             <Route path="/lacre-de-alimentos" element={<LacreAlimentos />} />
             <Route path="/pulseiras-de-festa" element={<PulseirasFesta />} />
             <Route path="/ima-de-geladeira" element={<ImaGeladeira />} />
             <Route path="/roller-clip" element={<RollerClip />} />
-            <Route path="/pastas-personalizadas" element={<PastasPersonalizadas />} />
+            <Route
+              path="/pastas-personalizadas"
+              element={<PastasPersonalizadas />}
+            />
             <Route path="/envelopes" element={<Envelopes />} />
             <Route path="/papel-timbrado" element={<PapelTimbrado />} />
-            <Route path="/blocos-anotacoes-recibo" element={<BlocosAnotacoesRecibo />} />
+            <Route
+              path="/blocos-anotacoes-recibo"
+              element={<BlocosAnotacoesRecibo />}
+            />
             <Route path="/tapetes-personalizados" element={<Tapete />} />
             <Route path="/blocos-de-anotacoes" element={<BlocosAnotacoes />} />
-            <Route path="/receituario-especial" element={<ReceituarioEspecial />} />
+            <Route
+              path="/receituario-especial"
+              element={<ReceituarioEspecial />}
+            />
             <Route path="/folder-a4-2-dobras" element={<FolderA4Dobras />} />
             <Route path="/adesivo-resinado" element={<AdesivoResinado />} />
             <Route path="/adesivo-casca-de-ovo" element={<AdesivoCascaOvo />} />
-            <Route path="/adesivos-papel-vinil" element={<AdesivoPapelVinil />} />
+            <Route
+              path="/adesivos-papel-vinil"
+              element={<AdesivoPapelVinil />}
+            />
             <Route
               path="/pulseiras-para-eventos-e-identificacao"
               element={<PulseirasEventos />}
@@ -1066,7 +1124,7 @@ function Layout() {
               path="/cartoes-e-crachas/carteirinha-ciptea"
               element={<CarteirinhaCiptea />}
             />
-            
+
             {/*<Route path="/calendarios" element={<PaginaEmBreve />} />*/}
           </Routes>
         </main>
