@@ -85,7 +85,7 @@ function CarteirinhaCiptea() {
           offers: {
             "@type": "Offer",
             availability: "https://schema.org/InStock",
-            price: "45.00",
+            price: "18.00",
             priceCurrency: "BRL",
             seller: {
               "@type": "Organization",
@@ -196,23 +196,78 @@ function CarteirinhaCiptea() {
                   backgroundPosition: "center center",
                 }}
               ></div>
-              <div className="bg-[#FFF4F0] rounded-xl sm:rounded-2xl px-6 py-4 mt-4 text-center shadow-lg">
-                <p className="text-[#FF6B35] font-bold text-base sm:text-lg mb-1">
-                  Kit Completo apenas
-                </p>
-                <p className="text-[#1A1A1A] font-extrabold text-2xl sm:text-3xl mb-2">
-                  R$ 45,00
-                </p>
-                <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"
-                >
-                  <i className="ri-whatsapp-line text-lg"></i>
-                  <span>Encomende pelo WhatsApp</span>
-                </a>
+            </div>
+          </div>
+
+          {/* Kits de Preço */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            {/* Kit 1 - Só o Cartão */}
+            <div className="bg-[#FFF4F0] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+              <p className="text-[#FF6B35] font-bold text-base sm:text-lg mb-2">
+                Cartão em PVC
+              </p>
+              <p className="text-[#1A1A1A] font-extrabold text-2xl sm:text-3xl mb-3">
+                R$ 18,00
+              </p>
+              <p className="text-[#666] text-sm mb-4">
+                Carteirinha CIPTEA em PVC resistente
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Cartão em PVC R$18,00")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300 w-full"
+              >
+                <i className="ri-whatsapp-line text-lg"></i>
+                <span>Pedir pelo WhatsApp</span>
+              </a>
+            </div>
+
+            {/* Kit 2 - Cartão + Capa */}
+            <div className="bg-[#FFF4F0] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+              <p className="text-[#FF6B35] font-bold text-base sm:text-lg mb-2">
+                Cartão + Capa Protetora
+              </p>
+              <p className="text-[#1A1A1A] font-extrabold text-2xl sm:text-3xl mb-3">
+                R$ 20,00
+              </p>
+              <p className="text-[#666] text-sm mb-4">
+                Cartão em PVC + Capa Protetora
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Cartão + Capa Protetora R$20,00")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300 w-full"
+              >
+                <i className="ri-whatsapp-line text-lg"></i>
+                <span>Pedir pelo WhatsApp</span>
+              </a>
+            </div>
+
+            {/* Kit 3 - Completo */}
+            <div className="bg-[#FF6B35] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1A1A1A] text-white text-xs font-bold px-3 py-1 rounded-full">
+                MAIS VENDIDO
               </div>
+              <p className="text-white font-bold text-base sm:text-lg mb-2 mt-2">
+                Kit Completo
+              </p>
+              <p className="text-white font-extrabold text-2xl sm:text-3xl mb-3">
+                R$ 45,00
+              </p>
+              <p className="text-white/90 text-sm mb-4">
+                Cartão em PVC + Capa Protetora + Cordão Autismo
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Kit Completo R$45,00")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#FF6B35] px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#FFF4F0] transition-all duration-300 w-full"
+              >
+                <i className="ri-whatsapp-line text-lg"></i>
+                <span>Pedir pelo WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>

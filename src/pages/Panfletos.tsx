@@ -11,25 +11,40 @@ const features = [
   { icon: "ri-price-tag-3-line", label: "Preço Competitivo" },
 ];
 
-// Format Options Data
+// Format Options Data com preços
 const formatOptions = [
   {
-    title: "10x14 cm",
-    description:
-      "Formato compacto, ideal para distribuição em mãos e panfletagem",
+    title: "10x14 cm (A6)",
+    description: "Formato compacto, ideal para distribuição em mãos e panfletagem",
+    prices: [
+      { qty: "500 un", price: "R$ 165" },
+      { qty: "1.000 un", price: "R$ 175", best: true },
+      { qty: "2.500 un", price: "R$ 235" },
+      { qty: "5.000 un", price: "R$ 425" },
+      { qty: "10.000 un", price: "R$ 902" },
+    ],
   },
   {
-    title: "14x20 cm",
+    title: "14x20 cm (A5)",
     description: "Tamanho intermediário, equilíbrio entre espaço e praticidade",
+    prices: [
+      { qty: "500 un", price: "R$ 265" },
+      { qty: "1.000 un", price: "R$ 275", best: true },
+      { qty: "2.500 un", price: "R$ 495" },
+      { qty: "5.000 un", price: "R$ 740" },
+      { qty: "10.000 un", price: "R$ 1.449" },
+    ],
   },
   {
-    title: "20x28 cm",
-    description:
-      "Formato amplo, perfeito para catálogos e materiais detalhados",
-  },
-  {
-    title: "A4 / A5 / A6",
-    description: "Formatos padrão para diferentes necessidades de comunicação",
+    title: "20x28 cm (A4)",
+    description: "Formato amplo, perfeito para catálogos e materiais detalhados",
+    prices: [
+      { qty: "500 un", price: "R$ 515" },
+      { qty: "1.000 un", price: "R$ 525", best: true },
+      { qty: "2.500 un", price: "R$ 955" },
+      { qty: "5.000 un", price: "R$ 1.485" },
+      { qty: "10.000 un", price: "R$ 2.885" },
+    ],
   },
 ];
 
@@ -177,31 +192,50 @@ function Panfletos() {
             ></div>
           </div>
 
-          {/* Formatos Section */}
+          {/* Formatos e Preços Section */}
           <div className="mb-12 sm:mb-20">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-6 sm:mb-10 text-center">
-              Formatos Disponíveis
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-3 sm:mb-4 text-center">
+              Panfletos Couché 90g - Preços
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <p className="text-sm text-[#666] text-center mb-6 sm:mb-10">
+              Impressão colorida frente | Produção até 48h | Arte pronta em CMYK
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               {formatOptions.map((option) => (
                 <div
                   key={option.title}
                   className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300 flex flex-col"
                 >
-                  <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                  <h4 className="text-[16px] sm:text-[20px] font-bold text-[#1A1A1A] mb-2">
                     {option.title}
                   </h4>
-                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed mb-3 flex-grow">
+                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed mb-4">
                     {option.description}
                   </p>
+                  <div className="space-y-2 mb-4 flex-grow">
+                    {option.prices.map((item) => (
+                      <div
+                        key={item.qty}
+                        className={`flex justify-between items-center py-1.5 px-2 rounded ${item.best ? "bg-[#FFF4F0]" : ""}`}
+                      >
+                        <span className={`text-xs sm:text-sm ${item.best ? "text-[#FF6B35] font-medium" : "text-[#555]"}`}>
+                          {item.qty}
+                        </span>
+                        <span className={`font-bold text-sm ${item.best ? "text-[#FF6B35]" : "text-[#1A1A1A]"}`}>
+                          {item.price}
+                          {item.best && <span className="text-xs ml-1">(melhor)</span>}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                   <a
-                    href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de solicitar orçamento para Panfleto ${option.title}`)}`}
+                    href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de fazer pedido de Panfleto ${option.title} Couché 90g`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-1 bg-[#25D366] text-white px-3 py-1.5 rounded-md text-[11px] sm:text-xs font-medium hover:bg-[#20BD5A] transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"
                   >
-                    <i className="ri-whatsapp-line text-sm"></i>
-                    <span>Solicitar Orçamento</span>
+                    <i className="ri-whatsapp-line text-lg"></i>
+                    <span>Fazer Pedido</span>
                   </a>
                 </div>
               ))}
