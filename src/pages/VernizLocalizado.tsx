@@ -11,10 +11,24 @@ const features = [
 ];
 
 // Preços Couché 300g + Laminação Fosca + Verniz Localizado
-const pricingOptions = [
-  { qty: "250 unidades", price: "R$ 180" },
-  { qty: "500 unidades", price: "R$ 185" },
-  { qty: "1.000 unidades", price: "R$ 199", best: true },
+const pricingCategories = [
+  {
+    title: "Cantos Retos",
+    icon: "ri-square-line",
+    prices: [
+      { qty: "250 unidades", price: "R$ 180,00" },
+      { qty: "500 unidades", price: "R$ 185,00" },
+      { qty: "1.000 unidades", price: "R$ 199,00", best: true },
+    ],
+  },
+  {
+    title: "Com 4 ou 2 Cantos Arredondados",
+    icon: "ri-checkbox-blank-circle-line",
+    prices: [
+      { qty: "500 unidades", price: "R$ 225,00" },
+      { qty: "1.000 unidades", price: "R$ 245,00", best: true },
+    ],
+  },
 ];
 
 const benefits = [
@@ -136,61 +150,82 @@ function VernizLocalizado() {
 
           {/* Preços */}
           <div className="bg-[#F8F9FA] rounded-2xl p-6 sm:p-10 mb-12 sm:mb-20">
-            <div className="text-center mb-6 sm:mb-8">
+            <div className="text-center mb-8 sm:mb-10">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-2">
-                Couché 300g + Laminação Fosca + Verniz Localizado
+                Cartões de Visita em Couchê 300g
               </h3>
-              <p className="text-sm text-[#666]">
-                Aquele brilho que destaca a logo ou detalhes do cartão
+              <p className="text-base sm:text-lg text-[#555] mb-2">
+                Laminação Fosca + Verniz Localizado
+              </p>
+              <p className="text-sm text-[#666] mb-4">
+                Impressão Colorida Frente e Verso
+              </p>
+              <p className="text-sm text-[#FF6B35] font-medium italic">
+                Aquele brilho que destaca a logo ou alguns detalhes do cartão
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto mb-6">
-              {pricingOptions.map((item) => (
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mb-8">
+              {pricingCategories.map((category) => (
                 <div
-                  key={item.qty}
-                  className={`relative rounded-xl p-5 text-center transition-all duration-300 ${
-                    item.best
-                      ? "bg-[#FF6B35] text-white shadow-lg scale-105"
-                      : "bg-white border border-[#E5E5E5] hover:shadow-lg"
-                  }`}
+                  key={category.title}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden"
                 >
-                  {item.best && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1A1A1A] text-white text-xs font-bold px-3 py-1 rounded-full">
-                      MAIS VENDIDO
-                    </span>
-                  )}
-                  <p className={`text-sm mb-1 ${item.best ? "text-white/90 mt-2" : "text-[#555]"}`}>
-                    {item.qty}
-                  </p>
-                  <p className={`text-2xl sm:text-3xl font-extrabold ${item.best ? "text-white" : "text-[#1A1A1A]"}`}>
-                    {item.price}
-                  </p>
+                  <div className="bg-[#FF6B35] px-5 py-3 flex items-center justify-center gap-2">
+                    <i className={`${category.icon} text-xl text-white`}></i>
+                    <h4 className="text-base sm:text-lg font-bold text-white">
+                      {category.title}
+                    </h4>
+                  </div>
+                  <div className="p-4 sm:p-5">
+                    <div className="space-y-3">
+                      {category.prices.map((item) => (
+                        <div
+                          key={item.qty}
+                          className={`relative rounded-lg p-4 text-center transition-all duration-300 ${
+                            item.best
+                              ? "bg-[#FF6B35] text-white shadow-md"
+                              : "bg-gray-50 hover:bg-gray-100"
+                          }`}
+                        >
+                          {item.best && (
+                            <span className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#1A1A1A] text-white text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
+                              MAIS VENDIDO
+                            </span>
+                          )}
+                          <div className="flex items-center justify-between">
+                            <p className={`text-sm ${item.best ? "text-white/90 mt-1" : "text-[#666]"}`}>
+                              {item.qty}
+                            </p>
+                            <p className={`text-xl sm:text-2xl font-bold ${item.best ? "text-white" : "text-[#1A1A1A]"}`}>
+                              {item.price}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <a
+                      href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de fazer pedido de Cartão de Visita com Verniz Localizado - ${category.title}`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"
+                    >
+                      <i className="ri-whatsapp-line text-lg"></i>
+                      <span>Fazer Pedido pelo WhatsApp</span>
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-[#666] mb-6">
-              <div className="flex items-center gap-2">
-                <i className="ri-timer-line text-[#FF6B35]"></i>
-                <span>Prazo: 3 dias úteis</span>
+            <div className="flex flex-col items-center gap-3 text-sm text-[#666]">
+              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-lg font-medium">
+                <i className="ri-error-warning-line text-lg"></i>
+                <span>Não fracionamos impressão</span>
               </div>
-              <div className="flex items-center gap-2">
-                <i className="ri-information-line text-[#FF6B35]"></i>
-                <span>Quantidades por arte única</span>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de fazer pedido de Cartão de Visita Couché 300g com Laminação Fosca e Verniz Localizado")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"
-              >
-                <i className="ri-whatsapp-line text-lg"></i>
-                <span>Fazer Pedido pelo WhatsApp</span>
-              </a>
+              <p className="text-xs text-center text-[#888]">
+                Os valores são relacionados a impressão de 1 única arte Frente e Verso
+              </p>
             </div>
           </div>
 
