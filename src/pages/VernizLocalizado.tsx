@@ -10,6 +10,13 @@ const features = [
   { icon: "ri-shield-check-line", label: "Proteção Extra" },
 ];
 
+// Preços Couché 300g + Laminação Fosca + Verniz Localizado
+const pricingOptions = [
+  { qty: "250 unidades", price: "R$ 180" },
+  { qty: "500 unidades", price: "R$ 185" },
+  { qty: "1.000 unidades", price: "R$ 199", best: true },
+];
+
 const benefits = [
   {
     title: "Brilho Seletivo",
@@ -125,6 +132,66 @@ function VernizLocalizado() {
                 backgroundSize: "cover",
               }}
             ></div>
+          </div>
+
+          {/* Preços */}
+          <div className="bg-[#F8F9FA] rounded-2xl p-6 sm:p-10 mb-12 sm:mb-20">
+            <div className="text-center mb-6 sm:mb-8">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-2">
+                Couché 300g + Laminação Fosca + Verniz Localizado
+              </h3>
+              <p className="text-sm text-[#666]">
+                Aquele brilho que destaca a logo ou detalhes do cartão
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto mb-6">
+              {pricingOptions.map((item) => (
+                <div
+                  key={item.qty}
+                  className={`relative rounded-xl p-5 text-center transition-all duration-300 ${
+                    item.best
+                      ? "bg-[#FF6B35] text-white shadow-lg scale-105"
+                      : "bg-white border border-[#E5E5E5] hover:shadow-lg"
+                  }`}
+                >
+                  {item.best && (
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1A1A1A] text-white text-xs font-bold px-3 py-1 rounded-full">
+                      MAIS VENDIDO
+                    </span>
+                  )}
+                  <p className={`text-sm mb-1 ${item.best ? "text-white/90 mt-2" : "text-[#555]"}`}>
+                    {item.qty}
+                  </p>
+                  <p className={`text-2xl sm:text-3xl font-extrabold ${item.best ? "text-white" : "text-[#1A1A1A]"}`}>
+                    {item.price}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-[#666] mb-6">
+              <div className="flex items-center gap-2">
+                <i className="ri-timer-line text-[#FF6B35]"></i>
+                <span>Prazo: 3 dias úteis</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <i className="ri-information-line text-[#FF6B35]"></i>
+                <span>Quantidades por arte única</span>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de fazer pedido de Cartão de Visita Couché 300g com Laminação Fosca e Verniz Localizado")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"
+              >
+                <i className="ri-whatsapp-line text-lg"></i>
+                <span>Fazer Pedido pelo WhatsApp</span>
+              </a>
+            </div>
           </div>
 
           <div>
