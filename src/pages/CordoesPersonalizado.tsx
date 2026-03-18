@@ -8,6 +8,7 @@ const pricingCategories = [
   {
     title: "Argola e Jacaré",
     icon: "ri-links-line",
+    image: "/assets/cordao.png",
     prices: [
       { qty: "10 unid", price: "R$ 79,00" },
       { qty: "20 unid", price: "R$ 156,00" },
@@ -20,6 +21,7 @@ const pricingCategories = [
   {
     title: "Com 1 Mosquete",
     icon: "ri-attachment-line",
+    image: "/assets/cordao3.png",
     prices: [
       { qty: "10 unid", price: "R$ 99,00" },
       { qty: "20 unid", price: "R$ 198,00" },
@@ -32,6 +34,7 @@ const pricingCategories = [
   {
     title: "Com 2 Mosquetes",
     icon: "ri-attachment-2",
+    image: "/assets/cordao3.png",
     prices: [
       { qty: "10 unid", price: "R$ 119,00" },
       { qty: "20 unid", price: "R$ 238,00" },
@@ -44,6 +47,7 @@ const pricingCategories = [
   {
     title: "1 Mosquete + Trava de Segurança",
     icon: "ri-lock-line",
+    image: "/assets/cordao2.png",
     prices: [
       { qty: "10 unid", price: "R$ 119,00" },
       { qty: "20 unid", price: "R$ 238,00" },
@@ -241,6 +245,13 @@ function CordoesPersonalizado() {
                   </h3>
                 </div>
                 <div className="p-4 sm:p-6">
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={category.image}
+                      alt={category.title}
+                      className="h-24 sm:h-32 w-auto object-contain"
+                    />
+                  </div>
                   <div className="grid grid-cols-2 gap-3">
                     {category.prices.map((item) => (
                       <div
