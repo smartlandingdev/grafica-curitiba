@@ -15,6 +15,7 @@ const pricingCategories = [
   {
     title: "Cantos Retos",
     icon: "ri-square-line",
+    image: "/assets/produtos/verniz localizado quadrado.png",
     prices: [
       { qty: "250 unidades", price: "R$ 180,00" },
       { qty: "500 unidades", price: "R$ 185,00" },
@@ -24,6 +25,7 @@ const pricingCategories = [
   {
     title: "Com 4 ou 2 Cantos Arredondados",
     icon: "ri-checkbox-blank-circle-line",
+    image: "/assets/produtos/vernix localizado redondo.png",
     prices: [
       { qty: "500 unidades", price: "R$ 225,00" },
       { qty: "1.000 unidades", price: "R$ 245,00", best: true },
@@ -171,6 +173,14 @@ function VernizLocalizado() {
                   key={category.title}
                   className="bg-white rounded-xl shadow-lg overflow-hidden"
                 >
+                  {/* Imagem do produto */}
+                  <div className="h-48 sm:h-56 overflow-hidden bg-gray-100">
+                    <img
+                      src={category.image}
+                      alt={`Cartão de visita com verniz localizado - ${category.title}`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
                   <div className="bg-[#FF6B35] px-5 py-3 flex items-center justify-center gap-2">
                     <i className={`${category.icon} text-xl text-white`}></i>
                     <h4 className="text-base sm:text-lg font-bold text-white">
