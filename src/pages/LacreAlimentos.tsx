@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import lacreDeliveryImg from "../assets/produtos/lacre-delivery.jpeg";
 import { CTAButton } from "../components";
 
 const features = [
@@ -118,7 +119,7 @@ function LacreAlimentos() {
             <div
               className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
               style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop")`,
+                backgroundImage: `url("${lacreDeliveryImg}")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
@@ -152,6 +153,67 @@ function LacreAlimentos() {
                   </a>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 sm:py-20 bg-[#F5F5F5]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-8 sm:mb-12 text-center">
+            Preços
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1A1A1A] mb-2">
+                Rolo com 1000 Unidades
+              </h3>
+              <p className="text-2xl sm:text-3xl font-extrabold text-[#FF6B35] mb-4">
+                R$ 120,00
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de comprar Lacre de Alimentos - Rolo com 1000 Unidades por R$ 120,00")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20BD5A] transition-all duration-300 w-full"
+              >
+                <i className="ri-whatsapp-line text-xl"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
+            </div>
+            <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1A1A1A] mb-2">
+                Rolo com 2000 Unidades
+              </h3>
+              <p className="text-2xl sm:text-3xl font-extrabold text-[#FF6B35] mb-4">
+                R$ 210,00
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de comprar Lacre de Alimentos - Rolo com 2000 Unidades por R$ 210,00")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20BD5A] transition-all duration-300 w-full"
+              >
+                <i className="ri-whatsapp-line text-xl"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
+            </div>
+            <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1A1A1A] mb-2">
+                Rolo com 3000 Unidades
+              </h3>
+              <p className="text-2xl sm:text-3xl font-extrabold text-[#FF6B35] mb-4">
+                R$ 285,00
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de comprar Lacre de Alimentos - Rolo com 3000 Unidades por R$ 285,00")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20BD5A] transition-all duration-300 w-full"
+              >
+                <i className="ri-whatsapp-line text-xl"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
