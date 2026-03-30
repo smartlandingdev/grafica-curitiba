@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import { CTAButton } from "../components";
-import verniz from "../assets/produtos/verniz-localizado.jpeg";
+import verniz from "../assets/produtos/verniz-localizado-novo.jpeg";
 
 const features = [
   { icon: "ri-drop-line", label: "Verniz UV Localizado" },
@@ -160,6 +160,7 @@ function VernizLocalizado() {
               style={{
                 backgroundImage: `url(${verniz})`,
                 backgroundSize: "cover",
+                backgroundPosition: "55% center",
               }}
             ></div>
           </div>

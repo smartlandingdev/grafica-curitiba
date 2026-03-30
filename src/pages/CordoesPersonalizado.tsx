@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
-import cordaoPromoImg from "../assets/produtos/cordao-promo.jpeg";
+import cordaoPersonalizadoImg from "../assets/produtos/cordao-personalizado.png";
 import { CTAButton } from "../components";
 
 // Preços dos cordões
@@ -174,9 +174,9 @@ function CordoesPersonalizado() {
             </div>
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
               <img
-                src={cordaoPromoImg}
+                src={cordaoPersonalizadoImg}
                 alt="Cordões personalizados para crachá"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-left"
               />
             </div>
           </div>

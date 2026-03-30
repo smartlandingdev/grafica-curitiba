@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
-import cartaoVisitaImg from "../assets/produtos/cartao-visita.jpeg";
+import cartaoVisitaImg from "../assets/produtos/cartao-visita-novo.jpeg";
 import { CTAButton } from "../components";
 
 // Features Data

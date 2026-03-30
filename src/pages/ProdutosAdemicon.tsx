@@ -1,4 +1,11 @@
 import { Link } from "react-router-dom";
+import folderAdemiconImg from "../assets/produtos/folder-ademicon.png";
+import canetaClassicImg from "../assets/produtos/caneta-classic-ademicon.png";
+import canetaTouchImg from "../assets/produtos/caneta-touch-ademicon.png";
+import panfleto10x14Img from "../assets/produtos/panfleto-10x14-ademicon.png";
+import folder14x20Img from "../assets/produtos/folder-14x20-ademicon.png";
+import canecaAdemiconImg from "../assets/produtos/caneca-ademicon.png";
+import kitCrachaCordaoImg from "../assets/produtos/kit-cracha-cordao-ademicon.png";
 
 // Types
 interface PriceItem {
@@ -22,10 +29,10 @@ interface ProdutoAdemicon {
 const produtosAdemicon: ProdutoAdemicon[] = [
   {
     id: "panfleto-a6",
-    title: "Panfletos 10x14",
-    subtitle: "Tamanho A6 – 10x14 cm",
-    description: "Panfletos personalizados para consultores Ademicon. Formato compacto ideal para distribuição em eventos e atendimentos.",
-    image: "/assets/produtos/panfletos.jpeg",
+    title: "Panfletos 10x14 Personalizados para Consultores Ademicon",
+    subtitle: "Panfletos A6 (10x14 cm) ideais para prospecção, eventos e atendimento ao cliente",
+    description: "Panfletos 10x14 cm (formato A6) impressos em Papel Couche 90g já personalizados para consultores Ademicon. Compactos, práticos e com visual profissional, são ideais para distribuição em eventos, visitas comerciais e atendimentos presenciais. Produzidos com alta qualidade de impressão, ajudam a transmitir credibilidade e aumentar suas chances de conversão.",
+    image: panfleto10x14Img,
     prices: [
       { qty: "500 unidades", price: "R$ 165" },
       { qty: "1.000 unidades", price: "R$ 175", best: true, label: "melhor custo" },
@@ -36,10 +43,10 @@ const produtosAdemicon: ProdutoAdemicon[] = [
   },
   {
     id: "panfleto-a5",
-    title: "Panfletos 14x20",
-    subtitle: "Tamanho A5 – 14x20 cm",
-    description: "Panfletos com mais espaço para informações. Ideal para apresentar os serviços da Ademicon de forma detalhada.",
-    image: "/assets/produtos/panfletos.jpeg",
+    title: "Folder 14x20cm A5 Personalizado",
+    subtitle: "Material profissional para vendas de consórcio Ademicon",
+    description: "Folder 14x20cm (A5) com impressão frente e verso em papel Couché de alta qualidade. Design moderno com impacto visual para apresentação de planos de consórcio. Ideal para reuniões, visitas comerciais e captação de clientes.",
+    image: folder14x20Img,
     prices: [
       { qty: "500 unidades", price: "R$ 265" },
       { qty: "1.000 unidades", price: "R$ 275", best: true, label: "melhor custo" },
@@ -53,7 +60,7 @@ const produtosAdemicon: ProdutoAdemicon[] = [
     title: "Folder 20x21 com 1 Dobra",
     subtitle: "Material profissional para apresentações",
     description: "Folder profissional em Couchê 90g com impressão 4x4 cores. Tamanho 20x21cm aberto com acabamento de 1 dobra central. Produção em 4 a 5 dias úteis.",
-    image: "/assets/produtos/folder.jpeg",
+    image: folderAdemiconImg,
     specs: [
       "Material: Couchê 90g",
       "Cor: 4x4",
@@ -68,13 +75,57 @@ const produtosAdemicon: ProdutoAdemicon[] = [
     ],
   },
   {
-    id: "canetas",
+    id: "canetas-classic",
     title: "Canetas Metal Classic",
-    subtitle: "Brindes premium para sua equipe",
-    description: "Canetas de metal personalizadas com a marca Ademicon. Material premium que transmite profissionalismo e qualidade em cada atendimento.",
-    image: "/assets/produtos/caneta-ademicon.jpeg",
+    subtitle: "Gravação a Laser",
+    description: "Canetas de metal personalizadas com gravação a laser. Material premium que transmite profissionalismo e qualidade em cada atendimento.",
+    image: canetaClassicImg,
     prices: [
-      { qty: "100 unidades", price: "R$ 540,00" },
+      { qty: "10 unidades", price: "R$ 80,00" },
+      { qty: "20 unidades", price: "R$ 129,99" },
+      { qty: "50 unidades", price: "R$ 311,99" },
+      { qty: "100 unidades", price: "R$ 519,87", best: true, label: "mais vendido" },
+      { qty: "250 unidades", price: "R$ 1.283,75" },
+      { qty: "500 unidades", price: "R$ 2.535,00" },
+    ],
+  },
+  {
+    id: "canetas-touch",
+    title: "Canetas Metal Touch",
+    subtitle: "Com ponteira touch screen",
+    description: "Canetas de metal com ponteira touch para dispositivos móveis. Funcionalidade moderna com acabamento premium para sua equipe Ademicon.",
+    image: canetaTouchImg,
+    prices: [
+      { qty: "10 unidades", price: "R$ 84,90" },
+      { qty: "20 unidades", price: "R$ 155,90" },
+      { qty: "50 unidades", price: "R$ 357,90" },
+      { qty: "100 unidades", price: "R$ 699,90", best: true, label: "mais vendido" },
+      { qty: "250 unidades", price: "R$ 1.754,90" },
+      { qty: "500 unidades", price: "R$ 3.477,90" },
+      { qty: "1.000 unidades", price: "R$ 6.889,90" },
+    ],
+  },
+  {
+    id: "caneca",
+    title: "Caneca Personalizada Ademicon",
+    subtitle: "Brinde premium para clientes e equipe",
+    description: "Caneca de cerâmica personalizada com a marca Ademicon. Perfeita para presentear clientes especiais, parceiros ou fortalecer o espírito de equipe. Acabamento de alta qualidade e durabilidade.",
+    image: canecaAdemiconImg,
+    prices: [
+      { qty: "1 unidade", price: "R$ 35,00" },
+    ],
+  },
+  {
+    id: "kit-cracha-cordao",
+    title: "Kit Crachá + Cordão Ademicon",
+    subtitle: "Personalizado e profissional para sua equipe",
+    description: "Garanta mais profissionalismo e padronização com o Kit Crachá + Cordão Ademicon. Crachá com impressão nítida e acabamento resistente + cordão personalizado com mosquete em metal prateado. Ideal para licenciados, consultores, eventos, reuniões e atendimento ao cliente.",
+    image: kitCrachaCordaoImg,
+    prices: [
+      { qty: "1 kit", price: "R$ 45,00" },
+      { qty: "10 kits", price: "R$ 400,00", best: true, label: "melhor custo" },
+      { qty: "25 kits", price: "R$ 950,00" },
+      { qty: "50 kits", price: "R$ 1.800,00" },
     ],
   },
 ];
@@ -198,13 +249,11 @@ function ProdutosAdemicon() {
             {produtosAdemicon.map((produto, index) => (
               <div
                 key={produto.id}
-                className={`bg-gradient-to-br from-[#1A1A1A] to-[#2C2C2C] rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D4AF37]/20 hover:border-[#D4AF37]/50/40 transition-all duration-500 ${
-                  index % 2 === 0 ? "" : "lg:flex-row-reverse"
-                }`}
+                className="bg-gradient-to-br from-[#1A1A1A] to-[#2C2C2C] rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 transition-all duration-500"
               >
-                <div className={`grid lg:grid-cols-2 gap-0 ${index % 2 !== 0 ? "lg:[direction:rtl]" : ""}`}>
-                  {/* Image */}
-                  <div className={`relative h-[250px] sm:h-[350px] lg:h-[400px] ${index % 2 !== 0 ? "lg:[direction:ltr]" : ""}`}>
+                <div className={`grid lg:grid-cols-5 gap-0 ${index % 2 !== 0 ? "lg:[direction:rtl]" : ""}`}>
+                  {/* Image - 2 columns */}
+                  <div className={`relative h-[250px] sm:h-[300px] lg:h-auto lg:min-h-[400px] lg:col-span-2 ${index % 2 !== 0 ? "lg:[direction:ltr]" : ""}`}>
                     <div
                       className="absolute inset-0"
                       style={{
@@ -216,57 +265,58 @@ function ProdutosAdemicon() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-[#1A1A1A]"></div>
                   </div>
 
-                  {/* Content */}
-                  <div className={`p-6 sm:p-8 lg:p-10 flex flex-col justify-center ${index % 2 !== 0 ? "lg:[direction:ltr]" : ""}`}>
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2">
+                  {/* Content - 3 columns */}
+                  <div className={`lg:col-span-3 p-6 sm:p-8 ${index % 2 !== 0 ? "lg:[direction:ltr]" : ""}`}>
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">
                       {produto.title}
                     </h3>
-                    <p className="text-[#D4AF37] font-medium mb-4">{produto.subtitle}</p>
-                    <p className="text-sm sm:text-base text-white/70 mb-6 leading-relaxed">
+                    <p className="text-[#D4AF37] font-medium text-sm mb-3">{produto.subtitle}</p>
+                    <p className="text-sm text-white/70 mb-4 leading-relaxed line-clamp-3">
                       {produto.description}
                     </p>
 
-                    {/* Specs if available */}
-                    {produto.specs && (
-                      <div className="mb-6 space-y-2">
-                        {produto.specs.map((spec, i) => (
-                          <div key={i} className="flex items-center gap-2 text-sm text-white/60">
-                            <i className="ri-check-line text-[#D4AF37]"></i>
-                            <span>{spec}</span>
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                    {/* Layout with specs and prices side by side */}
+                    <div className={`grid ${produto.specs ? "md:grid-cols-2" : "grid-cols-1"} gap-4 mb-5`}>
+                      {/* Specs if available */}
+                      {produto.specs && (
+                        <div className="space-y-1.5">
+                          <h4 className="text-xs font-semibold text-white/50 uppercase tracking-wide mb-2">
+                            Especificações
+                          </h4>
+                          {produto.specs.map((spec, i) => (
+                            <div key={i} className="flex items-center gap-2 text-xs text-white/60">
+                              <i className="ri-check-line text-[#D4AF37] text-sm"></i>
+                              <span>{spec}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
 
-                    {/* Prices */}
-                    <div className="bg-[#0D0D0D]/50 rounded-xl p-4 sm:p-6 mb-6">
-                      <h4 className="text-sm font-semibold text-[#D4AF37] mb-4 uppercase tracking-wide">
-                        Tabela de Preços
-                      </h4>
-                      <div className="space-y-3">
-                        {produto.prices.map((item) => (
-                          <div
-                            key={item.qty}
-                            className={`flex justify-between items-center py-2 px-3 rounded-lg ${
-                              item.best
-                                ? "bg-[#D4AF37]/20 border border-[#D4AF37]/30"
-                                : "bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]/5"
-                            }`}
-                          >
-                            <span className={`text-sm ${item.best ? "text-[#D4AF37] font-medium" : "text-white/70"}`}>
-                              {item.best && <i className="ri-star-fill mr-2"></i>}
-                              {item.qty}
-                            </span>
-                            <div className="text-right">
+                      {/* Prices */}
+                      <div className="bg-[#0D0D0D]/50 rounded-xl p-4">
+                        <h4 className="text-xs font-semibold text-[#D4AF37] mb-3 uppercase tracking-wide">
+                          Tabela de Preços
+                        </h4>
+                        <div className={`grid ${produto.prices.length > 4 ? "grid-cols-2 gap-x-3 gap-y-2" : "grid-cols-1 gap-2"}`}>
+                          {produto.prices.map((item) => (
+                            <div
+                              key={item.qty}
+                              className={`flex justify-between items-center py-1.5 px-2.5 rounded-md text-xs ${
+                                item.best
+                                  ? "bg-[#D4AF37]/20 border border-[#D4AF37]/30"
+                                  : "bg-[#252525]/50"
+                              }`}
+                            >
+                              <span className={`${item.best ? "text-[#D4AF37] font-medium" : "text-white/70"}`}>
+                                {item.best && <i className="ri-star-fill mr-1 text-[10px]"></i>}
+                                {item.qty.replace(" unidades", "un").replace(" Unidades", "un")}
+                              </span>
                               <span className={`font-bold ${item.best ? "text-[#D4AF37]" : "text-white"}`}>
                                 {item.price}
                               </span>
-                              {item.best && item.label && (
-                                <span className="block text-xs text-[#D4AF37]/80">({item.label})</span>
-                              )}
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
                     </div>
 
@@ -275,9 +325,9 @@ function ProdutosAdemicon() {
                       href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Olá! Gostaria de fazer pedido de ${produto.title} para Ademicon.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#D4AF37] to-[#C9A227] text-[#0D0D0D] px-6 py-3 rounded-full text-sm sm:text-base font-bold hover:shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:scale-105 transition-all duration-300"
+                      className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#D4AF37] to-[#C9A227] text-[#0D0D0D] px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:scale-105 transition-all duration-300"
                     >
-                      <i className="ri-whatsapp-line text-lg"></i>
+                      <i className="ri-whatsapp-line text-base"></i>
                       <span>Fazer Pedido</span>
                     </a>
                   </div>
