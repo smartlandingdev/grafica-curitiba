@@ -77,10 +77,13 @@ function Couche90g() {
           backgroundPosition: "center center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
+        </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Couche 90g cm
+            Folder <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">10x14 cm</span>
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Impressão de Couche 90g cm personalizados para divulgação. Formato
@@ -90,7 +93,7 @@ function Couche90g() {
             href="https://wa.me/+554130240080?text=Gostaria%20de%20solicitar%20or%C3%A7amento%20para%20Folder%2010x14"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 bg-[#D4AF37] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
             id="btn-whatsapp-orcamento"
           >
             <span>Solicitar Orçamento</span>
@@ -99,7 +102,7 @@ function Couche90g() {
       </section>
 
       {/* Features Section */}
-      <section className="py-10 sm:py-16 bg-[#FFF4F0]">
+      <section className="py-10 sm:py-16 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
@@ -107,12 +110,12 @@ function Couche90g() {
                 key={feature.label}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.4)] mb-2 sm:mb-3">
                   <i
-                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                    className={`${feature.icon} text-xl sm:text-2xl text-[#0A0A0A]`}
                   ></i>
                 </div>
-                <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
+                <p className="text-[12px] sm:text-[15px] font-medium text-white">
                   {feature.label}
                 </p>
               </div>
@@ -122,25 +125,25 @@ function Couche90g() {
       </section>
 
       {/* Content Section */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
                 Couche 90g cm Personalizado
               </h2>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
                 OCouche 90g cm é o formato mais compacto e prático para
                 distribuição. Ideal para divulgação de produtos, serviços e
                 promoções em pontos de venda, eventos e ações de marketing
                 direto.
               </p>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
                 Com tamanho reduzido, esse formato é econômico e perfeito para
                 grandes tiragens. Pode ser impresso frente e verso com cores
                 vibrantes e alta definição.
               </p>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
                 Na Gráfica Curitiba, trabalhamos com diversas gramaturas de
                 papel couché para atender às necessidades do seu projeto.
                 Entrega rápida e preços especiais para grandes quantidades.
@@ -157,19 +160,19 @@ function Couche90g() {
           </div>
 
           <div>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-6 sm:mb-10 text-center">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Opções de Papel
             </h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
               {formatOptions.map((option) => (
                 <div
                   key={option.title}
-                  className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300 flex flex-col"
+                  className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] hover:border-[#D4AF37]/50 transition-all duration-300 flex flex-col"
                 >
-                  <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                  <h4 className="text-[14px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3">
                     {option.title}
                   </h4>
-                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed mb-3 flex-grow">
+                  <p className="text-[12px] sm:text-[14px] text-white/70 leading-relaxed mb-3 flex-grow">
                     {option.description}
                   </p>
                   <a
@@ -189,12 +192,12 @@ function Couche90g() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-20 bg-[#FFF4F0]">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
+          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
             Pronto para Divulgar Seu Negócio?
           </h2>
-          <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
+          <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para seus
             Couche 90g cm.
           </p>
@@ -202,7 +205,7 @@ function Couche90g() {
             href="https://wa.me/+554130240080?text=Gostaria%20de%20solicitar%20or%C3%A7amento%20para%20Folder%2010x14"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 bg-[#D4AF37] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
@@ -210,7 +213,7 @@ function Couche90g() {
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"
-              className="inline-flex items-center gap-2 text-[#FF6B35] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
+              className="inline-flex items-center gap-2 text-[#D4AF37] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
             >
               <i className="ri-arrow-left-line"></i>
               <span>Voltar para página inicial</span>

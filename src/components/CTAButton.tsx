@@ -35,13 +35,13 @@ interface CTAButtonProps {
  */
 const variantStyles: Record<CTAVariant, string> = {
   primary:
-    'bg-[#FF6B35] text-white shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105',
+    'bg-gradient-to-r from-[#D4AF37] to-[#C9A227] text-[#0D0D0D] shadow-[0_4px_16px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_24px_rgba(212,175,55,0.6)] hover:scale-105',
   secondary:
-    'bg-[#00A859] text-white shadow-[0_4px_16px_rgba(0,168,89,0.4)] hover:scale-105',
+    'bg-[#0D0D0D] text-white shadow-xl hover:scale-105',
   whatsapp:
     'bg-[#25D366] text-white shadow-[0_4px_16px_rgba(37,211,102,0.4)] hover:bg-[#20BD5A] hover:scale-105',
   outline:
-    'bg-transparent border-2 border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white',
+    'bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0D0D0D]',
 };
 
 /**

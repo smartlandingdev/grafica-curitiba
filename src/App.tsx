@@ -35,6 +35,7 @@ import FolderA4Dobras from "./pages/FolderA4Dobras";
 import AdesivoResinado from "./pages/AdesivoResinado";
 import AdesivoCascaOvo from "./pages/AdesivoCascaOvo";
 import AdesivoPapelVinil from "./pages/AdesivoPapelVinil";
+import ProdutosAdemicon from "./pages/ProdutosAdemicon";
 import cartao from "./assets/produtos/cartao-promo.jpeg";
 import folder from "./assets/produtos/panfletos-promo.jpeg";
 import cordao from "./assets/produtos/cordao-promo.jpeg";
@@ -69,7 +70,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
+        scrolled ? "bg-[#000000] shadow-[0_4px_20px_rgba(212,175,55,0.15)]" : "bg-[#000000]/95 backdrop-blur-sm"
       }`}
     >
       <div className="px-4 sm:px-6">
@@ -81,14 +82,14 @@ function Header({ scrolled }: { scrolled: boolean }) {
           >
             <img
               alt="Gráfica Curitiba Logo"
-              className="h-10 sm:h-14 w-auto"
-              src="logo.png"
+              className="h-12 sm:h-16 w-auto"
+              src="logo-luxo.png"
             />
             <div className="flex flex-col">
-              <span className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] leading-tight">
-                Impressão Gráfica Offset e Digital
+              <span className="text-[14px] sm:text-[18px] font-bold text-white leading-tight">
+                Impressão Gráfica <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">Premium</span>
               </span>
-              <span className="text-[11px] sm:text-[13px] text-[#666] font-medium">
+              <span className="text-[11px] sm:text-[13px] text-white/60 font-medium">
                 Entregamos em todo Brasil
               </span>
             </div>
@@ -101,10 +102,10 @@ function Header({ scrolled }: { scrolled: boolean }) {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-[14px] xl:text-[15px] font-medium text-[#333] hover:text-[#FF6B35] transition-colors relative group whitespace-nowrap cursor-pointer capitalize"
+                  className="text-[14px] xl:text-[15px] font-medium text-white/80 hover:text-[#D4AF37] transition-colors relative group whitespace-nowrap cursor-pointer capitalize"
                 >
                   {item.replace("-", " ")}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF6B35] group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#D4AF37] to-[#F4E4A6] group-hover:w-full transition-all duration-300"></span>
                 </button>
               ),
             )}
@@ -141,7 +142,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
-                    className="text-[15px] font-medium text-[#333] hover:text-[#FF6B35] transition-colors text-left cursor-pointer capitalize py-2"
+                    className="text-[15px] font-medium text-[#333] hover:text-[#D4AF37] transition-colors text-left cursor-pointer capitalize py-2"
                   >
                     {item.replace("-", " ")}
                   </button>
@@ -189,6 +190,12 @@ function WhatsAppFloat() {
 
 // Sidebar Menu Data
 const sidebarCategories = [
+  {
+    title: "Parceiros Exclusivos",
+    items: [
+      { label: "Produtos Ademicon", href: "/produtos-ademicon" },
+    ],
+  },
   {
     title: "Cartões de Visita",
     items: [
@@ -294,7 +301,7 @@ function Sidebar({
         />
       )}
       <aside
-        className={`fixed lg:sticky top-20 left-0 h-[calc(100vh-5rem)] bg-white border-r border-[#E5E5E5] overflow-y-auto z-30 transition-transform duration-300 w-[280px] sm:w-72 ${
+        className={`fixed lg:sticky top-20 left-0 h-[calc(100vh-5rem)] bg-gradient-to-b from-[#1A1A1A] to-[#252525] border-r border-[#D4AF37]/20 overflow-y-auto z-30 transition-transform duration-300 w-[280px] sm:w-72 ${
           isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         }`}
       >
@@ -303,10 +310,10 @@ function Sidebar({
           <Link
             to="/"
             onClick={onClose}
-            className="flex items-center gap-2 sm:gap-4 px-4 py-3 rounded-lg mb-2 transition-all cursor-pointer bg-[#FF6B35] text-white"
+            className="flex items-center gap-2 sm:gap-4 px-4 py-3 rounded-lg mb-2 transition-all cursor-pointer bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] shadow-[0_4px_15px_rgba(212,175,55,0.3)]"
           >
             <i className="ri-home-line text-lg"></i>
-            <span className="font-medium text-[15px]">Início</span>
+            <span className="font-bold text-[15px]">Início</span>
           </Link>
 
           {/* Categories */}
@@ -315,11 +322,11 @@ function Sidebar({
               <div key={category.title}>
                 <button
                   onClick={() => toggleCategory(category.title)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-left text-[#1A1A1A] font-semibold text-[14px] hover:bg-[#F5F5F5] rounded-lg transition-colors cursor-pointer"
+                  className="w-full flex items-center justify-between px-4 py-3 text-left text-white font-semibold text-[14px] hover:bg-[#D4AF37]/10 rounded-lg transition-colors cursor-pointer"
                 >
                   <span>{category.title}</span>
                   <i
-                    className={`ri-arrow-down-s-line text-lg transition-transform ${
+                    className={`ri-arrow-down-s-line text-lg text-[#D4AF37] transition-transform ${
                       openCategories.includes(category.title)
                         ? "rotate-180"
                         : ""
@@ -333,7 +340,7 @@ function Sidebar({
                         key={item.href}
                         to={item.href}
                         onClick={onClose}
-                        className="block px-4 py-2 rounded-lg text-[14px] transition-all cursor-pointer text-[#666] hover:bg-[#F9F9F9] hover:text-[#FF6B35]"
+                        className="block px-4 py-2 rounded-lg text-[14px] transition-all cursor-pointer text-white/60 hover:bg-[#D4AF37]/10 hover:text-[#D4AF37]"
                       >
                         {item.label}
                       </Link>
@@ -369,38 +376,45 @@ function Footer() {
   const { simpleUrl } = useWhatsApp();
 
   return (
-    <footer id="contato" className="bg-[#2C2C2C] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
+    <footer id="contato" className="relative bg-gradient-to-b from-[#1A1A1A] to-[#0D0D0D] text-white overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent"></div>
+        <div className="absolute top-20 right-10 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-32 h-32 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
           {/* Column 1 - Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3 mb-3 sm:mb-4">
               <img
                 alt="Gráfica Curitiba Logo"
-                className="h-10 sm:h-12 w-auto"
-                src="logo.png"
+                className="h-12 sm:h-14 w-auto"
+                src="logo-luxo.png"
               />
             </div>
-            <p className="text-[14px] sm:text-[15px] font-semibold mb-2">
-              Gráfica e Web Sites
+            <p className="text-[14px] sm:text-[15px] font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">
+              Impressão Gráfica Premium
             </p>
-            <p className="text-[12px] sm:text-[14px] text-[#B0B0B0] leading-relaxed">
-              Impressão gráfica profissional em Curitiba desde 2004. Qualidade e
+            <p className="text-[12px] sm:text-[14px] text-white/60 leading-relaxed">
+              Impressão gráfica profissional em Curitiba desde 2004. Qualidade premium e
               atendimento personalizado.
             </p>
           </div>
 
           {/* Column 2 - Contact */}
           <div>
-            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4">
+            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">
               Contato
             </h3>
             <div className="space-y-2 sm:space-y-3">
               <a
                 href="tel:+554130240080"
-                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer"
+                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-white/70 hover:text-[#D4AF37] transition-colors cursor-pointer"
               >
-                <i className="ri-phone-line text-base sm:text-lg"></i>
+                <i className="ri-phone-line text-base sm:text-lg text-[#D4AF37]"></i>
                 <span>(41) 3024-0080</span>
               </a>
               <a
@@ -414,9 +428,9 @@ function Footer() {
               </a>
               <a
                 href="mailto:curitibagrafica@gmail.com"
-                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-white transition-colors cursor-pointer break-all"
+                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-white/70 hover:text-[#D4AF37] transition-colors cursor-pointer break-all"
               >
-                <i className="ri-mail-line text-base sm:text-lg flex-shrink-0"></i>
+                <i className="ri-mail-line text-base sm:text-lg flex-shrink-0 text-[#D4AF37]"></i>
                 <span className="text-[11px] sm:text-[15px]">
                   curitibagrafica@gmail.com
                 </span>
@@ -426,12 +440,12 @@ function Footer() {
 
           {/* Column 3 - Location */}
           <div>
-            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4">
+            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">
               Endereço
             </h3>
-            <div className="space-y-2 sm:space-y-3 text-[13px] sm:text-[15px] text-[#D0D0D0]">
+            <div className="space-y-2 sm:space-y-3 text-[13px] sm:text-[15px] text-white/70">
               <div className="flex items-start gap-2 sm:gap-3">
-                <i className="ri-map-pin-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
+                <i className="ri-map-pin-line text-base sm:text-lg mt-0.5 flex-shrink-0 text-[#D4AF37]"></i>
                 <span>
                   Gráfica Curitiba Limitada
                   <br />
@@ -443,17 +457,17 @@ function Footer() {
                 </span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
-                <i className="ri-truck-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
-                <span className="text-[#25D366] font-medium">
+                <i className="ri-truck-line text-base sm:text-lg mt-0.5 flex-shrink-0 text-[#D4AF37]"></i>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] font-medium">
                   Atendemos todo o Brasil
                 </span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
-                <i className="ri-building-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
+                <i className="ri-building-line text-base sm:text-lg mt-0.5 flex-shrink-0 text-[#D4AF37]"></i>
                 <span>CNPJ 42.916.243/0001-14</span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
-                <i className="ri-time-line text-base sm:text-lg mt-0.5 flex-shrink-0"></i>
+                <i className="ri-time-line text-base sm:text-lg mt-0.5 flex-shrink-0 text-[#D4AF37]"></i>
                 <span>Seg a Sex: 8:30h às 18h</span>
               </div>
             </div>
@@ -461,7 +475,7 @@ function Footer() {
 
           {/* Column 4 - Social Media */}
           <div>
-            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4">
+            <h3 className="text-[14px] sm:text-[16px] font-bold mb-3 sm:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">
               Redes Sociais
             </h3>
             <div className="space-y-2 sm:space-y-3">
@@ -469,27 +483,27 @@ function Footer() {
                 href="https://www.instagram.com/graficacuritibaonline/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-[#E4405F] transition-colors cursor-pointer"
+                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-white/70 hover:text-[#D4AF37] transition-colors cursor-pointer"
               >
-                <i className="ri-instagram-line text-base sm:text-lg"></i>
+                <i className="ri-instagram-line text-base sm:text-lg text-[#D4AF37]"></i>
                 <span>@graficacuritibaonline</span>
               </a>
               <a
                 href="https://www.youtube.com/@graficacuritibaonline"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-[#FF0000] transition-colors cursor-pointer"
+                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-white/70 hover:text-[#D4AF37] transition-colors cursor-pointer"
               >
-                <i className="ri-youtube-line text-base sm:text-lg"></i>
+                <i className="ri-youtube-line text-base sm:text-lg text-[#D4AF37]"></i>
                 <span>@graficacuritibaonline</span>
               </a>
               <a
                 href="https://www.facebook.com/GraficaCuritiba2"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-[#D0D0D0] hover:text-[#1877F2] transition-colors cursor-pointer"
+                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-white/70 hover:text-[#D4AF37] transition-colors cursor-pointer"
               >
-                <i className="ri-facebook-circle-line text-base sm:text-lg"></i>
+                <i className="ri-facebook-circle-line text-base sm:text-lg text-[#D4AF37]"></i>
                 <span>GraficaCuritiba2</span>
               </a>
             </div>
@@ -498,11 +512,11 @@ function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#1A1A1A] py-4 sm:py-6">
+      <div className="relative bg-[#0A0A0A] py-4 sm:py-6 border-t border-[#D4AF37]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-center gap-2 text-[11px] sm:text-[13px] text-[#808080] text-center">
+          <div className="flex flex-col items-center justify-center gap-2 text-[11px] sm:text-[13px] text-white/50 text-center">
             <p>
-              © 2026 Gráfica Curitiba - Impressão Profissional | Todos os
+              © 2026 Gráfica Curitiba - Impressão <span className="text-[#D4AF37]">Premium</span> | Todos os
               direitos reservados
             </p>
             <p>
@@ -511,7 +525,7 @@ function Footer() {
                 href="https://www.smartlanding.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#FF6B35] hover:text-[#00A859] transition-colors cursor-pointer"
+                className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#F4E4A6] transition-all cursor-pointer"
               >
                 SmartLanding
               </a>
@@ -627,14 +641,14 @@ const testimonials = [
     name: "Carlos Mendes",
     role: "Diretor Comercial - Imobiliária Prime",
     initial: "C",
-    color: "bg-[#00A859]",
+    color: "bg-[#D4AF37]",
     text: "Excelente qualidade de impressão! Os cartões de visita ficaram perfeitos e a entrega foi super rápida. Recomendo muito a Gráfica Curitiba para quem busca profissionalismo.",
   },
   {
     name: "Juliana Santos",
     role: "Proprietária - Boutique Elegance",
     initial: "J",
-    color: "bg-[#FF6B35]",
+    color: "bg-[#D4AF37]",
     text: "Atendimento impecável via WhatsApp! Tiraram todas as minhas dúvidas rapidamente e o orçamento foi muito justo. Os folders para minha loja ficaram lindos.",
   },
   {
@@ -653,23 +667,58 @@ function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section id="hero" className="bg-[#f2ede4] pt-24 pb-10 sm:pt-20">
-        <div className="text-center mt-10 mb-2">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight px-2">
-            Gráfica em Curitiba com Impressão Profissional e Entrega Rápida em
-            todo brasil
+      <section id="hero" className="relative bg-gradient-to-br from-[#2C2C2C] via-[#1F1F1F] to-[#252525] pt-24 pb-14 sm:pt-20 overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Golden glow effects */}
+          <div className="absolute top-10 left-1/4 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          {/* Subtle golden lines */}
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
+          {/* Corner accents */}
+          <div className="absolute top-20 left-10 w-20 h-20 border-l-2 border-t-2 border-[#D4AF37]/20 rounded-tl-3xl"></div>
+          <div className="absolute top-20 right-10 w-20 h-20 border-r-2 border-t-2 border-[#D4AF37]/20 rounded-tr-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-20 h-20 border-l-2 border-b-2 border-[#D4AF37]/20 rounded-bl-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-20 h-20 border-r-2 border-b-2 border-[#D4AF37]/20 rounded-br-3xl"></div>
+        </div>
+
+        <div className="relative z-10 text-center mt-10 mb-2">
+          {/* Premium Badge */}
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#D4AF37]/20 via-[#F4D03F]/20 to-[#D4AF37]/20 border border-[#D4AF37]/50 rounded-full px-5 py-2.5 mb-6 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+            <i className="ri-vip-crown-2-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] via-[#D4AF37] to-[#B8860B] text-xl drop-shadow-[0_0_8px_rgba(212,175,55,0.8)]" style={{WebkitTextStroke: '0.5px #D4AF37'}}></i>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] via-[#D4AF37] to-[#F4E4A6] text-sm font-bold tracking-widest uppercase drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">Qualidade Premium</span>
+          </div>
+
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight px-4 max-w-4xl mx-auto">
+            Gráfica em Curitiba com Impressão{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] via-[#FBF5B7] to-[#AA771C] drop-shadow-[0_0_30px_rgba(212,175,55,0.8)]">Premium</span> e Entrega Rápida em
+            todo Brasil
           </h1>
-          <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-gray-500 text-xs sm:text-sm">
-            <div className="flex items-center gap-0.5 sm:gap-1">
-              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
-              <i className="ri-star-fill text-[#FFB800] text-base sm:text-lg"></i>
+
+          <p className="mt-4 text-white/60 text-sm sm:text-base max-w-2xl mx-auto px-4">
+            Materiais gráficos de alta qualidade com acabamento sofisticado para elevar a imagem da sua empresa
+          </p>
+
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <div className="flex items-center gap-1 bg-gradient-to-r from-[#D4AF37]/10 via-[#F4D03F]/15 to-[#D4AF37]/10 border border-[#D4AF37]/40 px-4 py-2 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+              <div className="flex items-center gap-0.5">
+                <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg drop-shadow-[0_0_4px_rgba(212,175,55,0.8)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg drop-shadow-[0_0_4px_rgba(212,175,55,0.8)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg drop-shadow-[0_0_4px_rgba(212,175,55,0.8)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg drop-shadow-[0_0_4px_rgba(212,175,55,0.8)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg drop-shadow-[0_0_4px_rgba(212,175,55,0.8)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+              </div>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] font-bold ml-2">4.9</span>
             </div>
-            <span className="font-medium">
-              Avaliação 4.9 no Google | +500 clientes
-            </span>
+            <div className="flex items-center gap-2 text-white/70 text-sm">
+              <i className="ri-verified-badge-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] drop-shadow-[0_0_6px_rgba(212,175,55,0.6)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+              <span>+500 clientes satisfeitos</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/70 text-sm">
+              <i className="ri-truck-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] drop-shadow-[0_0_6px_rgba(212,175,55,0.6)]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+              <span>Entrega todo Brasil</span>
+            </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -740,16 +789,24 @@ function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="servicos" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#2C2C2C] overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
+          <div className="absolute top-20 right-10 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-10 w-60 h-60 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-bold text-[#1A1A1A] mb-3 sm:mb-4 px-2">
-              Serviços de Impressão Gráfica em Curitiba
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-bold text-white mb-3 sm:mb-4 px-2">
+              Serviços de Impressão <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C] drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">Premium</span>
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666] max-w-3xl mx-auto leading-relaxed px-2">
-              <strong>Gráfica em Curitiba</strong> especializada em materiais
-              promocionais e corporativos de alta qualidade. Produção local com{" "}
-              <strong>entrega para todo o Brasil</strong>.
+            <p className="text-sm sm:text-base lg:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
+              Gráfica em Curitiba especializada em materiais
+              promocionais e corporativos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">alta qualidade</span>. Produção local com
+              entrega para todo o Brasil.
             </p>
           </div>
 
@@ -758,31 +815,33 @@ function HomePage() {
               <Link
                 key={service.title}
                 to={service.href}
-                className="group bg-white border border-[#E5E5E5] rounded-xl overflow-hidden hover:shadow-[0_12px_32px_rgba(255,107,53,0.15)] hover:border-[#FF6B35] transition-all duration-300 cursor-pointer"
+                className="group bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl overflow-hidden hover:shadow-[0_12px_32px_rgba(212,175,55,0.2)] hover:border-[#D4AF37]/50 transition-all duration-300 cursor-pointer"
               >
-                <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden">
+                <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden relative">
                   <img
                     alt={`${service.title} - Gráfica Curitiba`}
                     title={`${service.title} impressão digital em Curitiba`}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     src={service.image}
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent opacity-60"></div>
                 </div>
                 <div className="p-4 sm:p-6 lg:p-8">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#FFF4F0] rounded-lg mb-3 sm:mb-5 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-gradient-to-br from-[#D4AF37]/20 to-[#D4AF37]/5 border border-[#D4AF37]/30 rounded-lg mb-3 sm:mb-5 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300">
                     <i
-                      className={`${service.icon} text-xl sm:text-2xl text-[#FF6B35]`}
+                      className={`${service.icon} text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37]`}
+                      style={{WebkitTextStroke: '0.3px #D4AF37'}}
                     ></i>
                   </div>
-                  <h3 className="text-lg sm:text-xl lg:text-[24px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                  <h3 className="text-lg sm:text-xl lg:text-[24px] font-bold text-white mb-2 sm:mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-[#555] leading-relaxed mb-4 sm:mb-5 line-clamp-3">
+                  <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-white/60 leading-relaxed mb-4 sm:mb-5 line-clamp-3">
                     {service.description}
                   </p>
-                  <div className="inline-flex items-center gap-1 text-[13px] sm:text-[14px] text-[#FF6B35] font-semibold group-hover:gap-2 transition-all duration-300">
+                  <div className="inline-flex items-center gap-1 text-[13px] sm:text-[14px] text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] font-semibold group-hover:gap-2 transition-all duration-300">
                     Solicitar Orçamento
-                    <i className="ri-arrow-right-line"></i>
+                    <i className="ri-arrow-right-line text-[#D4AF37]"></i>
                   </div>
                 </div>
               </Link>
@@ -790,8 +849,8 @@ function HomePage() {
           </div>
 
           <div className="text-center mt-8 sm:mt-12">
-            <p className="text-[13px] sm:text-[15px] text-[#666] mb-4 sm:mb-6 px-2">
-              <strong>Atendimento em Curitiba e Região Metropolitana</strong> •
+            <p className="text-[13px] sm:text-[15px] text-white/60 mb-4 sm:mb-6 px-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">Atendimento em Curitiba e Região Metropolitana</span> •
               Entregamos para todo o Brasil
             </p>
 
@@ -799,7 +858,7 @@ function HomePage() {
               href={getUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[14px] sm:text-[15px] hover:bg-[#E5562A] transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[14px] sm:text-[15px] shadow-[0_4px_16px_rgba(212,175,55,0.3)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.5)] transition-all duration-300 cursor-pointer"
               id="btn-whatsapp-orcamento"
             >
               <i className="ri-whatsapp-line text-lg sm:text-xl"></i>
@@ -812,26 +871,37 @@ function HomePage() {
       {/* Differentials Section */}
       <section
         id="diferenciais"
-        className="py-12 sm:py-16 lg:py-20 bg-[#F8F9FA]"
+        className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#2C2C2C] via-[#232323] to-[#1F1F1F] overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
+          <div className="absolute top-1/2 left-5 w-32 h-32 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-1/4 w-48 h-48 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          {/* Corner accents */}
+          <div className="absolute top-10 right-10 w-16 h-16 border-r-2 border-t-2 border-[#D4AF37]/20 rounded-tr-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-16 h-16 border-l-2 border-b-2 border-[#D4AF37]/20 rounded-bl-2xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-2 text-center lg:text-left">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6 leading-tight">
-                Por Que Escolher a Gráfica Curitiba?
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[38px] font-bold text-white mb-4 sm:mb-6 leading-tight">
+                Por Que Escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C] drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">Gráfica Curitiba</span>?
               </h2>
-              <p className="text-sm sm:text-base lg:text-[17px] text-[#555] leading-relaxed mb-6 sm:mb-8">
+              <p className="text-sm sm:text-base lg:text-[17px] text-white/70 leading-relaxed mb-6 sm:mb-8">
                 Somos especialistas em impressão gráfica com atendimento
-                personalizado e produção local. Qualidade garantida para sua
+                personalizado e produção local. Qualidade premium garantida para sua
                 empresa.
               </p>
               <a
                 href={getUrl("especialista")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-2 border-[#00A859] text-[#00A859] px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-medium text-sm sm:text-base hover:bg-[#00A859] hover:text-white transition-all duration-300 cursor-pointer"
+                className="inline-flex items-center gap-2 border-2 border-[#D4AF37] text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-medium text-sm sm:text-base hover:bg-gradient-to-r hover:from-[#BF953F] hover:via-[#D4AF37] hover:to-[#AA771C] hover:text-[#0A0A0A] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all duration-300 cursor-pointer"
               >
-                <i className="ri-customer-service-2-line text-lg sm:text-xl"></i>
+                <i className="ri-customer-service-2-line text-lg sm:text-xl text-[#D4AF37]"></i>
                 Falar com Especialista
               </a>
             </div>
@@ -841,18 +911,19 @@ function HomePage() {
                 {differentials.map((item) => (
                   <div
                     key={item.title}
-                    className="bg-white rounded-lg p-4 sm:p-6 flex items-start gap-3 sm:gap-4 hover:shadow-lg transition-all duration-300"
+                    className="bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-lg p-4 sm:p-6 flex items-start gap-3 sm:gap-4 hover:border-[#D4AF37]/50 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] transition-all duration-300"
                   >
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#FFF4F0] rounded-full flex-shrink-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-gradient-to-br from-[#D4AF37]/20 to-[#D4AF37]/5 border border-[#D4AF37]/30 rounded-full flex-shrink-0 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
                       <i
-                        className={`${item.icon} text-xl sm:text-2xl text-[#FF6B35]`}
+                        className={`${item.icon} text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37]`}
+                        style={{WebkitTextStroke: '0.3px #D4AF37'}}
                       ></i>
                     </div>
                     <div className="min-w-0">
-                      <h3 className="text-[14px] sm:text-[16px] font-bold text-[#1A1A1A] mb-1">
+                      <h3 className="text-[14px] sm:text-[16px] font-bold text-white mb-1">
                         {item.title}
                       </h3>
-                      <p className="text-[12px] sm:text-[14px] text-[#666] leading-relaxed">
+                      <p className="text-[12px] sm:text-[14px] text-white/60 leading-relaxed">
                         {item.description}
                       </p>
                     </div>
@@ -867,14 +938,22 @@ function HomePage() {
       {/* How It Works Section */}
       <section
         id="como-funciona"
-        className="py-12 sm:py-16 lg:py-24 bg-[#FAFAFA]"
+        className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-b from-[#1F1F1F] via-[#252525] to-[#2C2C2C] overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
+          <div className="absolute top-1/3 right-10 w-52 h-52 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-20 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-bold text-[#1A1A1A] mb-2 sm:mb-4">
-              Como Funciona Nosso Processo
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-bold text-white mb-2 sm:mb-4">
+              Como Funciona Nosso <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C] drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">Processo</span>
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666]">
+            <p className="text-sm sm:text-base lg:text-lg text-white/70">
               Simples, rápido e profissional
             </p>
           </div>
@@ -883,21 +962,22 @@ function HomePage() {
             {howItWorks.map((item, index) => (
               <div key={item.step} className="relative">
                 {index < howItWorks.length - 1 && (
-                  <div className="hidden lg:block absolute top-10 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 border-t-2 border-dashed border-[#00A859]/30"></div>
+                  <div className="hidden lg:block absolute top-10 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 border-t-2 border-dashed border-[#D4AF37]/40"></div>
                 )}
                 <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-[#FF6B35] text-white text-lg sm:text-xl lg:text-2xl font-bold rounded-full mb-3 sm:mb-5 shadow-lg">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] text-lg sm:text-xl lg:text-2xl font-bold rounded-full mb-3 sm:mb-5 shadow-[0_4px_20px_rgba(212,175,55,0.5)]">
                     {item.step}
                   </div>
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center bg-[#FFF4F0] rounded-full mb-3 sm:mb-5">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center bg-gradient-to-br from-[#D4AF37]/15 to-[#D4AF37]/5 border border-[#D4AF37]/30 rounded-full mb-3 sm:mb-5 shadow-[0_0_20px_rgba(212,175,55,0.15)]">
                     <i
-                      className={`${item.icon} text-2xl sm:text-3xl lg:text-4xl text-[#FF6B35]`}
+                      className={`${item.icon} text-2xl sm:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37]`}
+                      style={{WebkitTextStroke: '0.3px #D4AF37'}}
                     ></i>
                   </div>
-                  <h3 className="text-[14px] sm:text-[16px] lg:text-[20px] font-bold text-[#1A1A1A] mb-1 sm:mb-3">
+                  <h3 className="text-[14px] sm:text-[16px] lg:text-[20px] font-bold text-white mb-1 sm:mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-[#666] max-w-[200px] sm:max-w-[240px]">
+                  <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-white/60 max-w-[200px] sm:max-w-[240px]">
                     {item.description}
                   </p>
                 </div>
@@ -910,7 +990,7 @@ function HomePage() {
               href={getUrl("iniciar-pedido")}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#FF6B35] text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
             >
               <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
               <span>Iniciar Meu Pedido</span>
@@ -920,13 +1000,21 @@ function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#F1F8F4] to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#2C2C2C] via-[#232323] to-[#1F1F1F] overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
+          <div className="absolute top-20 left-1/4 w-48 h-48 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-1/4 w-56 h-56 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[38px] font-bold text-[#1A1A1A] mb-2 sm:mb-4">
-              O Que Nossos Clientes Dizem
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[38px] font-bold text-white mb-2 sm:mb-4">
+              O Que Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Clientes</span> Dizem
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666]">
+            <p className="text-sm sm:text-base lg:text-lg text-white/70">
               Avaliações reais de empresas que confiam em nosso trabalho
             </p>
           </div>
@@ -935,33 +1023,33 @@ function HomePage() {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.name}
-                className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] transition-all duration-300"
+                className="bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl sm:rounded-2xl p-5 sm:p-8 hover:border-[#D4AF37]/40 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] transition-all duration-300"
               >
                 <div className="flex items-center gap-0.5 sm:gap-1 mb-3 sm:mb-4">
-                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
-                  <i className="ri-star-fill text-[#FFB800] text-lg sm:text-xl"></i>
+                  <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg sm:text-xl" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                  <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg sm:text-xl" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                  <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg sm:text-xl" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                  <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg sm:text-xl" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
+                  <i className="ri-star-fill text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-lg sm:text-xl" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
                 </div>
-                <p className="text-[14px] sm:text-[16px] text-[#333] leading-relaxed italic mb-4 sm:mb-6 relative">
-                  <span className="text-[#00A859] text-2xl sm:text-3xl absolute -top-1 sm:-top-2 -left-1">
+                <p className="text-[14px] sm:text-[16px] text-white/80 leading-relaxed italic mb-4 sm:mb-6 relative">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-2xl sm:text-3xl absolute -top-1 sm:-top-2 -left-1">
                     "
                   </span>
                   <span className="pl-3 sm:pl-4">{testimonial.text}</span>
-                  <span className="text-[#00A859] text-2xl sm:text-3xl">"</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37] text-2xl sm:text-3xl">"</span>
                 </p>
                 <div className="flex items-center gap-3">
                   <div
-                    className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full ${testimonial.color} text-white font-bold text-base sm:text-lg flex-shrink-0`}
+                    className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] font-bold text-base sm:text-lg flex-shrink-0 shadow-[0_0_15px_rgba(212,175,55,0.3)]"
                   >
                     {testimonial.initial}
                   </div>
                   <div className="min-w-0">
-                    <div className="text-[14px] sm:text-[15px] font-bold text-[#1A1A1A]">
+                    <div className="text-[14px] sm:text-[15px] font-bold text-white">
                       {testimonial.name}
                     </div>
-                    <div className="text-[11px] sm:text-[13px] text-[#666] truncate">
+                    <div className="text-[11px] sm:text-[13px] text-white/60 truncate">
                       {testimonial.role}
                     </div>
                   </div>
@@ -971,19 +1059,19 @@ function HomePage() {
           </div>
 
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 sm:gap-3 bg-white px-4 sm:px-6 py-3 sm:py-4 rounded-full shadow-md">
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/30 px-4 sm:px-6 py-3 sm:py-4 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.15)]">
               <div className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
-                <i className="ri-google-fill text-xl sm:text-2xl text-[#4285F4]"></i>
+                <i className="ri-google-fill text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37]" style={{WebkitTextStroke: '0.3px #D4AF37'}}></i>
               </div>
               <div className="text-left">
-                <div className="text-[13px] sm:text-[15px] font-bold text-[#1A1A1A]">
-                  Avaliação 4.9 de 5.0 no Google
+                <div className="text-[13px] sm:text-[15px] font-bold text-white">
+                  Avaliação <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">4.9</span> de 5.0 no Google
                 </div>
                 <a
                   href="https://www.google.com/search?q=gráfica+curitiba"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[11px] sm:text-[13px] text-[#00A859] hover:underline cursor-pointer"
+                  className="text-[11px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] hover:underline cursor-pointer"
                 >
                   Ver todas as avaliações →
                 </a>
@@ -994,19 +1082,21 @@ function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-[#00A859] to-[#00875A] overflow-hidden">
-        {/* Decorative Circles */}
-        <div className="absolute inset-0 opacity-10 hidden sm:block">
-          <div className="absolute top-10 left-10 w-24 sm:w-32 h-24 sm:h-32 border-4 border-white rounded-full"></div>
-          <div className="absolute bottom-10 right-10 w-32 sm:w-40 h-32 sm:h-40 border-4 border-white rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-20 sm:w-24 h-20 sm:h-24 border-4 border-white rounded-full"></div>
+      <section className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+          <div className="absolute top-10 left-10 w-24 sm:w-32 h-24 sm:h-32 border-2 border-[#0D0D0D]/20 rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-32 sm:w-40 h-32 sm:h-40 border-2 border-[#0D0D0D]/20 rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-20 sm:w-24 h-20 sm:h-24 border-2 border-[#0D0D0D]/20 rounded-full"></div>
+          <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Pronto para Imprimir com Qualidade Profissional?
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0D0D0D] mb-4 sm:mb-6 leading-tight">
+            Pronto para Imprimir com Qualidade Premium?
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-10 leading-relaxed max-w-2xl mx-auto px-2">
+          <p className="text-base sm:text-lg lg:text-xl text-[#0D0D0D]/80 mb-6 sm:mb-10 leading-relaxed max-w-2xl mx-auto px-2">
             Fale agora com nossa equipe e receba seu orçamento personalizado em
             minutos
           </p>
@@ -1014,13 +1104,13 @@ function HomePage() {
             href={getUrl("especialista")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-[#FF6B35] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_16px_rgba(255,107,53,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 bg-[#0D0D0D] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-xl hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span className="whitespace-nowrap">Falar com Especialista</span>
             <i className="ri-arrow-right-line text-lg sm:text-xl hidden sm:inline"></i>
           </a>
-          <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-white/70">
+          <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-[#0D0D0D]/70">
             Atendimento de segunda a sexta, 8h às 18h
           </p>
         </div>
@@ -1045,7 +1135,7 @@ function SidebarToggle({ onClick }: { onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className="fixed top-24 left-4 w-14 h-14 lg:hidden flex items-center justify-center bg-[#FF6B35] text-white rounded-full shadow-lg hover:bg-[#E5562A] transition-all duration-300 z-40 cursor-pointer"
+      className="fixed top-24 left-4 w-14 h-14 lg:hidden flex items-center justify-center bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_30px_rgba(212,175,55,0.6)] transition-all duration-300 z-40 cursor-pointer"
       aria-label="Abrir menu de produtos"
     >
       <i className="ri-menu-2-line text-2xl"></i>
@@ -1123,6 +1213,10 @@ function Layout() {
             <Route
               path="/cartoes-e-crachas/carteirinha-ciptea"
               element={<CarteirinhaCiptea />}
+            />
+            <Route
+              path="/produtos-ademicon"
+              element={<ProdutosAdemicon />}
             />
 
             {/*<Route path="/calendarios" element={<PaginaEmBreve />} />*/}

@@ -6,20 +6,20 @@ function PaginaEmBreve() {
   const { productName } = useWhatsApp();
 
   return (
-    <section className="min-h-[80vh] flex items-center justify-center pt-24 sm:pt-20 pb-10 bg-gradient-to-b from-[#FFF4F0] to-white">
+    <section className="min-h-[80vh] flex items-center justify-center pt-24 sm:pt-20 pb-10 bg-gradient-to-b from-[#FFFDF5] to-white">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Icon */}
-        <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-6 sm:mb-8 flex items-center justify-center bg-[#FF6B35] rounded-full shadow-lg">
+        <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-6 sm:mb-8 flex items-center justify-center bg-[#D4AF37] rounded-full shadow-lg">
           <i className="ri-customer-service-2-line text-4xl sm:text-5xl text-white"></i>
         </div>
 
         {/* Title */}
-        <h1 className="text-2xl sm:text-3xl lg:text-[42px] font-bold text-[#1A1A1A] mb-3 sm:mb-4 leading-tight px-2">
+        <h1 className="text-2xl sm:text-3xl lg:text-[42px] font-bold text-white mb-3 sm:mb-4 leading-tight px-2">
           {productName}
         </h1>
 
         {/* Description */}
-        <p className="text-base sm:text-lg lg:text-xl text-[#555] mb-6 sm:mb-8 leading-relaxed px-2">
+        <p className="text-base sm:text-lg lg:text-xl text-white/70 mb-6 sm:mb-8 leading-relaxed px-2">
           Quer saber mais sobre <strong>{productName.toLowerCase()}</strong>?
           Entre em contato conosco pelo WhatsApp e nossa equipe terá prazer em
           ajudá-lo!
@@ -37,11 +37,11 @@ function PaginaEmBreve() {
         </a>*/}
 
         {/* Phone Number */}
-        <p className="text-[#666] text-sm sm:text-base mb-6 sm:mb-8">
+        <p className="text-white/60 text-sm sm:text-base mb-6 sm:mb-8">
           Ou ligue:{" "}
           <a
             href="tel:+554130240080"
-            className="text-[#FF6B35] font-semibold hover:underline"
+            className="text-[#D4AF37] font-semibold hover:underline"
           >
             (41) 3024-0080
           </a>
@@ -50,7 +50,7 @@ function PaginaEmBreve() {
         {/* Back Link */}
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-[#FF6B35] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
+          className="inline-flex items-center gap-2 text-[#D4AF37] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
         >
           <i className="ri-arrow-left-line"></i>
           <span>Voltar para página inicial</span>

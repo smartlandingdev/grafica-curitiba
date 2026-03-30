@@ -115,10 +115,13 @@ function CarteirinhaCiptea() {
           backgroundPosition: "center center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
+        </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Impressão de Carteirinha CIPTEA em PVC Personalizada.
+            Carteirinha <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">CIPTEA</span> em PVC
           </h1>
           <h5 className="text-[15px] sm:text-2xl lg:text-[28px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
             Entrega em todo o Paraná
@@ -136,7 +139,7 @@ function CarteirinhaCiptea() {
       </section>
 
       {/* Features Section */}
-      <section className="py-10 sm:py-16 bg-[#FFF4F0]">
+      <section className="py-10 sm:py-16 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
@@ -144,12 +147,12 @@ function CarteirinhaCiptea() {
                 key={feature.label}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.4)] mb-2 sm:mb-3">
                   <i
-                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                    className={`${feature.icon} text-xl sm:text-2xl text-[#0A0A0A]`}
                   ></i>
                 </div>
-                <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
+                <p className="text-[12px] sm:text-[15px] font-medium text-white">
                   {feature.label}
                 </p>
               </div>
@@ -159,14 +162,14 @@ function CarteirinhaCiptea() {
       </section>
 
       {/* What is CIPTEA Section */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
                 O Que É a Carteirinha CIPTEA?
               </h2>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
                 A CIPTEA — Carteira de Identificação da Pessoa com Transtorno do
                 Espectro Autista — foi criada pela{" "}
                 <strong>Lei 13.977/2020</strong>, também conhecida como{" "}
@@ -174,13 +177,13 @@ function CarteirinhaCiptea() {
                 uma identificação oficial que facilita o acesso a direitos e
                 atendimento prioritário.
               </p>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
                 A carteirinha contém informações essenciais como nome completo,
                 foto, data de nascimento, dados do responsável e o CID
                 (Classificação Internacional de Doenças), sendo um documento
                 reconhecido nacionalmente.
               </p>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
                 Na Gráfica Curitiba, produzimos a Carteirinha CIPTEA em{" "}
                 <strong>PVC de alta qualidade</strong>, com impressão
                 profissional e acabamento durável. Atendemos famílias,
@@ -202,14 +205,14 @@ function CarteirinhaCiptea() {
           {/* Kits de Preço */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Kit 1 - Só o Cartão */}
-            <div className="bg-[#FFF4F0] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <p className="text-[#FF6B35] font-bold text-base sm:text-lg mb-2">
+            <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+              <p className="text-[#D4AF37] font-bold text-base sm:text-lg mb-2">
                 Cartão em PVC
               </p>
-              <p className="text-[#1A1A1A] font-extrabold text-2xl sm:text-3xl mb-3">
+              <p className="text-white font-extrabold text-2xl sm:text-3xl mb-3">
                 R$ 18,00
               </p>
-              <p className="text-[#666] text-sm mb-4">
+              <p className="text-white/60 text-sm mb-4">
                 Carteirinha CIPTEA em PVC resistente
               </p>
               <a
@@ -224,14 +227,14 @@ function CarteirinhaCiptea() {
             </div>
 
             {/* Kit 2 - Cartão + Capa */}
-            <div className="bg-[#FFF4F0] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <p className="text-[#FF6B35] font-bold text-base sm:text-lg mb-2">
+            <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+              <p className="text-[#D4AF37] font-bold text-base sm:text-lg mb-2">
                 Cartão + Capa Protetora
               </p>
-              <p className="text-[#1A1A1A] font-extrabold text-2xl sm:text-3xl mb-3">
+              <p className="text-white font-extrabold text-2xl sm:text-3xl mb-3">
                 R$ 20,00
               </p>
-              <p className="text-[#666] text-sm mb-4">
+              <p className="text-white/60 text-sm mb-4">
                 Cartão em PVC + Capa Protetora
               </p>
               <a
@@ -246,7 +249,7 @@ function CarteirinhaCiptea() {
             </div>
 
             {/* Kit 3 - Completo */}
-            <div className="bg-[#FF6B35] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 relative">
+            <div className="bg-[#D4AF37] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1A1A1A] text-white text-xs font-bold px-3 py-1 rounded-full">
                 MAIS VENDIDO
               </div>
@@ -263,7 +266,7 @@ function CarteirinhaCiptea() {
                 href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Kit Completo R$45,00")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#FF6B35] px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#FFF4F0] transition-all duration-300 w-full"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] text-[#D4AF37] px-4 py-2 rounded-lg text-sm font-bold hover:bg-gradient-to-b from-[#1A1A1A] to-[#252525] transition-all duration-300 w-full"
               >
                 <i className="ri-whatsapp-line text-lg"></i>
                 <span>Pedir pelo WhatsApp</span>
@@ -274,13 +277,13 @@ function CarteirinhaCiptea() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-12 sm:py-20 bg-[#F8F9FA]">
+      <section className="py-12 sm:py-20 bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-3 sm:mb-4">
               Benefícios da Carteirinha CIPTEA
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666] max-w-3xl mx-auto leading-relaxed px-2">
+            <p className="text-sm sm:text-base lg:text-lg text-white/60 max-w-3xl mx-auto leading-relaxed px-2">
               Conheça as principais vantagens de possuir a Carteira de
               Identificação da Pessoa com Transtorno do Espectro Autista.
             </p>
@@ -290,12 +293,12 @@ function CarteirinhaCiptea() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="bg-white rounded-lg p-4 sm:p-6 hover:shadow-lg transition-all duration-300"
+                className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-lg p-4 sm:p-6 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] transition-all duration-300"
               >
-                <h3 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                <h3 className="text-[14px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-[12px] sm:text-[14px] text-[#666] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-white/60 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -305,13 +308,13 @@ function CarteirinhaCiptea() {
       </section>
 
       {/* Personalization Process Section */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-3 sm:mb-4">
               Como Personalizar Sua Carteirinha CIPTEA
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666] max-w-3xl mx-auto leading-relaxed px-2">
+            <p className="text-sm sm:text-base lg:text-lg text-white/60 max-w-3xl mx-auto leading-relaxed px-2">
               Processo simples e rápido para você ter a carteirinha em mãos com
               qualidade profissional.
             </p>
@@ -321,18 +324,18 @@ function CarteirinhaCiptea() {
             {personalizationSteps.map((item) => (
               <div key={item.step} className="relative">
                 <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-[#FF6B35] text-white text-lg sm:text-xl lg:text-2xl font-bold rounded-full mb-3 sm:mb-5 shadow-lg">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-[#D4AF37] text-white text-lg sm:text-xl lg:text-2xl font-bold rounded-full mb-3 sm:mb-5 shadow-lg">
                     {item.step}
                   </div>
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center bg-[#FFF4F0] rounded-full mb-3 sm:mb-5">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-full mb-3 sm:mb-5">
                     <i
-                      className={`${item.icon} text-2xl sm:text-3xl lg:text-4xl text-[#FF6B35]`}
+                      className={`${item.icon} text-2xl sm:text-3xl lg:text-4xl text-[#D4AF37]`}
                     ></i>
                   </div>
-                  <h3 className="text-[14px] sm:text-[16px] lg:text-[20px] font-bold text-[#1A1A1A] mb-1 sm:mb-3">
+                  <h3 className="text-[14px] sm:text-[16px] lg:text-[20px] font-bold text-white mb-1 sm:mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-[#666] max-w-[200px] sm:max-w-[240px]">
+                  <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-white/60 max-w-[200px] sm:max-w-[240px]">
                     {item.description}
                   </p>
                 </div>
@@ -343,12 +346,12 @@ function CarteirinhaCiptea() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-20 bg-[#FFF4F0]">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
+          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
             Solicite Sua Carteirinha CIPTEA
           </h2>
-          <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
+          <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para a
             Carteirinha CIPTEA em PVC com impressão profissional em Curitiba.
           </p>
@@ -357,7 +360,7 @@ function CarteirinhaCiptea() {
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"
-              className="inline-flex items-center gap-2 text-[#FF6B35] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
+              className="inline-flex items-center gap-2 text-[#D4AF37] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
             >
               <i className="ri-arrow-left-line"></i>
               <span>Voltar para página inicial</span>

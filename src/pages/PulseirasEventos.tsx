@@ -133,10 +133,13 @@ function PulseirasEventos() {
           backgroundPosition: "center center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
+        </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Pulseiras para Eventos e Identificação em Curitiba
+            Pulseiras para <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Eventos</span>
           </h1>
           <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
             Pulseiras personalizadas para shows, festas, hospitais, empresas e
@@ -148,7 +151,7 @@ function PulseirasEventos() {
       </section>
 
       {/* Features Section */}
-      <section className="py-10 sm:py-16 bg-[#FFF4F0]">
+      <section className="py-10 sm:py-16 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
@@ -156,12 +159,12 @@ function PulseirasEventos() {
                 key={feature.label}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#FF6B35] rounded-full mb-2 sm:mb-3">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.4)] mb-2 sm:mb-3">
                   <i
-                    className={`${feature.icon} text-xl sm:text-2xl text-white`}
+                    className={`${feature.icon} text-xl sm:text-2xl text-[#0A0A0A]`}
                   ></i>
                 </div>
-                <p className="text-[12px] sm:text-[15px] font-medium text-[#1A1A1A]">
+                <p className="text-[12px] sm:text-[15px] font-medium text-white">
                   {feature.label}
                 </p>
               </div>
@@ -171,26 +174,26 @@ function PulseirasEventos() {
       </section>
 
       {/* Content Section */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
                 Pulseiras Personalizadas para Todos os Tipos de Evento
               </h2>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
                 Na Gráfica Curitiba, produzimos pulseiras personalizadas para
                 eventos de todos os portes. Desde shows e festivais até
                 hospitais e ambientes corporativos, oferecemos soluções
                 completas de identificação e controle de acesso.
               </p>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed mb-4 sm:mb-6">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
                 Trabalhamos com os melhores materiais do mercado — Tyvek e vinil
                 — para garantir resistência, conforto e segurança. Todas as
                 pulseiras são totalmente personalizáveis com sua marca, logo ou
                 informação necessária.
               </p>
-              <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed">
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
                 Atendemos pedidos de pequenas e grandes quantidades com produção
                 rápida em Curitiba e envio para todo o Brasil. Solicite seu
                 orçamento sem compromisso e receba atendimento especializado.
@@ -207,19 +210,19 @@ function PulseirasEventos() {
           </div>
 
           <div>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A] mb-6 sm:mb-10 text-center">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Tipos de Pulseiras Disponíveis
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto">
               {productOptions.map((option) => (
                 <div
                   key={option.title}
-                  className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300 flex flex-col"
+                  className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] hover:border-[#D4AF37]/50 transition-all duration-300 flex flex-col"
                 >
-                  <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                  <h4 className="text-[14px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3">
                     {option.title}
                   </h4>
-                  <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed mb-3 flex-grow">
+                  <p className="text-[12px] sm:text-[14px] text-white/70 leading-relaxed mb-3 flex-grow">
                     {option.description}
                   </p>
                   <a
@@ -239,13 +242,13 @@ function PulseirasEventos() {
       </section>
 
       {/* Applications Section */}
-      <section className="py-12 sm:py-20 bg-[#F8F9FA]">
+      <section className="py-12 sm:py-20 bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-3 sm:mb-4">
               Onde Utilizar Nossas Pulseiras
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666] max-w-3xl mx-auto leading-relaxed px-2">
+            <p className="text-sm sm:text-base lg:text-lg text-white/60 max-w-3xl mx-auto leading-relaxed px-2">
               Soluções de identificação e controle de acesso para os mais
               diversos segmentos e necessidades.
             </p>
@@ -255,18 +258,18 @@ function PulseirasEventos() {
             {applications.map((app) => (
               <div
                 key={app.title}
-                className="bg-white rounded-lg p-4 sm:p-6 flex items-start gap-3 sm:gap-4 hover:shadow-lg transition-all duration-300"
+                className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-lg p-4 sm:p-6 flex items-start gap-3 sm:gap-4 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] transition-all duration-300"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#FFF4F0] rounded-full flex-shrink-0">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-full flex-shrink-0">
                   <i
-                    className={`${app.icon} text-xl sm:text-2xl text-[#FF6B35]`}
+                    className={`${app.icon} text-xl sm:text-2xl text-[#D4AF37]`}
                   ></i>
                 </div>
                 <div className="min-w-0">
-                  <h3 className="text-[14px] sm:text-[16px] font-bold text-[#1A1A1A] mb-1">
+                  <h3 className="text-[14px] sm:text-[16px] font-bold text-white mb-1">
                     {app.title}
                   </h3>
-                  <p className="text-[12px] sm:text-[14px] text-[#666] leading-relaxed">
+                  <p className="text-[12px] sm:text-[14px] text-white/60 leading-relaxed">
                     {app.description}
                   </p>
                 </div>
@@ -277,13 +280,13 @@ function PulseirasEventos() {
       </section>
 
       {/* Differentials Section */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1A1A1A] mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-3 sm:mb-4">
               Por Que Escolher a Gráfica Curitiba?
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-[#666] max-w-3xl mx-auto leading-relaxed px-2">
+            <p className="text-sm sm:text-base lg:text-lg text-white/60 max-w-3xl mx-auto leading-relaxed px-2">
               Qualidade, agilidade e atendimento personalizado para entregar
               pulseiras perfeitas para o seu projeto.
             </p>
@@ -293,17 +296,17 @@ function PulseirasEventos() {
             {differentials.map((item) => (
               <div
                 key={item.title}
-                className="bg-white border border-[#E5E5E5] rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg hover:border-[#FF6B35] transition-all duration-300 text-center"
+                className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-[0_8px_24px_rgba(212,175,55,0.15)] hover:border-[#D4AF37]/50 transition-all duration-300 text-center"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#FFF4F0] rounded-full mx-auto mb-3 sm:mb-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-full mx-auto mb-3 sm:mb-4">
                   <i
-                    className={`${item.icon} text-xl sm:text-2xl text-[#FF6B35]`}
+                    className={`${item.icon} text-xl sm:text-2xl text-[#D4AF37]`}
                   ></i>
                 </div>
-                <h4 className="text-[14px] sm:text-[18px] font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                <h4 className="text-[14px] sm:text-[18px] font-bold text-white mb-2 sm:mb-3">
                   {item.title}
                 </h4>
-                <p className="text-[12px] sm:text-[14px] text-[#555] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-white/70 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -313,12 +316,12 @@ function PulseirasEventos() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-20 bg-[#FFF4F0]">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-[#1A1A1A] mb-4 sm:mb-6">
+          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
             Precisa de Pulseiras para Seu Evento?
           </h2>
-          <p className="text-sm sm:text-lg text-[#555] mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
+          <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
             Entre em contato agora e receba um orçamento personalizado para
             pulseiras de identificação e controle de acesso.
           </p>
@@ -326,7 +329,7 @@ function PulseirasEventos() {
           <div className="mt-6 sm:mt-8">
             <Link
               to="/"
-              className="inline-flex items-center gap-2 text-[#FF6B35] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
+              className="inline-flex items-center gap-2 text-[#D4AF37] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
             >
               <i className="ri-arrow-left-line"></i>
               <span>Voltar para página inicial</span>
