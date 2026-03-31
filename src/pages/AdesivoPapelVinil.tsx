@@ -29,6 +29,34 @@ const types = [
   },
 ];
 
+const precosPapel3x3 = [
+  { qtd: "100 unidades", valor: "R$ 81,50" },
+  { qtd: "250 unidades", valor: "R$ 142,50" },
+  { qtd: "500 unidades", valor: "R$ 189,50" },
+  { qtd: "1.000 unidades", valor: "R$ 299,50" },
+];
+
+const precosPapel5x5 = [
+  { qtd: "100 unidades", valor: "R$ 109,50" },
+  { qtd: "250 unidades", valor: "R$ 189,50" },
+  { qtd: "500 unidades", valor: "R$ 214,50" },
+  { qtd: "1.000 unidades", valor: "R$ 344,50" },
+];
+
+const precosVinil3x3 = [
+  { qtd: "100 unidades", valor: "R$ 91,50" },
+  { qtd: "250 unidades", valor: "R$ 152,50" },
+  { qtd: "500 unidades", valor: "R$ 199,50" },
+  { qtd: "1.000 unidades", valor: "R$ 309,50" },
+];
+
+const precosVinil5x5 = [
+  { qtd: "100 unidades", valor: "R$ 119,50" },
+  { qtd: "250 unidades", valor: "R$ 199,50" },
+  { qtd: "500 unidades", valor: "R$ 224,50" },
+  { qtd: "1.000 unidades", valor: "R$ 354,50" },
+];
+
 function AdesivoPapelVinil() {
   return (
     <>
@@ -59,12 +87,11 @@ function AdesivoPapelVinil() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div><div className="absolute inset-0 pointer-events-none"><div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Adesivos Papel e <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Vinil</span>
+            Adesivos de Papel e Vinil em Curitiba com <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Impressão Profissional</span>
           </h1>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Adesivos personalizados em papel e vinil. Impressão digital colorida
-            com recorte preciso para qualquer aplicação.
-          </p>
+          <h2 className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2 font-medium">
+            Produção rápida de adesivos personalizados em Curitiba — alta qualidade, resistência e ótimo custo-benefício
+          </h2>
           <CTAButton type="adesivoPapelVinil" size="lg" />
         </div>
       </section>
@@ -91,28 +118,98 @@ function AdesivoPapelVinil() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
+      {/* SEÇÃO DE PREÇOS */}
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-8 sm:mb-10 text-center">
+            Valores dos Adesivos
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8">
+            {/* Adesivo Papel 3x3 */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1F1F1F] border border-[#D4AF37]/30 rounded-xl p-5 sm:p-6">
+              <h4 className="text-lg sm:text-xl font-bold text-[#D4AF37] mb-4 flex items-center gap-2">
+                <i className="ri-price-tag-3-line"></i> Adesivo Papel – 3x3 cm
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                {precosPapel3x3.map((item) => (
+                  <div key={item.qtd} className="bg-[#1A1A1A] rounded-lg p-3 text-center">
+                    <p className="text-[#D4AF37] font-bold text-base sm:text-lg">{item.valor}</p>
+                    <p className="text-white/60 text-xs sm:text-sm">{item.qtd}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Adesivo Papel 5x5 */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1F1F1F] border border-[#D4AF37]/30 rounded-xl p-5 sm:p-6">
+              <h4 className="text-lg sm:text-xl font-bold text-[#D4AF37] mb-4 flex items-center gap-2">
+                <i className="ri-price-tag-3-line"></i> Adesivo Papel – 5x5 cm
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                {precosPapel5x5.map((item) => (
+                  <div key={item.qtd} className="bg-[#1A1A1A] rounded-lg p-3 text-center">
+                    <p className="text-[#D4AF37] font-bold text-base sm:text-lg">{item.valor}</p>
+                    <p className="text-white/60 text-xs sm:text-sm">{item.qtd}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Adesivo Vinil 3x3 */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1F1F1F] border border-[#25D366]/30 rounded-xl p-5 sm:p-6">
+              <h4 className="text-lg sm:text-xl font-bold text-[#25D366] mb-4 flex items-center gap-2">
+                <i className="ri-drop-line"></i> Adesivo Vinil – 3x3 cm
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                {precosVinil3x3.map((item) => (
+                  <div key={item.qtd} className="bg-[#1A1A1A] rounded-lg p-3 text-center">
+                    <p className="text-[#25D366] font-bold text-base sm:text-lg">{item.valor}</p>
+                    <p className="text-white/60 text-xs sm:text-sm">{item.qtd}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Adesivo Vinil 5x5 */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1F1F1F] border border-[#25D366]/30 rounded-xl p-5 sm:p-6">
+              <h4 className="text-lg sm:text-xl font-bold text-[#25D366] mb-4 flex items-center gap-2">
+                <i className="ri-drop-line"></i> Adesivo Vinil – 5x5 cm
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                {precosVinil5x5.map((item) => (
+                  <div key={item.qtd} className="bg-[#1A1A1A] rounded-lg p-3 text-center">
+                    <p className="text-[#25D366] font-bold text-base sm:text-lg">{item.valor}</p>
+                    <p className="text-white/60 text-xs sm:text-sm">{item.qtd}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-white/70 text-sm sm:text-base mb-6">
+            Para outros tamanhos de Adesivos entre em contato com nossa equipe.
+          </p>
+
+          <div className="text-center">
+            <CTAButton type="adesivoPapelVinil" size="lg" />
+          </div>
+        </div>
+      </section>
+
+      {/* SEÇÃO DE DESCRIÇÃO E FOTO */}
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] via-[#1F1F1F] to-[#252525]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
-                Adesivos para Todas as Necessidades
-              </h2>
+              <h3 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
+                Qualidade e Versatilidade
+              </h3>
               <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                Oferecemos adesivos em diversos materiais para atender cada
-                necessidade. Adesivos em papel são ideais para uso interno e
-                aplicações temporárias, enquanto os de vinil são perfeitos para
-                uso externo e longa duração.
-              </p>
-              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                Nossa impressão digital garante cores vibrantes e alta definição
-                em qualquer tamanho. O recorte pode ser em formatos padrão
-                (quadrado, retangular, circular) ou no contorno exato do design.
+                Produzimos adesivos de papel e vinil em Curitiba, ideais para embalagens, rótulos, brindes e divulgação da sua marca. Trabalhamos com materiais de alta qualidade, incluindo vinil resistente à água e papel adesivo com excelente acabamento.
               </p>
               <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
-                Ideal para etiquetas de produtos, sinalização, decoração,
-                brindes, identificação e muito mais. Atendemos desde pequenas
-                quantidades até grandes tiragens.
+                Oferecemos produção rápida, impressão profissional e opção de retirada local ou envio para toda Curitiba e região metropolitana.
               </p>
             </div>
             <div
