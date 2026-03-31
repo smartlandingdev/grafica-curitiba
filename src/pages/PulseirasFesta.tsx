@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
+import pulseirasImg from "../assets/produtos/pulseira-festa-personalizada.png";
 import { CTAButton } from "../components";
 
 const features = [
@@ -7,6 +8,15 @@ const features = [
   { icon: "ri-palette-line", label: "Cores Variadas" },
   { icon: "ri-shield-check-line", label: "Inviolável" },
   { icon: "ri-vip-crown-line", label: "Controle VIP" },
+];
+
+const precos = [
+  { qtd: "50 unidades", valor: "R$ 45,00" },
+  { qtd: "100 unidades", valor: "R$ 60,00" },
+  { qtd: "200 unidades", valor: "R$ 120,00" },
+  { qtd: "300 unidades", valor: "R$ 175,00" },
+  { qtd: "500 unidades", valor: "R$ 275,00" },
+  { qtd: "1000 unidades", valor: "R$ 445,00" },
 ];
 
 const types = [
@@ -48,7 +58,7 @@ function PulseirasFesta() {
       </script>
 
       <section
-        className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
+        className="relative min-h-[50vh] sm:min-h-[60vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
         style={{
           backgroundImage: `url("${fundosProdutosImg}")`,
           backgroundSize: "cover",
@@ -58,12 +68,11 @@ function PulseirasFesta() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div><div className="absolute inset-0 pointer-events-none"><div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Pulseiras de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Festas</span>
+            Pulseiras Personalizadas para Eventos com <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Entrega Rápida</span>
           </h1>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Pulseiras para controle de acesso em festas, shows e eventos.
-            Diversos materiais e cores com personalização da sua marca.
-          </p>
+          <h2 className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2 font-medium">
+            Compre direto da fábrica — impressão em preto, alta resistência e envio para todo o Brasil
+          </h2>
           <CTAButton type="pulseira" size="lg" />
         </div>
       </section>
@@ -90,37 +99,64 @@ function PulseirasFesta() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
+      {/* SEÇÃO DE PREÇOS - PRIMEIRO */}
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
+            Valores das Pulseiras
+          </h3>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-8">
+            {precos.map((item) => (
+              <div
+                key={item.qtd}
+                className="bg-gradient-to-b from-[#2A2A2A] to-[#1F1F1F] border border-[#D4AF37]/30 rounded-lg p-4 text-center hover:border-[#D4AF37]/60 transition-all duration-300"
+              >
+                <p className="text-[#D4AF37] font-bold text-lg sm:text-xl mb-1">{item.valor}</p>
+                <p className="text-white/70 text-xs sm:text-sm">{item.qtd}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
+            <div className="flex items-center gap-2 text-white/80">
+              <i className="ri-shopping-bag-line text-[#D4AF37] text-lg"></i>
+              <span className="text-sm sm:text-base"><strong>Pedido mínimo:</strong> 50 unidades da mesma cor</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/80">
+              <i className="ri-time-line text-[#D4AF37] text-lg"></i>
+              <span className="text-sm sm:text-base"><strong>Produção rápida:</strong> em até 48 horas</span>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <CTAButton type="pulseira" size="lg" />
+          </div>
+        </div>
+      </section>
+
+      {/* SEÇÃO DE DESCRIÇÃO E FOTO */}
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] via-[#1F1F1F] to-[#252525]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
-                Controle de Acesso para Seu Evento
-              </h2>
+              <h3 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
+                Qualidade e Entrega Rápida
+              </h3>
               <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                As pulseiras de identificação são a solução mais prática e
-                segura para controle de acesso em festas, shows, baladas e
-                eventos. Fáceis de colocar e impossíveis de remover sem romper.
-              </p>
-              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                Oferecemos pulseiras em Tyvek (papel sintético resistente à
-                água), vinil (ideal para eventos de múltiplos dias) e opções
-                holográficas para maior segurança contra falsificações.
+                Produzimos pulseiras personalizadas em Curitiba com alta qualidade e entrega rápida para eventos, festas e empresas. Trabalhamos com pulseiras em Tyvek e vinil, com impressão em preto, garantindo excelente custo-benefício e resistência.
               </p>
               <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
-                Personalize com o nome do evento, data, logo e cores da sua
-                marca. Trabalhamos com pedidos de qualquer quantidade, desde
-                pequenas festas até grandes festivais.
+                Atendemos toda Curitiba e região metropolitana, com opção de retirada ou envio ágil. Solicite agora seu orçamento e receba atendimento imediato.
               </p>
             </div>
-            <div
-              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-              style={{
-                backgroundImage: `url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
-              }}
-            ></div>
+            <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]">
+              <img
+                src={pulseirasImg}
+                alt="Pulseiras personalizadas para eventos"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div>

@@ -39,7 +39,7 @@ import ProdutosAdemicon from "./pages/ProdutosAdemicon";
 import cartao from "./assets/produtos/cartao-promo.jpeg";
 import folder from "./assets/produtos/panfletos-promo.jpeg";
 import cordao from "./assets/produtos/cordao-promo.jpeg";
-import imagemPromocao from "./assets/produtos/imagem-promoção.png";
+import imagemPromocao from "./assets/capa-grafica-curitiba.png";
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -721,13 +721,13 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Product Showcase */}
           {/* Desktop: imagem combinada com áreas clicáveis sobrepostas */}
           <div className="hidden sm:block relative rounded-2xl overflow-hidden shadow-md">
             <img
               src={imagemPromocao}
-              alt="Ofertas Especiais"
+              alt="Gráfica Curitiba - Materiais Gráficos Premium"
               className="w-full object-contain"
             />
             {/* Overlay: metade esquerda → Cartão de Visita */}

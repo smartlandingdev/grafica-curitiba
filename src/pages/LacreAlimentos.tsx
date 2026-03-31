@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
-import lacreDeliveryImg from "../assets/produtos/lacre-delivery.jpeg";
+import lacreDeliveryImg from "../assets/produtos/lacre-delivery-novo.png";
 import { CTAButton } from "../components";
 
 const features = [
@@ -59,12 +59,11 @@ function LacreAlimentos() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div><div className="absolute inset-0 pointer-events-none"><div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Lacre de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Alimentos</span>
+            Lacres de Segurança para Delivery em Curitiba com <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">Produção Rápida</span>
           </h1>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2">
-            Lacres personalizados para segurança alimentar. Ideal para delivery,
-            restaurantes e food service com impressão da sua marca.
-          </p>
+          <h2 className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2 font-medium">
+            Proteja seus pedidos com lacres invioláveis personalizados — mais segurança, mais confiança e entrega imediata em Curitiba
+          </h2>
           <CTAButton type="lacre" size="lg" />
         </div>
       </section>
@@ -95,25 +94,14 @@ function LacreAlimentos() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
-                Segurança e Profissionalismo no Delivery
-              </h2>
+              <h3 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
+                Segurança e Confiança no Delivery
+              </h3>
               <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                Os lacres de alimentos são essenciais para garantir a segurança
-                das suas embalagens durante o transporte. Eles mostram ao
-                cliente que o produto não foi violado, transmitindo confiança e
-                profissionalismo.
-              </p>
-              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                Nossos lacres são fabricados com adesivo de alta aderência que
-                rompe ao tentar remover, garantindo inviolabilidade.
-                Personalizamos com sua logo, cores e até informações como
-                telefone e redes sociais.
+                Produzimos lacres de segurança para delivery em Curitiba, ideais para marmitas, sacolas e embalagens. Nossos adesivos invioláveis personalizados garantem que o pedido chegue intacto ao cliente, aumentando a confiança no seu delivery.
               </p>
               <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
-                Atendemos restaurantes, lanchonetes, pizzarias, confeitarias e
-                qualquer estabelecimento que trabalhe com delivery ou embalagens
-                lacradas.
+                Trabalhamos com produção rápida, impressão de alta qualidade e opção de retirada local ou envio imediato para toda Curitiba e região metropolitana.
               </p>
             </div>
             <div
@@ -121,7 +109,7 @@ function LacreAlimentos() {
               style={{
                 backgroundImage: `url("${lacreDeliveryImg}")`,
                 backgroundSize: "cover",
-                backgroundPosition: "center center",
+                backgroundPosition: "left center",
               }}
             ></div>
           </div>

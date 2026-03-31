@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
-import pulseiras from "../assets/produtos/pulseiras.jpg";
+import pulseiras from "../assets/produtos/pulseira-festa-personalizada.png";
 import { CTAButton } from "../components";
 
 // Features Data
