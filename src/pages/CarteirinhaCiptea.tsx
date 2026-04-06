@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
-import { CTAButton } from "../components";
 import ciptea from "../assets/produtos/ciptea.jpg";
 
 // Features Data
@@ -121,20 +120,11 @@ function CarteirinhaCiptea() {
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Carteirinha <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">CIPTEA</span> em PVC
+            Impressão de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">CIPTEA</span> em PVC | Carteira Autista Personalizada Curitiba
           </h1>
-          <h5 className="text-[15px] sm:text-2xl lg:text-[28px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Entrega em todo o Paraná
-          </h5>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
-            Facilite a identificação com carteirinha CIPTEA em PVC resistente e
-            profissional. Acompanha cordão. Ideal para escolas, passeios e
-            atendimento prioritário. Produção rápida em até 48h e com Envio para
-            todo Paraná.
+          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-2">
+            Transforme sua CIPTEA digital em cartão resistente e profissional em até 48h
           </p>
-          <div className="block">
-            <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
-          </div>
         </div>
       </section>
 
@@ -161,48 +151,9 @@ function CarteirinhaCiptea() {
         </div>
       </section>
 
-      {/* What is CIPTEA Section */}
+      {/* Kits de Preço */}
       <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
-            <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
-                O Que É a Carteirinha CIPTEA?
-              </h2>
-              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                A CIPTEA — Carteira de Identificação da Pessoa com Transtorno do
-                Espectro Autista — foi criada pela{" "}
-                <strong>Lei 13.977/2020</strong>, também conhecida como{" "}
-                <strong>Lei Romeo Mion</strong>. Ela garante à pessoa autista
-                uma identificação oficial que facilita o acesso a direitos e
-                atendimento prioritário.
-              </p>
-              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
-                A carteirinha contém informações essenciais como nome completo,
-                foto, data de nascimento, dados do responsável e o CID
-                (Classificação Internacional de Doenças), sendo um documento
-                reconhecido nacionalmente.
-              </p>
-              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
-                Na Gráfica Curitiba, produzimos a Carteirinha CIPTEA em{" "}
-                <strong>PVC de alta qualidade</strong>, com impressão
-                profissional e acabamento durável. Atendemos famílias,
-                associações e órgãos públicos em Curitiba e em todo o Brasil.
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <div
-                className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
-                style={{
-                  backgroundImage: `url("${ciptea}")`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center center",
-                }}
-              ></div>
-            </div>
-          </div>
-
-          {/* Kits de Preço */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Kit 1 - Só o Cartão */}
             <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
@@ -271,6 +222,38 @@ function CarteirinhaCiptea() {
                 <i className="ri-whatsapp-line text-lg"></i>
                 <span>Pedir pelo WhatsApp</span>
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What is CIPTEA Section */}
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
+                O Que É a Carteirinha CIPTEA?
+              </h2>
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
+                Transforme sua CIPTEA (Carteira de Identificação da Pessoa com Transtorno do Espectro Autista) em um cartão PVC resistente, durável e prático para o dia a dia.
+              </p>
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed mb-4 sm:mb-6">
+                Na Gráfica Curitiba, você pode solicitar a impressão da CIPTEA em PVC, garantindo mais segurança, organização e facilidade no uso em escolas, filas preferenciais, viagens e atendimentos.
+              </p>
+              <p className="text-[14px] sm:text-[16px] text-white/70 leading-relaxed">
+                Diferente do papel, o cartão em PVC não rasga, não amassa e possui acabamento profissional, ideal para quem precisa utilizar a carteira com frequência.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <div
+                className="rounded-xl sm:rounded-2xl overflow-hidden shadow-xl h-[250px] sm:h-[350px] lg:h-[400px]"
+                style={{
+                  backgroundImage: `url("${ciptea}")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center center",
+                }}
+              ></div>
             </div>
           </div>
         </div>
@@ -345,27 +328,16 @@ function CarteirinhaCiptea() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Back Link Section */}
       <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
-            Solicite Sua Carteirinha CIPTEA
-          </h2>
-          <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-10 max-w-2xl mx-auto px-2">
-            Entre em contato agora e receba um orçamento personalizado para a
-            Carteirinha CIPTEA em PVC com impressão profissional em Curitiba.
-          </p>
-          <CTAButton type="ciptea" size="lg" id="btn-whatsapp-orcamento" />
-
-          <div className="mt-6 sm:mt-8">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-[#D4AF37] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
-            >
-              <i className="ri-arrow-left-line"></i>
-              <span>Voltar para página inicial</span>
-            </Link>
-          </div>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-[#D4AF37] font-medium text-sm sm:text-base hover:gap-3 transition-all duration-300 cursor-pointer"
+          >
+            <i className="ri-arrow-left-line"></i>
+            <span>Voltar para página inicial</span>
+          </Link>
         </div>
       </section>
     </>
