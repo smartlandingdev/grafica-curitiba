@@ -36,6 +36,7 @@ import AdesivoResinado from "./pages/AdesivoResinado";
 import AdesivoCascaOvo from "./pages/AdesivoCascaOvo";
 import AdesivoPapelVinil from "./pages/AdesivoPapelVinil";
 import ProdutosAdemicon from "./pages/ProdutosAdemicon";
+import ProdutosIgreen from "./pages/ProdutosIgreen";
 import cartao from "./assets/produtos/cartao-promo.jpeg";
 import folder from "./assets/produtos/panfletos-promo.jpeg";
 import cordao from "./assets/produtos/cordao-promo.jpeg";
@@ -194,6 +195,7 @@ const sidebarCategories = [
     title: "Parceiros Exclusivos",
     items: [
       { label: "Produtos Ademicon", href: "/produtos-ademicon" },
+      { label: "Produtos Igreen", href: "/produtos-igreen" },
     ],
   },
   {
@@ -1217,6 +1219,10 @@ function Layout() {
             <Route
               path="/produtos-ademicon"
               element={<ProdutosAdemicon />}
+            />
+            <Route
+              path="/produtos-igreen"
+              element={<ProdutosIgreen />}
             />
 
             {/*<Route path="/calendarios" element={<PaginaEmBreve />} />*/}
