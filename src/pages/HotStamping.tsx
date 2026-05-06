@@ -171,7 +171,7 @@ function HotStamping() {
                       />
                     </div>
                   )}
-                  <div className="p-6 sm:p-8">
+                  <div className="p-4 sm:p-6 lg:p-8">
                   <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">
                     {product.title}
                   </h4>
@@ -186,9 +186,9 @@ function HotStamping() {
                     {product.prices.map((item) => (
                       <div
                         key={item.qty}
-                        className="flex items-center justify-between bg-[#1A1A1A]/50 border border-[#D4AF37]/10 rounded-lg p-3 sm:p-4"
+                        className="flex flex-col sm:flex-row items-start sm:items-center gap-2 bg-[#1A1A1A]/50 border border-[#D4AF37]/10 rounded-lg p-3 sm:p-4"
                       >
-                        <div>
+                        <div className="flex-1">
                           <p className="text-[13px] sm:text-[15px] text-white font-medium">
                             {item.qty}
                           </p>

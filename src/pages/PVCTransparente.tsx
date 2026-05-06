@@ -71,7 +71,7 @@ function PVCTransparente() {
 
       <section className="py-10 sm:py-16 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-4 lg:gap-6">
             {features.map((feature) => (
               <div
                 key={feature.label}
@@ -129,7 +129,7 @@ function PVCTransparente() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Vantagens do PVC Transparente
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               {benefits.map((benefit) => (
                 <div
                   key={benefit.title}

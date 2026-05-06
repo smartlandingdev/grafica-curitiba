@@ -154,13 +154,13 @@ function CarteirinhaCiptea() {
       {/* Kits de Preço */}
       <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Kit 1 - Só o Cartão */}
-            <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
               <p className="text-[#D4AF37] font-bold text-base sm:text-lg mb-2">
                 Cartão em PVC
               </p>
-              <p className="text-white font-extrabold text-2xl sm:text-3xl mb-3">
+              <p className="text-white font-extrabold text-xl sm:text-2xl lg:text-3xl mb-3">
                 R$ 18,00
               </p>
               <p className="text-white/60 text-sm mb-4">
@@ -178,11 +178,11 @@ function CarteirinhaCiptea() {
             </div>
 
             {/* Kit 2 - Cartão + Capa */}
-            <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-b from-[#1A1A1A] to-[#252525] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
               <p className="text-[#D4AF37] font-bold text-base sm:text-lg mb-2">
                 Cartão + Capa Protetora
               </p>
-              <p className="text-white font-extrabold text-2xl sm:text-3xl mb-3">
+              <p className="text-white font-extrabold text-xl sm:text-2xl lg:text-3xl mb-3">
                 R$ 20,00
               </p>
               <p className="text-white/60 text-sm mb-4">
@@ -200,14 +200,14 @@ function CarteirinhaCiptea() {
             </div>
 
             {/* Kit 3 - Completo */}
-            <div className="bg-[#D4AF37] rounded-xl sm:rounded-2xl px-6 py-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 relative">
+            <div className="bg-[#D4AF37] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1A1A1A] text-white text-xs font-bold px-3 py-1 rounded-full">
                 MAIS VENDIDO
               </div>
               <p className="text-white font-bold text-base sm:text-lg mb-2 mt-2">
                 Kit Completo
               </p>
-              <p className="text-white font-extrabold text-2xl sm:text-3xl mb-3">
+              <p className="text-white font-extrabold text-xl sm:text-2xl lg:text-3xl mb-3">
                 R$ 45,00
               </p>
               <p className="text-white/90 text-sm mb-4">

@@ -77,7 +77,7 @@ https://automotivo.kapazi.com.br/?cupom=Rafaelgarcia10"
                     className={`${feature.icon} text-xl sm:text-2xl text-[#0A0A0A]`}
                   ></i>
                 </div>
-                <p className="text-[12px] sm:text-[15px] font-medium text-white">
+                <p className="text-[13px] sm:text-[15px] font-medium text-white">
                   {feature.label}
                 </p>
               </div>

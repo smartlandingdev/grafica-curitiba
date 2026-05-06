@@ -127,7 +127,7 @@ function LixoCar() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Vantagens do LixoCar
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               {benefits.map((benefit) => (
                 <div
                   key={benefit.title}

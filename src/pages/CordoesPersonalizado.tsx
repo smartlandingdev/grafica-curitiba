@@ -185,7 +185,7 @@ function CordoesPersonalizado() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Tipos de Cordões Disponíveis
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               {types.map((type) => (
                 <div
                   key={type.title}
@@ -238,7 +238,7 @@ function CordoesPersonalizado() {
                 key={category.title}
                 className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-2xl shadow-lg overflow-hidden"
               >
-                <div className="bg-[#D4AF37] px-6 py-4 flex items-center gap-3">
+                <div className="bg-[#D4AF37] px-4 sm:px-6 py-3 sm:py-4 flex items-center gap-3">
                   <i className={`${category.icon} text-2xl text-white`}></i>
                   <h3 className="text-lg sm:text-xl font-bold text-white">
                     {category.title}

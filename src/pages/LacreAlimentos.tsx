@@ -151,8 +151,8 @@ function LacreAlimentos() {
           <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-white mb-8 sm:mb-12 text-center">
             Preços
           </h2>
-          <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
-            <div className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-xl p-4 sm:p-6 text-center shadow-lg active:scale-105 sm:hover:scale-105 transition-transform duration-300">
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
                 Rolo com 1000 Unidades
               </h3>
@@ -169,7 +169,7 @@ function LacreAlimentos() {
                 <span>Comprar pelo WhatsApp</span>
               </a>
             </div>
-            <div className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300">
+            <div className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-xl p-4 sm:p-6 text-center shadow-lg active:scale-105 sm:hover:scale-105 transition-transform duration-300">
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
                 Rolo com 2000 Unidades
               </h3>
@@ -186,7 +186,7 @@ function LacreAlimentos() {
                 <span>Comprar pelo WhatsApp</span>
               </a>
             </div>
-            <div className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-xl p-6 text-center shadow-lg hover:scale-105 transition-transform duration-300">
+            <div className="bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] rounded-xl p-4 sm:p-6 text-center shadow-lg active:scale-105 sm:hover:scale-105 transition-transform duration-300">
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
                 Rolo com 3000 Unidades
               </h3>

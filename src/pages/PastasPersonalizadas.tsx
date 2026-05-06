@@ -4,7 +4,7 @@ import { CTAButton } from "../components";
 import pasta from "../assets/produtos/pasta.jpg";
 
 const features = [
-  { icon: "ri-folder-line", label: "Diversos Modelos" },
+  { icon: "ri-folder-line", label: "Pasta com Bolsa" },
   { icon: "ri-printer-line", label: "Impressão Offset" },
   { icon: "ri-palette-line", label: "Full Color" },
   { icon: "ri-building-line", label: "Uso Corporativo" },
@@ -27,6 +27,30 @@ const types = [
     title: "Pasta Executiva",
     description: "Acabamento premium para apresentações importantes",
   },
+];
+
+const pastaBolsaCouche250 = [
+  { qty: "25 unidades", price: "R$ 435,00" },
+  { qty: "50 unidades", price: "R$ 688,50" },
+  { qty: "100 unidades", price: "R$ 1.255,00" },
+  { qty: "250 unidades", price: "R$ 1.768,00" },
+  { qty: "500 unidades", price: "R$ 2.068,00" },
+  { qty: "1.000 unidades", price: "R$ 3.092,50" },
+];
+
+const pastaBolsaCouche300 = [
+  { qty: "25 unidades", price: "R$ 371,00" },
+  { qty: "50 unidades", price: "R$ 620,00" },
+  { qty: "100 unidades", price: "R$ 955,00" },
+  { qty: "250 unidades", price: "R$ 1.820,00" },
+  { qty: "500 unidades", price: "R$ 2.808,00" },
+  { qty: "1.000 unidades", price: "R$ 3.930,00" },
+];
+
+const bolsaVernizLocalizado = [
+  { qty: "250 unidades", price: "R$ 2.410,00" },
+  { qty: "500 unidades", price: "R$ 3.465,00" },
+  { qty: "1.000 unidades", price: "R$ 4.730,00" },
 ];
 
 function PastasPersonalizadas() {
@@ -153,6 +177,130 @@ function PastasPersonalizadas() {
                   </a>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção Pasta com Bolsa - Destaque */}
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] via-[#1F1F1F] to-[#252525]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-14">
+            <span className="inline-block bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37] text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider">
+              Mais Vendido
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-white mb-4">
+              Pasta com{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">
+                Bolsa
+              </span>{" "}
+              – Formato A4
+            </h2>
+            <p className="text-[14px] sm:text-[16px] text-white/60 max-w-2xl mx-auto">
+              Prazo de produção: <strong className="text-white/80">6 dias úteis</strong>. Impressão colorida, acabamento profissional.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Card 1 - Couchê 250 */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl overflow-hidden hover:border-[#D4AF37]/50 hover:shadow-[0_8px_32px_rgba(212,175,55,0.15)] transition-all duration-300">
+              <div className="px-5 pt-6 pb-4 border-b border-[#D4AF37]/10">
+                <h3 className="text-[15px] sm:text-[17px] font-bold text-white mb-1">
+                  Papel Couchê 250
+                </h3>
+                <p className="text-[12px] text-white/50">30x42 cm · Impressão colorida (frente)</p>
+              </div>
+              <div className="px-5 py-4 space-y-2">
+                {pastaBolsaCouche250.map((item) => (
+                  <div
+                    key={item.qty}
+                    className="flex items-center justify-between py-1.5 border-b border-white/5 last:border-0"
+                  >
+                    <span className="text-[12px] sm:text-[13px] text-white/70">{item.qty}</span>
+                    <span className="text-[14px] font-semibold text-[#D4AF37]">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="px-5 pb-6 pt-2">
+                <a
+                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pasta com Bolsa – Couchê 250")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white px-4 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-300"
+                >
+                  <i className="ri-whatsapp-line text-base"></i>
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2 - Couchê 300 com Verniz */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/40 rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(212,175,55,0.12)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.25)] transition-all duration-300">
+              <div className="px-5 pt-6 pb-4 border-b border-[#D4AF37]/10">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-[15px] sm:text-[17px] font-bold text-white">
+                    Papel Couchê 300 + Verniz Total
+                  </h3>
+                  <span className="ml-2 flex-shrink-0 bg-gradient-to-r from-[#BF953F] to-[#AA771C] text-[#0A0A0A] text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    Premium
+                  </span>
+                </div>
+                <p className="text-[12px] text-white/50">30x42 cm · Verniz total · Impressão colorida (frente)</p>
+              </div>
+              <div className="px-5 py-4 space-y-2">
+                {pastaBolsaCouche300.map((item) => (
+                  <div
+                    key={item.qty}
+                    className="flex items-center justify-between py-1.5 border-b border-white/5 last:border-0"
+                  >
+                    <span className="text-[12px] sm:text-[13px] text-white/70">{item.qty}</span>
+                    <span className="text-[14px] font-semibold text-[#D4AF37]">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="px-5 pb-6 pt-2">
+                <a
+                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pasta com Bolsa – Couchê 300 com Verniz Total")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white px-4 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-300"
+                >
+                  <i className="ri-whatsapp-line text-base"></i>
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3 - Bolsa Verniz Localizado */}
+            <div className="bg-gradient-to-b from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl overflow-hidden hover:border-[#D4AF37]/50 hover:shadow-[0_8px_32px_rgba(212,175,55,0.15)] transition-all duration-300">
+              <div className="px-5 pt-6 pb-4 border-b border-[#D4AF37]/10">
+                <h3 className="text-[15px] sm:text-[17px] font-bold text-white mb-1">
+                  Bolsa Personalizada
+                </h3>
+                <p className="text-[12px] text-white/50">Verniz Localizado · 4x0 Cores</p>
+              </div>
+              <div className="px-5 py-4 space-y-2">
+                {bolsaVernizLocalizado.map((item) => (
+                  <div
+                    key={item.qty}
+                    className="flex items-center justify-between py-1.5 border-b border-white/5 last:border-0"
+                  >
+                    <span className="text-[12px] sm:text-[13px] text-white/70">{item.qty}</span>
+                    <span className="text-[14px] font-semibold text-[#D4AF37]">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="px-5 pb-6 pt-2">
+                <a
+                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Bolsa Personalizada com Verniz Localizado")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white px-4 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-300"
+                >
+                  <i className="ri-whatsapp-line text-base"></i>
+                  Solicitar Orçamento
+                </a>
+              </div>
             </div>
           </div>
         </div>

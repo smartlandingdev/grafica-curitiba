@@ -189,7 +189,7 @@ function VernizLocalizado() {
                   className="bg-[#1A1A1A] border border-[#D4AF37]/30 rounded-xl overflow-hidden hover:border-[#D4AF37]/60 transition-all duration-300"
                 >
                   {/* Imagem do produto */}
-                  <div className="h-48 sm:h-56 overflow-hidden bg-[#0A0A0A]">
+                  <div className="h-36 sm:h-48 overflow-hidden bg-[#0A0A0A]">
                     <img
                       src={category.image}
                       alt={`Cartão de visita com verniz localizado - ${category.title}`}
@@ -258,7 +258,7 @@ function VernizLocalizado() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Benefícios do <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">Verniz Localizado</span>
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-6">
               {benefits.map((benefit) => (
                 <div
                   key={benefit.title}

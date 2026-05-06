@@ -203,7 +203,7 @@ function Panfletos() {
             <p className="text-sm text-white/60 text-center mb-6 sm:mb-10">
               Impressão colorida frente | Produção até 48h | Arte pronta em CMYK
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {formatOptions.map((option) => (
                 <div
                   key={option.title}
@@ -250,7 +250,7 @@ function Panfletos() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-10 text-center">
               Opções de Papel Couché
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               {paperOptions.map((option) => (
                 <div
                   key={option.title}

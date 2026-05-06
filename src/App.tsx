@@ -11,6 +11,7 @@ import CartoesDeVisita from "./pages/CartoesDeVisita";
 import Panfletos from "./pages/Panfletos";
 import CrachasCordoes from "./pages/CrachasCordoes";
 import Banners from "./pages/Banners";
+import TripeParaBanner from "./pages/TripeParaBanner";
 import { useWhatsApp } from "./hooks/useWhatsApp";
 import PulseirasEventos from "./pages/PulseirasEventos";
 import CarteirinhaCiptea from "./pages/CarteirinhaCiptea";
@@ -229,7 +230,10 @@ const sidebarCategories = [
   },
   {
     title: "Banner e Lonas",
-    items: [{ label: "Banner e Lonas", href: "/banners" }],
+    items: [
+      { label: "Banner e Lonas", href: "/banners" },
+      { label: "Tripé para Banner", href: "/tripe-para-banner" },
+    ],
   },
   {
     title: "Pulseiras para Eventos",
@@ -303,11 +307,23 @@ function Sidebar({
         />
       )}
       <aside
-        className={`fixed lg:sticky top-20 left-0 h-[calc(100vh-5rem)] bg-gradient-to-b from-[#1A1A1A] to-[#252525] border-r border-[#D4AF37]/20 overflow-y-auto z-30 transition-transform duration-300 w-[280px] sm:w-72 ${
+        className={`fixed lg:sticky top-20 left-0 h-[calc(100vh-5rem)] bg-gradient-to-b from-[#1A1A1A] to-[#252525] border-r border-[#D4AF37]/20 overflow-y-auto z-30 transition-transform duration-300 w-[calc(100vw-3rem)] sm:w-72 ${
           isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         }`}
       >
         <div className="px-4 sm:px-6 py-6">
+          {/* Close button — mobile only */}
+          <div className="flex items-center justify-between mb-4 lg:hidden">
+            <span className="text-[13px] font-semibold text-white/50 uppercase tracking-wider">Menu</span>
+            <button
+              onClick={onClose}
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+              aria-label="Fechar menu"
+            >
+              <i className="ri-close-line text-xl"></i>
+            </button>
+          </div>
+
           {/* Home Link */}
           <Link
             to="/"
@@ -819,7 +835,7 @@ function HomePage() {
                 to={service.href}
                 className="group bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl overflow-hidden hover:shadow-[0_12px_32px_rgba(212,175,55,0.2)] hover:border-[#D4AF37]/50 transition-all duration-300 cursor-pointer"
               >
-                <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden relative">
+                <div className="w-full h-40 sm:h-56 lg:h-64 overflow-hidden relative">
                   <img
                     alt={`${service.title} - Gráfica Curitiba`}
                     title={`${service.title} impressão digital em Curitiba`}
@@ -1109,7 +1125,7 @@ function HomePage() {
             className="inline-flex items-center gap-2 sm:gap-3 bg-[#0D0D0D] text-white px-6 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-xl hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span className="whitespace-nowrap">Falar com Especialista</span>
+            <span className="whitespace-nowrap text-sm sm:text-base">Falar com Especialista</span>
             <i className="ri-arrow-right-line text-lg sm:text-xl hidden sm:inline"></i>
           </a>
           <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-[#0D0D0D]/70">
@@ -1133,7 +1149,8 @@ function ScrollToTop() {
 }
 
 // Sidebar Toggle Button Component
-function SidebarToggle({ onClick }: { onClick: () => void }) {
+function SidebarToggle({ onClick, isOpen }: { onClick: () => void; isOpen: boolean }) {
+  if (isOpen) return null;
   return (
     <button
       onClick={onClick}
@@ -1171,6 +1188,7 @@ function Layout() {
             <Route path="/panfletos" element={<Panfletos />} />
             <Route path="/crachas-e-cordoes" element={<CrachasCordoes />} />
             <Route path="/banners" element={<Banners />} />
+            <Route path="/tripe-para-banner" element={<TripeParaBanner />} />
             {/* Páginas de produtos */}
             <Route path="/verniz-localizado" element={<VernizLocalizado />} />
             <Route path="/hotstamping" element={<HotStamping />} />
@@ -1231,7 +1249,7 @@ function Layout() {
       </div>
       <Footer />
       {/*   <WhatsAppFloat />*/}
-      <SidebarToggle onClick={() => setSidebarOpen(true)} />
+      <SidebarToggle onClick={() => setSidebarOpen(true)} isOpen={sidebarOpen} />
     </div>
   );
 }
