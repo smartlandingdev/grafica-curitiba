@@ -10,6 +10,27 @@ const features = [
   { icon: "ri-paint-brush-line", label: "Personalizado" },
 ];
 
+const pricingOptions = [
+  {
+    title: "1 x 1 cm",
+    icon: "ri-price-tag-3-line",
+    prices: [
+      { qty: "250 unidades", price: "R$ 65,00" },
+      { qty: "500 unidades", price: "R$ 85,00" },
+      { qty: "1.000 unidades", price: "R$ 99,00", best: true },
+    ],
+  },
+  {
+    title: "2,5 x 1 cm",
+    icon: "ri-price-tag-3-line",
+    prices: [
+      { qty: "250 unidades", price: "R$ 75,00" },
+      { qty: "500 unidades", price: "R$ 95,00" },
+      { qty: "1.000 unidades", price: "R$ 110,00", best: true },
+    ],
+  },
+];
+
 const applications = [
   {
     title: "Lacre de Garantia",
@@ -157,7 +178,76 @@ function AdesivoCascaOvo() {
         </div>
       </section>
 
+      {/* Pricing Section */}
       <section className="py-12 sm:py-20 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-2xl p-6 sm:p-10">
+            <div className="text-center mb-8 sm:mb-10">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2">
+                Tabela de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">Preços</span>
+              </h3>
+              <p className="text-sm text-white/50">Prazo de Produção: 3 Dias Úteis</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto mb-8">
+              {pricingOptions.map((option) => (
+                <div
+                  key={option.title}
+                  className="bg-[#1A1A1A] border border-[#D4AF37]/30 rounded-xl overflow-hidden hover:border-[#D4AF37]/60 transition-all duration-300"
+                >
+                  <div className="bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] px-5 py-3 flex items-center justify-center gap-2">
+                    <i className={`${option.icon} text-xl text-[#0A0A0A]`}></i>
+                    <h4 className="text-base sm:text-lg font-bold text-[#0A0A0A]">
+                      {option.title}
+                    </h4>
+                  </div>
+                  <div className="p-4 sm:p-5 space-y-3">
+                    {option.prices.map((item) => (
+                      <a
+                        key={item.qty}
+                        href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Olá! Gostaria de fazer pedido de Adesivo Casca de Ovo ${option.title} - ${item.qty} por ${item.price}`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`relative rounded-lg p-4 flex items-center justify-between transition-all duration-300 cursor-pointer ${
+                          item.best
+                            ? "bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:brightness-110"
+                            : "bg-[#2A2A2A] hover:bg-[#333333]"
+                        }`}
+                      >
+                        {item.best && (
+                          <span className="absolute -top-2 right-3 bg-[#0A0A0A] text-[#D4AF37] text-[10px] font-bold px-2 py-0.5 rounded-full border border-[#D4AF37]/50">
+                            MAIS VENDIDO
+                          </span>
+                        )}
+                        <span className={`text-sm font-medium ${item.best ? "text-[#0A0A0A]" : "text-white/80"}`}>
+                          {item.qty}
+                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className={`text-base font-bold ${item.best ? "text-[#0A0A0A]" : "text-[#D4AF37]"}`}>
+                            {item.price}
+                          </span>
+                          <i className={`ri-whatsapp-line text-lg ${item.best ? "text-[#0A0A0A]" : "text-[#25D366]"}`}></i>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Delivery info */}
+            <div className="border-t border-[#D4AF37]/20 pt-6 text-center">
+              <p className="text-sm text-white/60 mb-1">
+                <i className="ri-truck-line mr-1 text-[#D4AF37]"></i>
+                <span className="text-white/80 font-medium">Entrega em Curitiba:</span> R$ 19,00 &nbsp;|&nbsp;
+                <span className="text-white/80 font-medium">Região Metropolitana:</span> R$ 35,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-[#252525] to-[#1A1A1A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl sm:text-2xl lg:text-[38px] font-bold text-white mb-4 sm:mb-6">
             Solicite Seu Orçamento de Adesivos
