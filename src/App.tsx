@@ -524,6 +524,15 @@ function Footer() {
                 <i className="ri-facebook-circle-line text-base sm:text-lg text-[#D4AF37]"></i>
                 <span>GraficaCuritiba2</span>
               </a>
+              <a
+                href="https://graficacuritiba2026.blogspot.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 sm:gap-3 text-[13px] sm:text-[15px] text-white/70 hover:text-[#D4AF37] transition-colors cursor-pointer"
+              >
+                <i className="ri-article-line text-base sm:text-lg text-[#D4AF37]"></i>
+                <span>Blog Gráfica Curitiba</span>
+              </a>
             </div>
           </div>
         </div>
