@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import bannerImg from "../assets/produtos/banner.jpeg";
 import cartaoImg from "../assets/produtos/cartao-visita-novo.jpeg";
 import crachaImg from "../assets/produtos/cracha.jpeg";
@@ -122,14 +121,6 @@ const produtosIgreen: ProdutoIgreen[] = [
   },
 ];
 
-// Features Data
-const features = [
-  { icon: "ri-verified-badge-line", label: "Artes Prontas" },
-  { icon: "ri-user-star-line", label: "Personalização" },
-  { icon: "ri-leaf-line", label: "Padrão Igreen" },
-  { icon: "ri-truck-line", label: "Entrega Rápida" },
-];
-
 function ProdutosIgreen() {
   return (
     <>
@@ -201,27 +192,6 @@ function ProdutosIgreen() {
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>
           </a>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-10 sm:py-16 bg-gradient-to-b from-[#0D2010] to-[#0A1A0F]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            {features.map((feature) => (
-              <div
-                key={feature.label}
-                className="flex flex-col items-center text-center"
-              >
-                <div className="w-14 h-14 sm:w-18 sm:h-18 flex items-center justify-center bg-gradient-to-br from-[#22C55E] to-[#16A34A] rounded-full mb-3 sm:mb-4 shadow-[0_4px_16px_rgba(34,197,94,0.3)]">
-                  <i className={`${feature.icon} text-xl sm:text-2xl text-white`}></i>
-                </div>
-                <p className="text-[13px] sm:text-[15px] font-medium text-white">
-                  {feature.label}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -355,45 +325,6 @@ function ProdutosIgreen() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 sm:py-24 bg-gradient-to-b from-[#122B17] via-[#163620] to-[#122B17] relative overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#22C55E]/50 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#22C55E]/30 to-transparent"></div>
-          <div className="absolute top-10 left-10 w-32 h-32 border border-[#22C55E]/20 rounded-full"></div>
-          <div className="absolute bottom-10 right-10 w-48 h-48 border border-[#22C55E]/20 rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#22C55E]/5 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 right-1/4 w-48 h-48 bg-[#22C55E]/5 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-[44px] font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Eleve o Profissionalismo da Sua Unidade <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#16A34A] via-[#86EFAC] to-[#22C55E]">Igreen</span>
-          </h2>
-          <p className="text-base sm:text-lg text-white/70 mb-8 sm:mb-12 max-w-2xl mx-auto">
-            Materiais de alta qualidade que transmitem credibilidade e fortalecem a imagem da sua unidade
-          </p>
-          <a
-            href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Sou consultor Igreen e gostaria de fazer um pedido de materiais gráficos.")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#22C55E] to-[#16A34A] text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_24px_rgba(34,197,94,0.4)] hover:shadow-[0_8px_32px_rgba(34,197,94,0.6)] hover:scale-105 transition-all duration-300"
-          >
-            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
-            <span>Falar com Especialista</span>
-          </a>
-          <div className="mt-8">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-[#22C55E] font-medium hover:gap-3 transition-all duration-300"
-            >
-              <i className="ri-arrow-left-line"></i>
-              <span>Voltar para página inicial</span>
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

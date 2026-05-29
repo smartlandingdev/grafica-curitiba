@@ -41,7 +41,7 @@ import ProdutosIgreen from "./pages/ProdutosIgreen";
 import cartao from "./assets/produtos/cartao-promo.jpeg";
 import folder from "./assets/produtos/panfletos-promo.jpeg";
 import cordao from "./assets/produtos/cordao-promo.jpeg";
-import imagemPromocao from "./assets/capa-grafica-curitiba.png";
+import imagemPromocao from "./assets/capa-nova.jpeg";
 
 // Header Component
 function Header({ scrolled }: { scrolled: boolean }) {
@@ -806,86 +806,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="servicos" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#2C2C2C] overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
-          <div className="absolute top-20 right-10 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-60 h-60 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-bold text-white mb-3 sm:mb-4 px-2">
-              Serviços de Impressão <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C] drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">Premium</span>
-            </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
-              Gráfica em Curitiba especializada em materiais
-              promocionais e corporativos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">alta qualidade</span>. Produção local com
-              entrega para todo o Brasil.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
-            {services.map((service) => (
-              <Link
-                key={service.title}
-                to={service.href}
-                className="group bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl overflow-hidden hover:shadow-[0_12px_32px_rgba(212,175,55,0.2)] hover:border-[#D4AF37]/50 transition-all duration-300 cursor-pointer"
-              >
-                <div className="w-full h-40 sm:h-56 lg:h-64 overflow-hidden relative">
-                  <img
-                    alt={`${service.title} - Gráfica Curitiba`}
-                    title={`${service.title} impressão digital em Curitiba`}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    src={service.image}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent opacity-60"></div>
-                </div>
-                <div className="p-4 sm:p-6 lg:p-8">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-gradient-to-br from-[#D4AF37]/20 to-[#D4AF37]/5 border border-[#D4AF37]/30 rounded-lg mb-3 sm:mb-5 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300">
-                    <i
-                      className={`${service.icon} text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37]`}
-                      style={{WebkitTextStroke: '0.3px #D4AF37'}}
-                    ></i>
-                  </div>
-                  <h3 className="text-lg sm:text-xl lg:text-[24px] font-bold text-white mb-2 sm:mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-white/60 leading-relaxed mb-4 sm:mb-5 line-clamp-3">
-                    {service.description}
-                  </p>
-                  <div className="inline-flex items-center gap-1 text-[13px] sm:text-[14px] text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] font-semibold group-hover:gap-2 transition-all duration-300">
-                    Solicitar Orçamento
-                    <i className="ri-arrow-right-line text-[#D4AF37]"></i>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-8 sm:mt-12">
-            <p className="text-[13px] sm:text-[15px] text-white/60 mb-4 sm:mb-6 px-2">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">Atendimento em Curitiba e Região Metropolitana</span> •
-              Entregamos para todo o Brasil
-            </p>
-
-            <a
-              href={getUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[14px] sm:text-[15px] shadow-[0_4px_16px_rgba(212,175,55,0.3)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.5)] transition-all duration-300 cursor-pointer"
-              id="btn-whatsapp-orcamento"
-            >
-              <i className="ri-whatsapp-line text-lg sm:text-xl"></i>
-              <span>Solicitar Orçamento</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Differentials Section */}
       <section
         id="diferenciais"
@@ -1131,6 +1051,86 @@ function HomePage() {
           <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-[#0D0D0D]/70">
             Atendimento de segunda a sexta, 8h às 18h
           </p>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="servicos" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#2C2C2C] overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
+          <div className="absolute top-20 right-10 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-10 w-60 h-60 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-bold text-white mb-3 sm:mb-4 px-2">
+              Serviços de Impressão <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C] drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">Premium</span>
+            </h2>
+            <p className="text-sm sm:text-base lg:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
+              Gráfica em Curitiba especializada em materiais
+              promocionais e corporativos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">alta qualidade</span>. Produção local com
+              entrega para todo o Brasil.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+            {services.map((service) => (
+              <Link
+                key={service.title}
+                to={service.href}
+                className="group bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] border border-[#D4AF37]/20 rounded-xl overflow-hidden hover:shadow-[0_12px_32px_rgba(212,175,55,0.2)] hover:border-[#D4AF37]/50 transition-all duration-300 cursor-pointer"
+              >
+                <div className="w-full h-40 sm:h-56 lg:h-64 overflow-hidden relative">
+                  <img
+                    alt={`${service.title} - Gráfica Curitiba`}
+                    title={`${service.title} impressão digital em Curitiba`}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    src={service.image}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent opacity-60"></div>
+                </div>
+                <div className="p-4 sm:p-6 lg:p-8">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-gradient-to-br from-[#D4AF37]/20 to-[#D4AF37]/5 border border-[#D4AF37]/30 rounded-lg mb-3 sm:mb-5 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300">
+                    <i
+                      className={`${service.icon} text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#F4E4A6] to-[#D4AF37]`}
+                      style={{WebkitTextStroke: '0.3px #D4AF37'}}
+                    ></i>
+                  </div>
+                  <h3 className="text-lg sm:text-xl lg:text-[24px] font-bold text-white mb-2 sm:mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-white/60 leading-relaxed mb-4 sm:mb-5 line-clamp-3">
+                    {service.description}
+                  </p>
+                  <div className="inline-flex items-center gap-1 text-[13px] sm:text-[14px] text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37] font-semibold group-hover:gap-2 transition-all duration-300">
+                    Solicitar Orçamento
+                    <i className="ri-arrow-right-line text-[#D4AF37]"></i>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-8 sm:mt-12">
+            <p className="text-[13px] sm:text-[15px] text-white/60 mb-4 sm:mb-6 px-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4E4A6] to-[#D4AF37]">Atendimento em Curitiba e Região Metropolitana</span> •
+              Entregamos para todo o Brasil
+            </p>
+
+            <a
+              href={getUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#BF953F] via-[#D4AF37] to-[#AA771C] text-[#0A0A0A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[14px] sm:text-[15px] shadow-[0_4px_16px_rgba(212,175,55,0.3)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.5)] transition-all duration-300 cursor-pointer"
+              id="btn-whatsapp-orcamento"
+            >
+              <i className="ri-whatsapp-line text-lg sm:text-xl"></i>
+              <span>Solicitar Orçamento</span>
+            </a>
+          </div>
         </div>
       </section>
     </>

@@ -1,14 +1,5 @@
 import { Link } from "react-router-dom";
-import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 import ciptea from "../assets/produtos/ciptea.jpg";
-
-// Features Data
-const features = [
-  { icon: "ri-shield-check-line", label: "Material em PVC Resistente" },
-  { icon: "ri-palette-line", label: "Personalização Completa" },
-  { icon: "ri-heart-pulse-line", label: "Conforme Lei 13.977/2020" },
-  { icon: "ri-timer-line", label: "Produção Rápida" },
-];
 
 // Benefits Data
 const benefits = [
@@ -105,48 +96,35 @@ function CarteirinhaCiptea() {
         })}
       </script>
 
-      {/* Hero Section */}
-      <section
-        className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center pt-24 pb-8 sm:pt-20"
-        style={{
-          backgroundImage: `url("${fundosProdutosImg}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div>
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
-        </div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-[26px] sm:text-4xl lg:text-[48px] font-extrabold text-white leading-tight mb-4 sm:mb-6 drop-shadow-lg">
-            Impressão de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">CIPTEA</span> em PVC | Carteira Autista Personalizada Curitiba
-          </h1>
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-2">
-            Transforme sua CIPTEA digital em cartão resistente e profissional em até 48h
-          </p>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-10 sm:py-16 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            {features.map((feature) => (
-              <div
-                key={feature.label}
-                className="flex flex-col items-center text-center"
+      {/* Título + Descrição + Imagem */}
+      <section className="pt-28 pb-12 sm:pb-16 bg-gradient-to-b from-[#1A1A1A] to-[#252525]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div>
+              <h1 className="text-[26px] sm:text-4xl lg:text-[42px] font-extrabold text-white leading-tight mb-4 sm:mb-6">
+                Impressão de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] via-[#D4AF37] to-[#AA771C]">CIPTEA</span> em PVC
+              </h1>
+              <p className="text-sm sm:text-lg text-white/80 leading-relaxed mb-6 sm:mb-10">
+                Transforme sua CIPTEA digital em cartão resistente e profissional em até 48h. Conforme Lei 13.977/2020.
+              </p>
+              <a
+                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Carteirinha CIPTEA em PVC")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 sm:gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold px-8 py-4 rounded-xl text-base sm:text-lg shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.5)] transition-all duration-300"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-gradient-to-br from-[#BF953F] via-[#D4AF37] to-[#AA771C] rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.4)] mb-2 sm:mb-3">
-                  <i
-                    className={`${feature.icon} text-xl sm:text-2xl text-[#0A0A0A]`}
-                  ></i>
-                </div>
-                <p className="text-[12px] sm:text-[15px] font-medium text-white">
-                  {feature.label}
-                </p>
-              </div>
-            ))}
+                <i className="ri-whatsapp-line text-xl"></i>
+                Falar no WhatsApp
+              </a>
+            </div>
+            <div
+              className="rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(212,175,55,0.2)] h-[250px] sm:h-[350px] lg:h-[400px] border border-[#D4AF37]/20"
+              style={{
+                backgroundImage: `url("${ciptea}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+              }}
+            />
           </div>
         </div>
       </section>
