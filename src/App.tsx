@@ -815,6 +815,51 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Não trabalhamos com Section */}
+      <section className="relative py-8 sm:py-10 bg-gradient-to-b from-[#1A1A1A] to-[#1F1F1F] overflow-hidden border-y border-[#D4AF37]/10">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-20 bg-red-900/10 rounded-full blur-3xl"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-5">
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="w-10 h-10 flex items-center justify-center bg-red-900/30 border border-red-500/40 rounded-full">
+                <i className="ri-close-circle-line text-xl text-red-400"></i>
+              </div>
+              <h2 className="text-[16px] sm:text-[18px] font-bold text-white whitespace-nowrap">
+                Não trabalhamos com:
+              </h2>
+            </div>
+            <div className="hidden sm:block h-[1px] flex-1 bg-gradient-to-r from-red-500/30 to-transparent"></div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3">
+            {[
+              { icon: "ri-file-copy-line", label: "Xerox / Cópias" },
+              { icon: "ri-stack-line", label: "Plastificação" },
+              { icon: "ri-image-line", label: "Revelação de Fotos" },
+              { icon: "ri-cake-line", label: "Topo de Bolo" },
+              { icon: "ri-book-open-line", label: "Revistas" },
+              { icon: "ri-book-2-line", label: "Encadernação" },
+              { icon: "ri-gift-line", label: "Brindes / Canetas" },
+              { icon: "ri-newspaper-line", label: "Jornais" },
+              { icon: "ri-shirt-line", label: "Camisetas / Uniformes" },
+              { icon: "ri-cup-line", label: "Canecas / Objetos" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="flex items-center gap-2 bg-red-950/20 border border-red-500/20 rounded-lg px-3 py-2.5 text-[13px] sm:text-[14px] text-red-300/80"
+              >
+                <i className={`${item.icon} text-red-400/70 flex-shrink-0`}></i>
+                <span className="line-through decoration-red-500/50">{item.label}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-[12px] sm:text-[13px] text-white/40 text-center sm:text-left">
+            Somos uma gráfica industrial especializada em impressão offset e digital. Para os itens acima, recomendamos buscar uma copiadora ou papelaria da sua região.
+          </p>
+        </div>
+      </section>
+
       {/* Differentials Section */}
       <section
         id="diferenciais"
