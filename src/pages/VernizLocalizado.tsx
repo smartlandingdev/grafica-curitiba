@@ -6,6 +6,7 @@ const pricingCategories = [
     title: "Cantos Retos",
     icon: "ri-square-line",
     image: "/assets/produtos/verniz localizado quadrado.png",
+    href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/7c23eb78-3712-4871-b72c-d43f748d0412",
     prices: [
       { qty: "250 unidades", price: "R$ 180,00" },
       { qty: "500 unidades", price: "R$ 185,00" },
@@ -16,6 +17,7 @@ const pricingCategories = [
     title: "Com 4 ou 2 Cantos Arredondados",
     icon: "ri-checkbox-blank-circle-line",
     image: "/assets/produtos/vernix localizado redondo.png",
+    href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/c98c27f7-e342-4865-a0a5-0d4e000da3c0",
     prices: [
       { qty: "500 unidades", price: "R$ 225,00" },
       { qty: "1.000 unidades", price: "R$ 245,00", best: true },
@@ -133,7 +135,7 @@ function VernizLocalizado() {
                     ))}
                   </div>
                   <a
-                    href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de fazer pedido de Cartão de Visita com Verniz Localizado - ${category.title}`)}`}
+                    href={category.href || `https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de fazer pedido de Cartão de Visita com Verniz Localizado - ${category.title}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"

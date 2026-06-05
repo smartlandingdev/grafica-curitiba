@@ -5,10 +5,12 @@ const paperOptions = [
   {
     title: "Papel Supremo 250g",
     description: "Textura premium, perfeito para acabamento sofisticado",
+    href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/e87a0723-1394-48fd-b4f0-8cfca63eb712",
   },
   {
     title: "Papel Reciclado",
     description: "Opção sustentável com excelente qualidade de impressão",
+    href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/e5dd4585-2758-46e0-b3a5-285ed194e422",
   },
   {
     title: "Laminação Brilhante",
@@ -99,7 +101,7 @@ function CartoesDeVisita() {
                   {option.description}
                 </p>
                 <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de solicitar orçamento para Cartão de Visita em ${option.title}`)}`}
+                  href={option.href || `https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de solicitar orçamento para Cartão de Visita em ${option.title}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-1 bg-[#25D366] text-white px-3 py-1.5 rounded-md text-[11px] sm:text-xs font-medium hover:bg-[#20BD5A] transition-all duration-300"

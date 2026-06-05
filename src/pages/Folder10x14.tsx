@@ -73,7 +73,7 @@ function Couche90g() {
                 Impressão de folders 10x14 cm personalizados. Formato compacto, prático e ideal para distribuição em mãos e panfletagem.
               </p>
               <a
-                href="https://wa.me/+554130240080?text=Gostaria%20de%20solicitar%20or%C3%A7amento%20para%20Folder%2010x14"
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/538d3460-edb8-46ee-8be1-7d41bd1913d0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold px-8 py-4 rounded-xl text-base sm:text-lg shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.5)] transition-all duration-300"

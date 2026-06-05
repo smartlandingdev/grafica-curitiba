@@ -192,7 +192,7 @@ function ProdutosAdemicon() {
           </h2>
 
           <a
-            href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de fazer um pedido de materiais gráficos para Ademicon.")}`}
+            href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/a5a80c14-d204-40a3-8d33-da6c0d9ec056"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-[#D4AF37] to-[#C9A227] text-[#0D0D0D] px-8 sm:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_24px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -292,7 +292,7 @@ function ProdutosAdemicon() {
 
                     {/* CTA Button */}
                     <a
-                      href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Olá! Gostaria de fazer pedido de ${produto.title} para Ademicon.`)}`}
+                      href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/a5a80c14-d204-40a3-8d33-da6c0d9ec056"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#D4AF37] to-[#C9A227] text-[#0D0D0D] px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:scale-105 transition-all duration-300"
@@ -321,7 +321,7 @@ function ProdutosAdemicon() {
               Entre em contato para saber mais!
             </p>
             <a
-              href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de saber sobre novos produtos para Ademicon.")}`}
+              href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/a5a80c14-d204-40a3-8d33-da6c0d9ec056"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-[#D4AF37] text-[#D4AF37] px-6 py-3 rounded-full font-medium hover:bg-[#D4AF37] hover:text-[#0D0D0D] transition-all duration-300"

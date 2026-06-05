@@ -58,7 +58,7 @@ export const WHATSAPP_NUMBER = "554130240080";
 export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   // Botão para orçamento de Folder
   folder: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Folder")}`,
+    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/538d3460-edb8-46ee-8be1-7d41bd1913d0",
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
@@ -101,13 +101,13 @@ export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   },
 
   verniz: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Verniz Localizado")}`,
+    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/cce4ea74-41b8-4d46-95a6-8d49206c86d6",
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   hotStamping: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Hot Stamping")}`,
+    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/4c332362-c01d-4a4d-bb26-d6812e218c7a",
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
@@ -173,7 +173,7 @@ export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   },
 
   pvcTransparente: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Cartão PVC Transparente")}`,
+    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/1c2e87b3-de54-4fd3-8d2b-eb68cd5c982a",
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },

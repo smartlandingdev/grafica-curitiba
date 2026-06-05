@@ -9,8 +9,8 @@ const products = [
     subtitle: "(Hot Stamping Aplicado somente de um lado do Cartão)",
     paper: "Papel Couche 300g com Laminação Soft Touch",
     prices: [
-      { qty: "500 Unidades", price: "R$ 472,60" },
-      { qty: "1.000 Unidades", price: "R$ 562,00" },
+      { qty: "500 Unidades", price: "R$ 472,60", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/97ab7d77-4533-429c-84dc-6b0e11756e44" },
+      { qty: "1.000 Unidades", price: "R$ 562,00", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/fb43e9ec-2a84-401e-9166-7017a3d0e79a" },
     ],
     prazo: "10 dias úteis",
     color: "Prata",
@@ -22,7 +22,7 @@ const products = [
     paper: "Papel Couche 300g com Laminação Soft Touch",
     prices: [
       { qty: "500 Unidades", price: "R$ 472,60" },
-      { qty: "1.000 Unidades", price: "R$ 562,00" },
+      { qty: "1.000 Unidades", price: "R$ 562,00", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/ce956f42-c99b-451d-9ef3-98ed2f65c157" },
     ],
     prazo: "10 dias úteis",
     color: "Dourado",
@@ -124,7 +124,7 @@ function HotStamping() {
                           </p>
                         </div>
                         <a
-                          href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Olá! Gostaria de comprar Cartão de Visita com Hot Stamping ${product.color} - ${item.qty} por ${item.price}`)}`}
+                          href={item.href || `https://wa.me/+554130240080?text=${encodeURIComponent(`Olá! Gostaria de comprar Cartão de Visita com Hot Stamping ${product.color} - ${item.qty} por ${item.price}`)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center justify-center gap-1.5 bg-[#25D366] text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-[12px] sm:text-sm font-semibold hover:bg-[#20BD5A] transition-all duration-300 shadow-lg hover:shadow-[0_4px_16px_rgba(37,211,102,0.3)]"
