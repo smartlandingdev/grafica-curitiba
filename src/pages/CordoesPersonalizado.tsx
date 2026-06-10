@@ -165,7 +165,7 @@ function CordoesPersonalizado() {
                     ))}
                   </div>
                   <a
-                    href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de fazer pedido de Cordão Personalizado - ${category.title}`)}`}
+                    href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"

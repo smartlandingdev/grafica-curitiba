@@ -60,7 +60,7 @@ function LacreAlimentos() {
                 R$ 120,00
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de comprar Lacre de Alimentos - Rolo com 1000 Unidades por R$ 120,00")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20BD5A] transition-all duration-300 w-full"
@@ -77,7 +77,7 @@ function LacreAlimentos() {
                 R$ 210,00
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de comprar Lacre de Alimentos - Rolo com 2000 Unidades por R$ 210,00")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20BD5A] transition-all duration-300 w-full"
@@ -94,7 +94,7 @@ function LacreAlimentos() {
                 R$ 285,00
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Olá! Gostaria de comprar Lacre de Alimentos - Rolo com 3000 Unidades por R$ 285,00")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20BD5A] transition-all duration-300 w-full"

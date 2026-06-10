@@ -140,7 +140,7 @@ function Panfletos() {
                   ))}
                 </div>
                 <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de fazer pedido de Panfleto ${option.title} Couché 90g`)}`}
+                  href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300"

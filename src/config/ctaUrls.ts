@@ -49,6 +49,8 @@ export interface CTAConfig {
 // Número do WhatsApp (usado para gerar URLs dinâmicas)
 export const WHATSAPP_NUMBER = "554130240080";
 
+const WHATSAPP_URL = "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1";
+
 /**
  * CONFIGURAÇÃO CENTRAL DOS CTAs
  *
@@ -58,158 +60,158 @@ export const WHATSAPP_NUMBER = "554130240080";
 export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   // Botão para orçamento de Folder
   folder: {
-    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/538d3460-edb8-46ee-8be1-7d41bd1913d0",
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   // Botão para WhatsApp genérico
   whatsapp: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}`,
+    url: WHATSAPP_URL,
     label: "Falar no WhatsApp",
     icon: "ri-whatsapp-line",
   },
 
   cordao: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Cordão Personalizado")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   banner: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Banner")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   pulseira: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pulseira")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   cartoes: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Cartões de Visita")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   ciptea: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de comprar carteirinha CIPTEA")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   verniz: {
-    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/cce4ea74-41b8-4d46-95a6-8d49206c86d6",
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   hotStamping: {
-    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/4c332362-c01d-4a4d-bb26-d6812e218c7a",
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   credenciais: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Credenciais")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   pastas: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pastas Personalizadas")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   papelTimbrado: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Papel Timbrado")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   blocos: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Blocos de Recibo")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   receituario: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Receituário")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   envelopes: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Envelopes")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   ima: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Imã de Geladeira")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   rollerClip: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Roller Clip")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   lacre: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Lacre de Alimentos")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   lixoCar: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para LixoCar")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   pvcTransparente: {
-    url: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/1c2e87b3-de54-4fd3-8d2b-eb68cd5c982a",
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   adesivoResinado: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Adesivo Resinado")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   adesivoCascaOvo: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Adesivo Casca de Ovo")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   adesivoPapelVinil: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Adesivo Papel/Vinil")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   blocosAnotacoes: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Blocos de Anotações")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   pulseirasEventos: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pulseiras de Eventos")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
 
   folderA4Dobras: {
-    url: `https://wa.me/+${WHATSAPP_NUMBER}?text=${encodeURIComponent("Gostaria de solicitar orçamento para Folder A4 com Dobras")}`,
+    url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
     icon: "ri-whatsapp-line",
   },
@@ -232,7 +234,6 @@ export function getCTAConfig(type: CTAType): CTAConfig {
 /**
  * Função para gerar URL do WhatsApp com mensagem personalizada
  */
-export function getWhatsAppUrlWithMessage(message: string): string {
-  const encodedMessage = encodeURIComponent(message);
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+export function getWhatsAppUrlWithMessage(_message: string): string {
+  return WHATSAPP_URL;
 }

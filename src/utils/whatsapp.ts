@@ -92,17 +92,15 @@ export function getWhatsAppMessage(pathname: string, type: MessageType = 'orcame
 /**
  * Gera a URL completa do WhatsApp com a mensagem codificada
  */
-export function getWhatsAppUrl(pathname: string, type: MessageType = 'orcamento'): string {
-  const message = getWhatsAppMessage(pathname, type)
-  const encodedMessage = encodeURIComponent(message)
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`
+export function getWhatsAppUrl(_pathname: string, _type: MessageType = 'orcamento'): string {
+  return 'https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1'
 }
 
 /**
  * Gera URL do WhatsApp sem mensagem (apenas número)
  */
 export function getWhatsAppUrlSimple(): string {
-  return `https://wa.me/${WHATSAPP_NUMBER}`
+  return 'https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1'
 }
 
 /**

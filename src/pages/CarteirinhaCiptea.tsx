@@ -108,7 +108,7 @@ function CarteirinhaCiptea() {
                 Transforme sua CIPTEA digital em cartão resistente e profissional em até 48h. Conforme Lei 13.977/2020.
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Carteirinha CIPTEA em PVC")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 sm:gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold px-8 py-4 rounded-xl text-base sm:text-lg shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.5)] transition-all duration-300"
@@ -145,7 +145,7 @@ function CarteirinhaCiptea() {
                 Carteirinha CIPTEA em PVC resistente
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Cartão em PVC R$18,00")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300 w-full"
@@ -167,7 +167,7 @@ function CarteirinhaCiptea() {
                 Cartão em PVC + Capa Protetora
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Cartão + Capa Protetora R$20,00")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#20BD5A] transition-all duration-300 w-full"
@@ -192,7 +192,7 @@ function CarteirinhaCiptea() {
                 Cartão em PVC + Capa Protetora + Cordão Autismo
               </p>
               <a
-                href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de comprar a Carteirinha CIPTEA - Kit Completo R$45,00")}`}
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-b from-[#252525] via-[#1F1F1F] to-[#1A1A1A] text-[#D4AF37] px-4 py-2 rounded-lg text-sm font-bold hover:bg-gradient-to-b from-[#1A1A1A] to-[#252525] transition-all duration-300 w-full"

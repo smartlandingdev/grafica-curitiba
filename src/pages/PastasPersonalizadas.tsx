@@ -111,7 +111,7 @@ function PastasPersonalizadas() {
               </div>
               <div className="px-5 pb-6 pt-2">
                 <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pasta com Bolsa – Couchê 250")}`}
+                  href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white px-4 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-300"
@@ -148,7 +148,7 @@ function PastasPersonalizadas() {
               </div>
               <div className="px-5 pb-6 pt-2">
                 <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Pasta com Bolsa – Couchê 300 com Verniz Total")}`}
+                  href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white px-4 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-300"
@@ -180,7 +180,7 @@ function PastasPersonalizadas() {
               </div>
               <div className="px-5 pb-6 pt-2">
                 <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent("Gostaria de solicitar orçamento para Bolsa Personalizada com Verniz Localizado")}`}
+                  href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BD5A] text-white px-4 py-2.5 rounded-lg text-[13px] font-semibold transition-all duration-300"

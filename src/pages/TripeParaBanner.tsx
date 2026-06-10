@@ -1,7 +1,7 @@
 import fundosProdutosImg from "../assets/produtos/fundos-produtos.jpeg";
 
 const WHATSAPP_URL =
-  "https://wa.me/+554130240080?text=Gostaria%20de%20comprar%20Trip%C3%A9%20para%20Banner";
+  "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1";
 
 function TripeParaBanner() {
   return (

@@ -73,7 +73,7 @@ function Couche90g() {
                 Impressão de folders 10x14 cm personalizados. Formato compacto, prático e ideal para distribuição em mãos e panfletagem.
               </p>
               <a
-                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/538d3460-edb8-46ee-8be1-7d41bd1913d0"
+                href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold px-8 py-4 rounded-xl text-base sm:text-lg shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.5)] transition-all duration-300"
@@ -117,7 +117,7 @@ function Couche90g() {
                   {option.description}
                 </p>
                 <a
-                  href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Gostaria de solicitar orçamento para Folder 10x14 em ${option.title}`)}`}
+                  href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-1 bg-[#25D366] text-white px-3 py-1.5 rounded-md text-[11px] sm:text-xs font-medium hover:bg-[#20BD5A] transition-all duration-300"

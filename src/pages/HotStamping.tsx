@@ -9,8 +9,8 @@ const products = [
     subtitle: "(Hot Stamping Aplicado somente de um lado do Cartão)",
     paper: "Papel Couche 300g com Laminação Soft Touch",
     prices: [
-      { qty: "500 Unidades", price: "R$ 472,60", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/97ab7d77-4533-429c-84dc-6b0e11756e44" },
-      { qty: "1.000 Unidades", price: "R$ 562,00", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/fb43e9ec-2a84-401e-9166-7017a3d0e79a" },
+      { qty: "500 Unidades", price: "R$ 472,60", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1" },
+      { qty: "1.000 Unidades", price: "R$ 562,00", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1" },
     ],
     prazo: "10 dias úteis",
     color: "Prata",
@@ -22,7 +22,7 @@ const products = [
     paper: "Papel Couche 300g com Laminação Soft Touch",
     prices: [
       { qty: "500 Unidades", price: "R$ 472,60" },
-      { qty: "1.000 Unidades", price: "R$ 562,00", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/ce956f42-c99b-451d-9ef3-98ed2f65c157" },
+      { qty: "1.000 Unidades", price: "R$ 562,00", href: "https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1" },
     ],
     prazo: "10 dias úteis",
     color: "Dourado",

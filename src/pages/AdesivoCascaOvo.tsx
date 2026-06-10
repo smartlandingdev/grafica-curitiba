@@ -100,7 +100,7 @@ function AdesivoCascaOvo() {
                     {option.prices.map((item) => (
                       <a
                         key={item.qty}
-                        href={`https://wa.me/+554130240080?text=${encodeURIComponent(`Olá! Gostaria de fazer pedido de Adesivo Casca de Ovo ${option.title} - ${item.qty} por ${item.price}`)}`}
+                        href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`relative rounded-lg p-4 flex items-center justify-between transition-all duration-300 cursor-pointer ${
