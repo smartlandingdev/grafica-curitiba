@@ -3,7 +3,6 @@
  * baseadas na rota atual do usuário
  */
 
-const WHATSAPP_NUMBER = '554130240080'
 
 // Mapeamento de rotas para nomes de produtos/páginas
 const routeNames: Record<string, string> = {
