@@ -1,8 +1,11 @@
 import bannerImg from "../assets/produtos/banner.jpeg";
 import cartaoImg from "../assets/produtos/cartao-visita-novo.jpeg";
-import crachaImg from "../assets/produtos/cracha.jpeg";
+import crachaImg from "../assets/produtos/kit-cracha-igreen.png";
 import cordaoImg from "../assets/produtos/cordao-personalizado.png";
-import folderImg from "../assets/produtos/folder.jpeg";
+import folderImg from "../assets/produtos/folder-igreen.png";
+import caneta from "../assets/produtos/caneta-igreen.png";
+import chaveiro from "../assets/produtos/chaveiro-igreen.jpeg";
+import bannerTopo from "../assets/produtos/igreen-banner-topo.png";
 
 // Types
 interface PriceItem {
@@ -63,20 +66,43 @@ const produtosIgreen: ProdutoIgreen[] = [
     ],
   },
   {
-    id: "cracha",
-    title: "Crachás Personalizados Igreen",
-    subtitle: "Identificação profissional para consultores e equipe",
-    description: "Crachás personalizados com a identidade visual Igreen. Impressos em PVC rígido ou papel com plastificação, com foto, nome e cargo. Garantem padronização e profissionalismo para toda a equipe em atendimentos, eventos e reuniões.",
-    image: crachaImg,
+    id: "folder",
+    title: "Folders / Panfletos Igreen",
+    subtitle: "Impressão de alta qualidade para valorizar sua marca",
+    description: "Folders personalizados com identidade visual Igreen. Impressão colorida em Papel Couchê 90g de alta qualidade. Disponível nos formatos A6 (10x14cm) e A5 (14x20cm). Ideais para apresentação de planos, produtos e serviços em reuniões, visitas comerciais e eventos.",
+    image: folderImg,
     specs: [
-      "Material: PVC rígido ou papel laminado",
-      "Formato: 9x5,5cm",
-      "Impressão: Frente e verso",
-      "Inclui: Furo para cordão",
+      "Material: Papel Couchê 90g",
+      "Impressão: Colorido",
+      "Formatos: A6 (10x14cm) e A5 (14x20cm)",
+      "Produção: 2 dias úteis",
     ],
     prices: [
-      { qty: "1 unidade", price: "R$ 25,00" },
-      { qty: "10 unidades", price: "R$ 220,00", best: true, label: "melhor custo" },
+      { qty: "500 un A6 (10x14cm)", price: "R$ 165,00" },
+      { qty: "1.000 un A6 (10x14cm)", price: "R$ 175,00", best: true, label: "Mais vendido" },
+      { qty: "2.500 un A6 (10x14cm)", price: "R$ 245,00" },
+      { qty: "5.000 un A6 (10x14cm)", price: "R$ 425,00" },
+      { qty: "500 un A5 (14x20cm)", price: "R$ 285,00" },
+      { qty: "1.000 un A5 (14x20cm)", price: "R$ 295,00", best: true, label: "Mais vendido" },
+      { qty: "2.500 un A5 (14x20cm)", price: "R$ 495,00" },
+      { qty: "5.000 un A5 (14x20cm)", price: "R$ 775,00" },
+    ],
+  },
+  {
+    id: "cracha",
+    title: "Kit Crachá Igreen",
+    subtitle: "Crachá de PVC + Capa Protetora + Cordão Personalizado",
+    description: "Kit completo de identificação para consultores Igreen. Inclui crachá de PVC rígido e resistente com foto e dados personalizados, capa protetora transparente para mais conservação e cordão personalizado com a marca Igreen para praticidade no dia a dia.",
+    image: crachaImg,
+    specs: [
+      "Crachá de PVC: resistente e durável",
+      "Capa protetora: mais conservação",
+      "Cordão personalizado Igreen",
+      "Formato: 9x5,5cm",
+    ],
+    prices: [
+      { qty: "1 unidade", price: "R$ 25,00", best: true, label: "kit completo" },
+      { qty: "10 unidades", price: "R$ 220,00" },
       { qty: "25 unidades", price: "R$ 525,00" },
       { qty: "50 unidades", price: "R$ 1.000,00" },
     ],
@@ -101,22 +127,39 @@ const produtosIgreen: ProdutoIgreen[] = [
     ],
   },
   {
-    id: "folder",
-    title: "Folder Personalizado Igreen",
-    subtitle: "Material de apresentação profissional para consultores Igreen",
-    description: "Folders personalizados com identidade visual Igreen em formato A5 (14x20cm) ou A4 dobrado. Impressos em Couché 90g ou 115g com impressão 4x4 cores. Ideais para apresentar planos, produtos e serviços Igreen em reuniões, visitas comerciais e eventos.",
-    image: folderImg,
+    id: "caneta",
+    title: "Canetas Personalizadas Igreen",
+    subtitle: "Caneta executiva com a marca Igreen",
+    description: "Canetas personalizadas com a identidade visual Igreen. Acabamento premium com gravação da marca. Ideal para brindes em eventos, reuniões e visitas comerciais. Fortalece o profissionalismo e o reconhecimento da marca junto aos clientes.",
+    image: caneta,
     specs: [
-      "Material: Couché 90g ou 115g",
-      "Formato: A5 (14x20cm) ou A4 dobrado",
-      "Impressão: 4x4 cores",
-      "Produção: 4 a 5 dias úteis",
+      "Personalização: Logo Igreen",
+      "Acabamento: Premium",
+      "Uso: Eventos e brindes",
+      "Produção: Consulte prazo",
     ],
     prices: [
-      { qty: "500 unidades", price: "R$ 265,00" },
-      { qty: "1.000 unidades", price: "R$ 275,00", best: true, label: "melhor custo" },
-      { qty: "2.500 unidades", price: "R$ 495,00" },
-      { qty: "5.000 unidades", price: "R$ 740,00" },
+      { qty: "Consulte quantidades e valores", price: "sob consulta" },
+    ],
+  },
+  {
+    id: "chaveiro",
+    title: "Chaveiros de Tecido Igreen",
+    subtitle: "Poliéster Acetinado 20mm — Medida: 11x2cm",
+    description: "Chaveiros de tecido personalizados em Poliéster Acetinado 20mm com a marca Igreen. Medida 11x2cm com argola metálica. Excelente brinde para distribuição em eventos, reuniões e ações de captação. Durável, leve e com visual profissional.",
+    image: chaveiro,
+    specs: [
+      "Material: Poliéster Acetinado 20mm",
+      "Medida: 11x2cm",
+      "Acabamento: Argola metálica",
+      "Personalização: Logo Igreen",
+    ],
+    prices: [
+      { qty: "30 unidades", price: "R$ 88,50" },
+      { qty: "60 unidades", price: "R$ 177,00", best: true, label: "melhor custo" },
+      { qty: "90 unidades", price: "R$ 260,00" },
+      { qty: "120 unidades", price: "R$ 342,00" },
+      { qty: "150 unidades", price: "R$ 420,00" },
     ],
   },
 ];
@@ -159,35 +202,34 @@ function ProdutosIgreen() {
         })}
       </script>
 
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center pt-24 pb-12 sm:pt-20 bg-gradient-to-br from-[#0A1A0F] via-[#0D2010] to-[#122B17]">
-        {/* Decorative Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-[#22C55E]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-48 h-48 bg-[#22C55E]/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#22C55E]/5 rounded-full blur-3xl"></div>
-        </div>
+      {/* Hero Banner */}
+      <section className="relative pt-20 bg-[#0A1A0F]">
+        <img
+          src={bannerTopo}
+          alt="Licenciado de Sucesso Igreen - Materiais Gráficos"
+          className="w-full object-cover"
+        />
+      </section>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#22C55E]/20 border border-[#22C55E]/30 rounded-full px-4 py-2 mb-6">
+      {/* Subtitle Section */}
+      <section className="py-8 sm:py-10 bg-gradient-to-br from-[#0A1A0F] via-[#0D2010] to-[#122B17]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-[#22C55E]/20 border border-[#22C55E]/30 rounded-full px-4 py-2 mb-4">
             <i className="ri-leaf-fill text-[#22C55E]"></i>
             <span className="text-[#22C55E] text-sm font-medium">Setor Exclusivo Igreen</span>
           </div>
-
-          <h1 className="text-[26px] sm:text-4xl lg:text-[52px] font-extrabold text-white leading-tight mb-4 sm:mb-6">
+          <h1 className="text-[22px] sm:text-3xl lg:text-[40px] font-extrabold text-white leading-tight mb-3">
             Materiais gráficos personalizados para consultores{" "}
-            <span className="text-[#22C55E]">Igreen</span>: banners, cartões, crachás, cordões e folders
+            <span className="text-[#22C55E]">Igreen</span>
           </h1>
-          <h2 className="text-sm sm:text-lg lg:text-xl text-white/80 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2">
+          <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto mb-6">
             Produtos prontos para uso, personalizados com o nome, endereço e identidade da sua unidade Igreen, garantindo mais profissionalismo no atendimento
-          </h2>
-
+          </p>
           <a
             href="https://tintim.link/whatsapp/0eb741f7-a339-4a99-a871-b7c6aff012dd/affb41e2-145a-4fcb-8d48-46d48ab0c7f1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#22C55E] to-[#16A34A] text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_24px_rgba(34,197,94,0.4)] hover:shadow-[0_8px_32px_rgba(34,197,94,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#22C55E] to-[#16A34A] text-white px-8 sm:px-12 py-4 rounded-full text-base sm:text-lg font-bold shadow-[0_4px_24px_rgba(34,197,94,0.4)] hover:shadow-[0_8px_32px_rgba(34,197,94,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
             <span>Solicitar Orçamento</span>

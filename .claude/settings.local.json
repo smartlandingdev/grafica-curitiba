@@ -19,7 +19,12 @@
       "Bash(playwright --version)",
       "Read(//Users/arthurtenorio/.npm/_npx/**)",
       "Bash(/Users/arthurtenorio/.npm/_npx/e41f203b7505f1fb/node_modules/.bin/playwright install *)",
-      "Bash(kill %1 %2 %3)"
+      "Bash(kill %1 %2 %3)",
+      "Bash(cp \"/Users/mariajulia/Downloads/foto pra topo.png\" \"/Users/mariajulia/SmartLanding/grafica-curitiba/src/assets/produtos/igreen-banner-topo.png\")",
+      "Bash(cp \"/Users/mariajulia/Downloads/ChatGPT Image 14 de mai. de 2026, 13_13_50.png\" \"/Users/mariajulia/SmartLanding/grafica-curitiba/src/assets/produtos/kit-cracha-igreen.png\")",
+      "Bash(cp \"/Users/mariajulia/Downloads/ChatGPT Image 25 de mai. de 2026, 11_49_54.png\" \"/Users/mariajulia/SmartLanding/grafica-curitiba/src/assets/produtos/folder-igreen.png\")",
+      "Bash(cp \"/Users/mariajulia/Downloads/ChatGPT Image 25 de mai. de 2026, 11_57_03 \\(1\\).png\" \"/Users/mariajulia/SmartLanding/grafica-curitiba/src/assets/produtos/caneta-igreen.png\")",
+      "Bash(cp \"/Users/mariajulia/Downloads/WhatsApp Image 2026-05-25 at 11.57.13.jpeg\" \"/Users/mariajulia/SmartLanding/grafica-curitiba/src/assets/produtos/chaveiro-igreen.jpeg\")"
     ]
   }
 }
