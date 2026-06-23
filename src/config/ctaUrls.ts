@@ -37,7 +37,8 @@ export type CTAType =
   | "adesivoPapelVinil"
   | "blocosAnotacoes"
   | "pulseirasEventos"
-  | "folderA4Dobras";
+  | "folderA4Dobras"
+  | "marcadorPagina";
 
 // Interface para a configuração de cada CTA
 export interface CTAConfig {
@@ -213,6 +214,12 @@ export const CTA_CONFIG: Record<CTAType, CTAConfig> = {
   folderA4Dobras: {
     url: WHATSAPP_URL,
     label: "Solicitar Orçamento",
+    icon: "ri-whatsapp-line",
+  },
+
+  marcadorPagina: {
+    url: WHATSAPP_URL,
+    label: "Gostaria de comprar Marcadores de página",
     icon: "ri-whatsapp-line",
   },
 };
